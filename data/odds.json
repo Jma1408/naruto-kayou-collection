@@ -1,0 +1,115 @@
+{
+ "method": "1 chance sur X boosters. Rareté : 1/(nb attendu par booster) ou « ≥1 par booster ». Carte précise : 1 / (1-(1-1/n)^k), n = cartes de la rareté, k = nb attendu de cette rareté par booster.",
+ "heaven-scroll": {
+  "EU": {
+   "label": "Édition EU (NRSA01)",
+   "packCards": 8,
+   "boxPacks": 24,
+   "rarities": {
+    "R": {
+     "k": 2,
+     "src": "Kayou, page officielle Heaven Scroll Series 1 (Appearance Probability : 2R+1SR+3 flex+2PTR)"
+    },
+    "SR": {
+     "k": 2.75,
+     "src": "1 garanti (Kayou, page officielle Heaven Scroll Series 1 (Appearance Probability : 2R+1SR+3 flex+2PTR)) + part estimée des cases flex",
+     "est": true
+    },
+    "SSR": {
+     "k": 0.6,
+     "est": true,
+     "src": "Estimation : 3 cases « flex » par booster ; 12 boosters sur 24 peuvent contenir une carte PU/MR/BP/SP/SE (officiel), on suppose 1 hit par booster éligible réparti PU 50 % · MR 25 % · BP 15 % · SP 6 % · SE 4 % ; UR/SSR calés sur les ratios publiés des boîtes Earth Scroll SEA (UR 4/30, SSR 9/30 boosters) ajustés aux 3 cases flex."
+    },
+    "UR": {
+     "k": 0.15,
+     "est": true,
+     "src": "Estimation : 3 cases « flex » par booster ; 12 boosters sur 24 peuvent contenir une carte PU/MR/BP/SP/SE (officiel), on suppose 1 hit par booster éligible réparti PU 50 % · MR 25 % · BP 15 % · SP 6 % · SE 4 % ; UR/SSR calés sur les ratios publiés des boîtes Earth Scroll SEA (UR 4/30, SSR 9/30 boosters) ajustés aux 3 cases flex."
+    },
+    "PTR": {
+     "k": 2,
+     "src": "Kayou, page officielle Heaven Scroll Series 1 (Appearance Probability : 2R+1SR+3 flex+2PTR)"
+    },
+    "PU": {
+     "k": 0.25,
+     "est": true,
+     "src": "Estimation : 3 cases « flex » par booster ; 12 boosters sur 24 peuvent contenir une carte PU/MR/BP/SP/SE (officiel), on suppose 1 hit par booster éligible réparti PU 50 % · MR 25 % · BP 15 % · SP 6 % · SE 4 % ; UR/SSR calés sur les ratios publiés des boîtes Earth Scroll SEA (UR 4/30, SSR 9/30 boosters) ajustés aux 3 cases flex."
+    },
+    "MR": {
+     "k": 0.125,
+     "est": true,
+     "src": "Estimation : 3 cases « flex » par booster ; 12 boosters sur 24 peuvent contenir une carte PU/MR/BP/SP/SE (officiel), on suppose 1 hit par booster éligible réparti PU 50 % · MR 25 % · BP 15 % · SP 6 % · SE 4 % ; UR/SSR calés sur les ratios publiés des boîtes Earth Scroll SEA (UR 4/30, SSR 9/30 boosters) ajustés aux 3 cases flex."
+    },
+    "BP": {
+     "k": 0.075,
+     "est": true,
+     "src": "Estimation : 3 cases « flex » par booster ; 12 boosters sur 24 peuvent contenir une carte PU/MR/BP/SP/SE (officiel), on suppose 1 hit par booster éligible réparti PU 50 % · MR 25 % · BP 15 % · SP 6 % · SE 4 % ; UR/SSR calés sur les ratios publiés des boîtes Earth Scroll SEA (UR 4/30, SSR 9/30 boosters) ajustés aux 3 cases flex."
+    },
+    "SP": {
+     "k": 0.03,
+     "est": true,
+     "src": "Estimation : 3 cases « flex » par booster ; 12 boosters sur 24 peuvent contenir une carte PU/MR/BP/SP/SE (officiel), on suppose 1 hit par booster éligible réparti PU 50 % · MR 25 % · BP 15 % · SP 6 % · SE 4 % ; UR/SSR calés sur les ratios publiés des boîtes Earth Scroll SEA (UR 4/30, SSR 9/30 boosters) ajustés aux 3 cases flex."
+    },
+    "SE": {
+     "k": 0.02,
+     "est": true,
+     "src": "Estimation : 3 cases « flex » par booster ; 12 boosters sur 24 peuvent contenir une carte PU/MR/BP/SP/SE (officiel), on suppose 1 hit par booster éligible réparti PU 50 % · MR 25 % · BP 15 % · SP 6 % · SE 4 % ; UR/SSR calés sur les ratios publiés des boîtes Earth Scroll SEA (UR 4/30, SSR 9/30 boosters) ajustés aux 3 cases flex."
+    }
+   }
+  },
+  "CN": {
+   "label": "Édition CN (T4W6)",
+   "packCards": 5,
+   "boxPacks": 18,
+   "rarities": {
+    "R": {
+     "k": 2,
+     "src": "Capsule Corp Gear (2R par booster Tier 4)"
+    },
+    "SR": {
+     "k": 1,
+     "src": "Capsule Corp Gear (1SR par booster Tier 4)"
+    },
+    "PTR": {
+     "k": 1,
+     "est": true,
+     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
+    },
+    "SSR": {
+     "k": 0.6,
+     "est": true,
+     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
+    },
+    "UR": {
+     "k": 0.2,
+     "est": true,
+     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
+    },
+    "PU": {
+     "k": 0.0746,
+     "est": true,
+     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
+    },
+    "MR": {
+     "k": 0.04,
+     "est": true,
+     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
+    },
+    "BP": {
+     "k": 0.03,
+     "est": true,
+     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
+    },
+    "SP": {
+     "k": 0.01,
+     "est": true,
+     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
+    },
+    "SE": {
+     "k": 0.005,
+     "est": true,
+     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
+    }
+   }
+  }
+ }
+}

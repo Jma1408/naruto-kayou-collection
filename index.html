@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0b0d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Kayou Dex">
+<title>Kayou Dex</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="top"><button id="back" aria-label="Retour" hidden>‹</button><h1 id="title">Kayou Dex</h1><span id="pdate"></span><button id="menu" aria-label="Collections">▦</button></header>
+<main id="view"></main>
+<nav id="tabs">
+  <a href="#home" data-t="home"><i>◎</i>Accueil</a>
+  <a href="#cards" data-t="cards"><i>▦</i>Cartes</a>
+  <a href="#booster" data-t="booster"><i>✦</i>Booster</a>
+  <a href="#more" data-t="more"><i>☰</i>Plus</a>
+</nav>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

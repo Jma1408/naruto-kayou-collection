@@ -1,0 +1,33 @@
+[
+ {
+  "id": "heaven-scroll",
+  "file": "data/heaven-scroll.json",
+  "status": "ok",
+  "count": 158,
+  "cover": "https://static-sg.kayouofficial.com/overseas/website/2026/06/15/61643f3d546728d09a35c0c3339e7c52-733-1029.png",
+  "eu": "Heaven Scroll – Série 01",
+  "euSub": "FR/EU · code NRSA01",
+  "cn": "T4W6 – Tier 4 Wave 6",
+  "cnSub": "Chine · 10 ¥ le booster"
+ },
+ {
+  "id": "earth-scroll-1",
+  "status": "soon",
+  "count": 131,
+  "eu": "Earth Scroll – Série 1",
+  "euSub": "code NRI01"
+ },
+ {
+  "id": "earth-scroll-2",
+  "status": "soon",
+  "count": 132,
+  "eu": "Earth Scroll – Série 2",
+  "euSub": "code NREA02"
+ },
+ {
+  "id": "t4w7",
+  "status": "soon",
+  "eu": "Tier 4 Wave 7",
+  "euSub": "Chine"
+ }
+]
