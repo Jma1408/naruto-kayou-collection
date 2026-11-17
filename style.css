@@ -127,3 +127,5 @@ main.sl{animation:sl .25s}main.sr{animation:sr .25s}
 table td{overflow-wrap:anywhere}.rt td{overflow-wrap:normal}
 td select{background:var(--bg3);color:var(--tx);border:0;border-radius:8px;height:40px;padding:0 10px}
 .c .rp{position:absolute;top:4px;left:4px;background:#000a;color:var(--or2);font-size:11px;border-radius:8px;padding:0 5px}
+.tot{display:block;margin:2px 0 4px;color:var(--mu);text-decoration:none;font-size:14px}.tot b{color:var(--or)}
+.mp{display:flex;align-items:center;gap:8px}.mp input{flex:1;height:52px;border-radius:12px;border:1px solid var(--bg3);background:var(--bg2);padding:0 14px;font-size:22px;font-weight:700}.mp span{font-size:22px;color:var(--mu)}

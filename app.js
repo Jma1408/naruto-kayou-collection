@@ -3,13 +3,32 @@
 const $ = (s, r = document) => r.querySelector(s);
 const V = $('#view');
 const CONDS = ['Mint', 'NM', 'EX', 'GD', 'LP', 'PL', 'Abîmée'];
-const S = { sets: [], setsSrc: '', odds: {}, col: {}, photos: {}, prices: null, data: {}, ctx: [], pack: [], opened: null, cls: {}, q: '' };
+const S = { sets: [], setsSrc: '', odds: {}, col: {}, photos: {}, data: {}, ctx: [], pack: [], opened: null, cls: {}, q: '' };
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const eur = v => v == null ? '—' : v.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' });
 const f1 = y => (Math.round(y * 10) / 10).toLocaleString('fr-FR');
 const key = c => c.set + '|' + c.code;
 const qty = c => (S.col[key(c)] || {}).q || 0;
-const price = c => { const p = S.prices && S.prices.cards[c.code]; return p && p.n > 0 ? p : null; };
+// Prix manuel : saisi par l'utilisateur, stocké dans l'enregistrement de collection { q, cond, price, priceDate }
+const myPrice = c => { const e = S.col[key(c)]; return e && typeof e.price === 'number' ? e.price : null; };
+const price = c => myPrice(c) == null ? null : { median: myPrice(c) };
+const OLD = 30 * 864e5;
+const stale = e => e && e.priceDate && Date.now() - new Date(e.priceDate) > OLD;
+const fdate = s => { const d = new Date(s); return `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}/${d.getFullYear()}`; };
+// valeur d'un ensemble de clés « set|code » : somme prix × quantité, + nb de cartes possédées sans prix
+function worth(prefix) {
+  let v = 0, miss = 0;
+  for (const k in S.col) { const e = S.col[k]; if ((!prefix || k.startsWith(prefix + '|')) && e.q > 0) { if (typeof e.price === 'number') v += e.price * e.q; else miss++; } }
+  return { v, miss };
+}
+const worthTxt = w => `${eur(w.v)}${w.miss ? ` · ${w.miss} carte${w.miss > 1 ? 's' : ''} sans prix` : ''}`;
+/* Migration des enregistrements (backups v1, collection existante) : ajoute les champs manquants sans rien perdre */
+function migrateRec(e) {
+  if (!e || typeof e !== 'object') return null;
+  const r = { q: Math.max(0, parseInt(e.q, 10) || 0), cond: e.cond || 'NM' };
+  if (e.price != null && !isNaN(+e.price)) { r.price = Math.round(+e.price * 100) / 100; r.priceDate = e.priceDate || new Date().toISOString(); }
+  return r;
+}
 const meta = id => S.sets.find(m => m.id === id);
 const rarOf = c => S.data[c.set].rarities.find(x => x.id === c.rarity) || { id: c.rarity, label: c.rarity };
 const rIdx = c => S.data[c.set].rarities.findIndex(x => x.id === c.rarity);
@@ -32,7 +51,7 @@ const allOf = st => dbp.then(d => new Promise(res => {
   const o = {}, c = d.transaction(st).objectStore(st).openCursor();
   c.onsuccess = () => { const k = c.result; if (k) { o[k.key] = k.value; k.continue(); } else res(o); };
 }));
-const saveCol = k => S.col[k] && (S.col[k].q || S.col[k].cond)
+const saveCol = k => S.col[k] && (S.col[k].q || S.col[k].cond || S.col[k].price != null)
   ? idb('col', 'readwrite', s => s.put(S.col[k], k)) : idb('col', 'readwrite', s => s.delete(k));
 
 /* ---------- utils ---------- */
@@ -47,11 +66,6 @@ function img(c) {
   return `<img src="${esc(src)}" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.outerHTML=this.nextElementSibling.innerHTML"><template>${ph(c)}</template>`;
 }
 const ring = (o, t, size = 46) => `<div class="ring" style="--p:${t ? o / t * 100 : 0};--s:${size}px"><span>${t ? Math.round(o / t * 100) : 0}%</span></div>`;
-function pDate() { if (!S.prices || !S.prices.updated) return ''; const d = new Date(S.prices.updated); return `Prix du ${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}`; }
-async function loadPrices(force) {
-  try { S.prices = await (await fetch('data/prices.json' + (force ? '?t=' + Date.now() : ''), { cache: 'no-store' })).json(); if (force) toast('Prix actualisés'); }
-  catch { if (force) toast('Hors ligne : prix en cache'); }
-}
 async function loadSet(id) {
   if (S.data[id]) return S.data[id];
   const m = meta(id); if (!m || !m.file) return null;
@@ -117,6 +131,7 @@ const views = {
     const reg = localStorage.getItem('reg') || 'all';
     return `<div class="band"><div class="seg">${[['fr', 'FR'], ['cn', 'Chine'], ['all', 'Tout']].map(([v, l]) => `<button data-reg="${v}" class="${reg === v ? 'on' : ''}">${l}</button>`).join('')}</div>
       <input id="gq" type="search" placeholder="🔍 Perso, nom chinois ou code (tous les sets)" value="${esc(S.q)}" autocomplete="off"></div>
+      <a class="tot" href="#r">Ma collection : <b>${worthTxt(worth())}</b></a>
       <div id="res"></div>
       <div id="shelves">${ROWS().filter(r => reg === 'all' || (reg === 'fr' ? r.region === 'intl' : r.region === 'cn')).map(r => `<section class="shelf"><h3>${esc(r.title)}</h3><div class="row">${r.sets.map(m => shelfTile(m)).join('')}</div></section>`).join('')}</div>`;
   },
@@ -126,10 +141,10 @@ const views = {
   },
   binder(d) {
     const id = d.id, f = S.cls[id] || (S.cls[id] = { r: '', own: false });
-    const own = d.cards.filter(qty).length, t = d.cards.length, val = d.cards.reduce((a, c) => a + (price(c) ? price(c).median * qty(c) : 0), 0);
+    const own = d.cards.filter(qty).length, t = d.cards.length, val = worth(id);
     const tabs = [{ id: '', label: 'Tout' }, ...d.rarities.slice().reverse()];
     S.ctx = d.cards.filter(c => (!f.r || c.rarity === f.r) && (!f.own || qty(c)));
-    return `<section class="bh">${ring(own, t, 64)}<div><div class="big">${own}/${t}</div><div class="mu">Valeur estimée : ${eur(val)}</div></div>
+    return `<section class="bh">${ring(own, t, 64)}<div><div class="big">${own}/${t}</div><div class="mu">Valeur (mes prix) : ${worthTxt(val)}</div></div>
       <a class="btn g" href="#g/${id}">📖 Guide</a></section>
       ${d.partial ? '<p class="note">Liste partielle : des cartes peuvent manquer ou être sans image (placeholder). ↺ = réédition d\'une autre boîte de la même wave.</p>' : ''}
       <div class="ctabs">${tabs.map(r => { const cs = r.id ? d.cards.filter(c => c.rarity === r.id) : d.cards; return `<button data-r="${esc(r.id)}" class="${f.r === r.id ? 'on' : ''}">${esc(r.id || r.label)} <small>${cs.filter(qty).length}/${cs.length}</small></button>`; }).join('')}</div>
@@ -140,8 +155,8 @@ const views = {
   card(d, code) {
     const c = d.cards.find(x => x.code === code); if (!c) return '<p>Carte introuvable.</p>';
     if (!S.ctx.includes(c)) S.ctx = d.cards;
-    const e = S.col[key(c)] || { q: 0, cond: 'NM' }, p = price(c), r = rarOf(c), m = meta(c.set), i = S.ctx.indexOf(c);
-    const q = encodeURIComponent(`kayou naruto ${c.code}`);
+    const e = S.col[key(c)] || { q: 0, cond: 'NM' }, r = rarOf(c), m = meta(c.set), i = S.ctx.indexOf(c);
+    const q = encodeURIComponent(`${c.code.replace(/~\d+$/, '').replace(/L\d$/, '')} ${c.name || ''}`.trim()) + '&LH_Sold=1&LH_Complete=1';
     const twin = (cd, sid) => sid && meta(sid) && meta(sid).file ? `<a href="#s/${sid}/${esc(cd)}">${esc(cd)}</a>` : esc(cd);
     return `<div class="det"><div class="card3d ${land(c) ? 'l' : ''} ${isHigh(c) ? 'holo' : ''}" id="c3">${img(c)}</div></div>
     <div class="nav"><button data-step="-1" ${i > 0 ? '' : 'disabled'}>‹</button><span class="mu">${i + 1}/${S.ctx.length} · glisse ← →</span><button data-step="1" ${i < S.ctx.length - 1 ? '' : 'disabled'}>›</button></div>
@@ -154,12 +169,11 @@ const views = {
       ${c.alias && c.alias.eu && c.alias.eu !== c.code ? `<tr><td>Code FR/EU</td><td>${twin(c.alias.eu, m.link)}</td></tr>` : ''}
       ${c.alias && c.alias.cn && c.alias.cn !== c.code ? `<tr><td>Code CN</td><td>${twin(c.alias.cn, m.link)}</td></tr>` : ''}
       <tr><td>État</td><td><select id="cond">${CONDS.map(x => `<option${x === e.cond ? ' selected' : ''}>${x}</option>`).join('')}</select></td></tr></table></section>
-    <section class="box"><h2>Prix marché</h2>
-      ${p ? `<div class="big">${eur(p.median)}</div><div class="mu">Médiane de ${p.n} annonce${p.n > 1 ? 's' : ''} eBay actives · ${pDate()}</div>
-        ${p.psa ? `<div class="mu">Gradées PSA : ${eur(p.psa.median)} (${p.psa.n})</div>` : ''}`
-        : '<div class="big" style="color:var(--mu)">pas de prix</div><div class="mu">0 annonce trouvée lors de la dernière mise à jour.</div>'}
-      <div class="note">Estimation basée sur les annonces eBay, jamais une cote officielle.</div>
-      <div class="links">${['fr', 'de', 'com'].map(t => `<a class="btn g" target="_blank" rel="noopener" href="https://www.ebay.${t}/sch/i.html?_nkw=${q}">eBay ${t === 'com' ? 'US' : t.toUpperCase()}</a>`).join('')}</div></section>
+    <section class="box"><h2>Mon prix</h2>
+      <div class="mp"><input id="mp" type="text" inputmode="decimal" autocomplete="off" pattern="[0-9]*[.,]?[0-9]*" placeholder="Prix en €" value="${e.price ?? ''}"><span>€</span></div>
+      <div class="mu" id="mpd">${e.priceDate ? `Saisi le ${fdate(e.priceDate)}${stale(e) ? ' <span title="plus de 30 jours">🕓 à revoir (+30 jours)</span>' : ''}` : 'Aucun prix saisi'}</div>
+      <p class="note">Regarde les ventes réussies, puis note ton prix : il sert au calcul de la valeur de tes classeurs.</p>
+      <div class="links"><a class="btn g" target="_blank" rel="noopener" href="https://www.ebay.fr/sch/i.html?_nkw=${q}">Ventes eBay FR</a><a class="btn g" target="_blank" rel="noopener" href="https://www.ebay.com/sch/i.html?_nkw=${q}">Ventes eBay US</a></div></section>
     <section class="box"><h2>Taux de drop</h2>${oddsLine(c)}<a class="mu" href="#g/${c.set}">Détail et source dans le guide ›</a></section>
     <section class="box"><h2>Ma photo</h2>
       <label class="btn w">📷 ${S.photos[key(c)] ? 'Remplacer ma photo' : 'Ajouter ma photo'}<input id="ph" type="file" accept="image/*" capture="environment" hidden></label>
@@ -200,8 +214,8 @@ const views = {
       <section class="box recap" style="--d:${o.cards.length * 0.45 + 0.3}s"><h2>Récap</h2>
       <div class="rw"><span>Nouvelles cartes</span><b>${o.isNew.filter(Boolean).length}</b></div>
       <div class="rw"><span>Doublons</span><b>${o.isNew.filter(x => !x).length}</b></div>
-      <div class="rw"><span>Valeur estimée du booster</span><b>${eur(o.cards.reduce((a, c) => a + (price(c)?.median || 0), 0))}</b></div>
-      <p class="note">Somme des médianes eBay disponibles (${o.cards.filter(price).length}/${o.cards.length} cartes avec un prix).</p>
+      <div class="rw"><span>Valeur du booster (mes prix)</span><b>${eur(o.cards.reduce((a, c) => a + (myPrice(c) || 0), 0))}</b></div>
+      <p class="note">${o.cards.filter(c => myPrice(c) == null).length} carte(s) sans prix saisi.</p>
       <a class="btn w" href="#b/${id}" data-replace>Nouveau booster</a><a class="btn g w" href="#s/${id}">Voir le classeur</a></section>`;
   },
   r() {
@@ -209,8 +223,7 @@ const views = {
     <section class="box"><h2>Sauvegarde</h2><p class="mu">Ta collection est stockée sur ce téléphone (IndexedDB). Exporte-la régulièrement.</p>
       <button class="btn w" id="ex">⤓ Exporter (JSON)</button>
       <label class="btn g w">⤒ Importer un backup<input id="im" type="file" accept="application/json,.json" hidden></label></section>
-    <section class="box"><h2>Prix</h2><p class="mu">${pDate() || 'Aucun prix'} — ${S.prices ? Object.values(S.prices.cards).filter(p => p.n).length : 0} cartes avec au moins une annonce. Estimation basée sur les annonces eBay actives, pas une cote officielle.</p>
-      <button class="btn g w" id="refresh">↻ Actualiser</button></section>
+    <section class="box"><h2>Prix</h2><p>Valeur totale (mes prix × quantités) : <b>${worthTxt(worth())}</b></p><p class="mu">Les prix sont saisis à la main sur chaque fiche, à partir des ventes réussies eBay. Ils sont inclus dans l'export JSON.</p></section>
     <section class="box"><h2>Données</h2><p class="mu">International : kayouofficial.com. Chine : ${esc(S.setsSrc)}.</p></section>`;
   },
   k() {
@@ -317,7 +330,6 @@ const binds = {
   r() { $('#ex').onclick = exportJSON; $('#im').onchange = e => e.target.files[0] && importJSON(e.target.files[0]); }
 };
 document.addEventListener('click', async e => {
-  const r = e.target.closest('#refresh'); if (r) { await loadPrices(true); curBase = null; route(); return; }
   const a = e.target.closest('a[data-replace]'); if (a) { e.preventDefault(); replaceTo(a.getAttribute('href')); }
 });
 
@@ -329,6 +341,12 @@ function bindCard(c) {
   V.querySelectorAll('.qty button').forEach(b => b.onclick = () => { add(c, +b.dataset.d); $('#qv').textContent = qty(c); vib(15); });
   V.querySelectorAll('.nav button').forEach(b => b.onclick = () => step(c, +b.dataset.step));
   $('#cond').onchange = e => { (S.col[k] || (S.col[k] = { q: 0 })).cond = e.target.value; saveCol(k); };
+  const mp = $('#mp'), savePrice = () => {
+    const e = S.col[k] || (S.col[k] = { q: 0, cond: 'NM' }), v = mp.value.trim().replace(',', '.');
+    if (v === '') { delete e.price; delete e.priceDate; } else if (!isNaN(+v)) { e.price = Math.round(+v * 100) / 100; e.priceDate = new Date().toISOString(); } else return;
+    saveCol(k); $('#mpd').textContent = e.priceDate ? 'Saisi le ' + fdate(e.priceDate) : 'Aucun prix saisi'; toast(v === '' ? 'Prix retiré' : 'Prix enregistré');
+  };
+  mp.onchange = savePrice; mp.onkeydown = ev => { if (ev.key === 'Enter') mp.blur(); };
   const tilt = (px, py) => { c3.style.setProperty('--mx', px * 100 + '%'); c3.style.setProperty('--my', py * 100 + '%'); c3.style.setProperty('--ry', (px - .5) * 24 + 'deg'); c3.style.setProperty('--rx', (.5 - py) * 24 + 'deg'); };
   if (isHigh(c)) {
     c3.onpointermove = e => { if (e.pointerType === 'touch') return; const r = c3.getBoundingClientRect(); tilt((e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height); };
@@ -363,7 +381,7 @@ const b2d = b => new Promise(r => { const fr = new FileReader(); fr.onload = () 
 async function exportJSON() {
   const ph = await allOf('photos'), photos = {};
   for (const k in ph) photos[k] = await b2d(ph[k]);
-  const blob = new Blob([JSON.stringify({ app: 'kayoudex', v: 1, date: new Date().toISOString(), col: S.col, photos })], { type: 'application/json' });
+  const blob = new Blob([JSON.stringify({ app: 'kayoudex', v: 2, date: new Date().toISOString(), col: S.col, photos })], { type: 'application/json' });
   const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `kayoudex-backup-${new Date().toISOString().slice(0, 10)}.json`; a.click();
   toast('Backup exporté');
 }
@@ -372,7 +390,7 @@ async function importJSON(f) {
     const d = JSON.parse(await f.text()); if (d.app !== 'kayoudex' || !d.col) throw 0;
     if (!confirm('Remplacer la collection actuelle par ce backup ?')) return;
     await idb('col', 'readwrite', s => s.clear()); await idb('photos', 'readwrite', s => s.clear());
-    await idb('col', 'readwrite', s => { for (const k in d.col) s.put(d.col[k], k); });
+    await idb('col', 'readwrite', s => { for (const k in d.col) { const r = migrateRec(d.col[k]); if (r) s.put(r, k); } }); // v1 et v2 acceptés
     const blobs = {}; for (const k in d.photos || {}) blobs[k] = await (await fetch(d.photos[k])).blob();
     await idb('photos', 'readwrite', s => { for (const k in blobs) s.put(blobs[k], k); });
     toast('Backup importé'); setTimeout(() => location.reload(), 600);
@@ -383,8 +401,8 @@ async function init() {
   const [sj, od] = await Promise.all([fetch('data/sets.json').then(r => r.json()), fetch('data/odds.json').then(r => r.json())]);
   S.sets = Array.isArray(sj) ? sj : sj.sets; S.setsSrc = sj.source || ''; S.odds = od;
   S.col = await allOf('col');
+  for (const k in S.col) { const r = migrateRec(S.col[k]); if (JSON.stringify(r) !== JSON.stringify(S.col[k])) { S.col[k] = r; saveCol(k); } } // migration douce, même base et mêmes clés
   const ph = await allOf('photos'); for (const k in ph) S.photos[k] = URL.createObjectURL(ph[k]);
-  await loadPrices();
   const h = parse(location.hash)[0];
   if (!location.hash || !views[h] || ['c', 'm', 'q', 'i', 'w', 'menu'].includes(h)) history.replaceState(history.state, '', '#h'); // anciennes URL → accueil
   route();
