@@ -1,33 +1,411 @@
-[
- {
-  "id": "heaven-scroll",
-  "file": "data/heaven-scroll.json",
-  "status": "ok",
-  "count": 158,
-  "cover": "https://static-sg.kayouofficial.com/overseas/website/2026/06/15/61643f3d546728d09a35c0c3339e7c52-733-1029.png",
-  "eu": "Heaven Scroll – Série 01",
-  "euSub": "FR/EU · code NRSA01",
-  "cn": "T4W6 – Tier 4 Wave 6",
-  "cnSub": "Chine · 10 ¥ le booster"
- },
- {
-  "id": "earth-scroll-1",
-  "status": "soon",
-  "count": 131,
-  "eu": "Earth Scroll – Série 1",
-  "euSub": "code NRI01"
- },
- {
-  "id": "earth-scroll-2",
-  "status": "soon",
-  "count": 132,
-  "eu": "Earth Scroll – Série 2",
-  "euSub": "code NREA02"
- },
- {
-  "id": "t4w7",
-  "status": "soon",
-  "eu": "Tier 4 Wave 7",
-  "euSub": "Chine"
- }
+{
+"source": "Guide Capsule Corp Gear (capsulecorpgear.com/naruto-kayou-card-guide) — liste des boîtes, ¥/booster et boosters/boîte",
+"sets": [
+{
+"id": "heaven-scroll",
+"region": "intl",
+"status": "ok",
+"file": "data/heaven-scroll.json",
+"count": 158,
+"cover": "https://static-sg.kayouofficial.com/overseas/website/2026/06/15/61643f3d546728d09a35c0c3339e7c52-733-1029.png",
+"title": "Heaven Scroll – Série 1",
+"sub": "NRSA01 · September 2025",
+"pack": "8 cartes/booster · 24 boosters/boîte",
+"link": "cn-t4w6",
+"linkLabel": "Mêmes illustrations que T4W6 (Chine)"
+},
+{
+"id": "chapter-jin-2",
+"region": "intl",
+"status": "ok",
+"file": "data/chapter-jin-2.json",
+"count": 168,
+"cover": "https://static-sg.kayouofficial.com/overseas/website/2026/06/16/5a7b3e8843459da0092e2f29b131b582-733-1029.png",
+"title": "Chapter Jin – Série 2",
+"sub": "NRSA02 · November 2025",
+"pack": "8 cartes/booster · 12 boosters/boîte",
+"link": "cn-t4w7",
+"linkLabel": "Mêmes illustrations que T4W7 (Chine) (selon un guide collector, non officiel)"
+},
+{
+"id": "chapter-jin-3",
+"region": "intl",
+"status": "ok",
+"file": "data/chapter-jin-3.json",
+"count": 185,
+"cover": "https://static-sg.kayouofficial.com/overseas/website/2026/06/15/782c8c1fc98be9037dcdca738d2861d4-733-1029.png",
+"title": "Chapter Jin – Série 3",
+"sub": "NRSA03 · April 2026",
+"pack": "8 cartes/booster · 12 boosters/boîte"
+},
+{
+"id": "chapter-jin-4",
+"region": "intl",
+"status": "ok",
+"file": "data/chapter-jin-4.json",
+"count": 186,
+"cover": "https://static-sg.kayouofficial.com/overseas/website/2026/11/06/9deccf8dd67ddd5d3cebb8809deacf38-1217-1712.png",
+"title": "Chapter Jin – Série 4",
+"sub": "NRSA04 · November 2026",
+"pack": "8 cartes/booster · 12 boosters/boîte"
+},
+{
+"id": "earth-scroll-1",
+"region": "intl",
+"status": "ok",
+"file": "data/earth-scroll-1.json",
+"count": 131,
+"cover": "https://static-sg.kayouofficial.com/overseas/website/2026/06/18/a0bc30ada514d2166f865f5144d6aefa-733-1028.png",
+"title": "Earth Scroll – Série 1",
+"sub": "NRI01 · December 2025",
+"pack": "8 cartes/booster · 20 boosters/boîte"
+},
+{
+"id": "earth-scroll-2",
+"region": "intl",
+"status": "ok",
+"file": "data/earth-scroll-2.json",
+"count": 132,
+"cover": "https://static-sg.kayouofficial.com/overseas/website/2026/06/17/407612a710e145e47068c0c50cfd8729-733-1028.png",
+"title": "Earth Scroll – Série 2",
+"sub": "NREA02 · March 2026",
+"pack": "7 cartes/booster · 20 boosters/boîte"
+},
+{
+"id": "earth-scroll-3",
+"region": "intl",
+"status": "ok",
+"file": "data/earth-scroll-3.json",
+"count": 122,
+"cover": "https://static-sg.kayouofficial.com/overseas/website/2026/10/21/2d4244f1eef7552c921761f3e91f412e-733-1029.png",
+"title": "Earth Scroll – Série 3",
+"sub": "NREA03 · October 2026",
+"pack": "8 cartes/booster · 20 boosters/boîte"
+},
+{
+"id": "ninja-age",
+"region": "intl",
+"status": "ok",
+"file": "data/ninja-age.json",
+"count": 106,
+"cover": "https://static-sg.kayouofficial.com/overseas/website/2026/07/10/aa3d2e9553bf589711b6a69551016635-733-1029.png",
+"title": "Ninja Age – Premium Collector Box",
+"sub": "NRCCNA · August 2026",
+"pack": "5 cartes/booster · 16 boosters/boîte"
+},
+{
+"id": "cn-t4w8",
+"region": "cn",
+"group": "Tier 4 — Chapter of the Array",
+"title": "T4W8",
+"sub": "Boîte NR-RD-Z008",
+"price": "10 ¥ / booster",
+"pack": "5 cartes/booster · 18 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t4w7",
+"region": "cn",
+"group": "Tier 4 — Chapter of the Array",
+"title": "T4W7",
+"sub": "Boîte NR-RD-Z007",
+"price": "10 ¥ / booster",
+"pack": "5 cartes/booster · 18 boosters/boîte",
+"status": "wip",
+"link": "chapter-jin-2",
+"linkLabel": "Mêmes illustrations que Chapter Jin S2 (NRSA02) (selon un guide collector, non officiel)"
+},
+{
+"id": "cn-t4w6",
+"region": "cn",
+"group": "Tier 4 — Chapter of the Array",
+"title": "T4W6",
+"sub": "Boîte NR-RD-Z006",
+"price": "10 ¥ / booster",
+"pack": "5 cartes/booster · 18 boosters/boîte",
+"status": "wip",
+"link": "heaven-scroll",
+"linkLabel": "Mêmes illustrations que Heaven Scroll S1 (NRSA01)"
+},
+{
+"id": "cn-t4w5",
+"region": "cn",
+"group": "Tier 4 — Chapter of the Array",
+"title": "T4W5",
+"sub": "Boîte NR-RD-Z005",
+"price": "10 ¥ / booster",
+"pack": "5 cartes/booster · 18 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t4w4",
+"region": "cn",
+"group": "Tier 4 — Chapter of the Array",
+"title": "T4W4",
+"sub": "Boîte NR-RD-Z004",
+"price": "10 ¥ / booster",
+"pack": "5 cartes/booster · 18 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t4w3",
+"region": "cn",
+"group": "Tier 4 — Chapter of the Array",
+"title": "T4W3",
+"sub": "Boîte NR-RD-Z003",
+"price": "10 ¥ / booster",
+"pack": "5 cartes/booster · 18 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t4w2",
+"region": "cn",
+"group": "Tier 4 — Chapter of the Array",
+"title": "T4W2",
+"sub": "Boîte NR-RD-Z002",
+"price": "10 ¥ / booster",
+"pack": "5 cartes/booster · 18 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t4w1",
+"region": "cn",
+"group": "Tier 4 — Chapter of the Array",
+"title": "T4W1",
+"sub": "Boîte NR-RD-Z001",
+"price": "10 ¥ / booster",
+"pack": "5 cartes/booster · 18 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t3w5",
+"region": "cn",
+"group": "Tier 3 — Chapter of Fighting",
+"title": "T3W5",
+"sub": "Boîte NR-CC-D005",
+"price": "5 ¥ / booster",
+"pack": "5 cartes/booster · 20 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t3w4",
+"region": "cn",
+"group": "Tier 3 — Chapter of Fighting",
+"title": "T3W4",
+"sub": "Boîte NR-CC-D004",
+"price": "5 ¥ / booster",
+"pack": "5 cartes/booster · 20 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t3w3",
+"region": "cn",
+"group": "Tier 3 — Chapter of Fighting",
+"title": "T3W3",
+"sub": "Boîte NR-CC-D003",
+"price": "5 ¥ / booster",
+"pack": "5 cartes/booster · 20 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t3w2",
+"region": "cn",
+"group": "Tier 3 — Chapter of Fighting",
+"title": "T3W2",
+"sub": "Boîte NR-CC-D002",
+"price": "5 ¥ / booster",
+"pack": "5 cartes/booster · 20 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t3w1",
+"region": "cn",
+"group": "Tier 3 — Chapter of Fighting",
+"title": "T3W1",
+"sub": "Boîte NR-CC-D001",
+"price": "5 ¥ / booster",
+"pack": "5 cartes/booster · 20 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t25w1",
+"region": "cn",
+"group": "Tier 2.5 — Capital Chapter",
+"title": "T2.5W1",
+"sub": "Boîte NR-RD-J001",
+"price": "prix ¥ non trouvé",
+"pack": "50 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t2w9",
+"region": "cn",
+"group": "Tier 2 — Chapter of Soldiers",
+"title": "T2W9",
+"sub": "Boîte NR-CC-B009",
+"price": "2 ¥ / booster",
+"pack": "5 cartes/booster · 30 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t2w8",
+"region": "cn",
+"group": "Tier 2 — Chapter of Soldiers",
+"title": "T2W8",
+"sub": "Boîte NR-CC-B008",
+"price": "2 ¥ / booster",
+"pack": "5 cartes/booster · 30 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t2w7",
+"region": "cn",
+"group": "Tier 2 — Chapter of Soldiers",
+"title": "T2W7",
+"sub": "Boîte NR-CC-B007",
+"price": "2 ¥ / booster",
+"pack": "5 cartes/booster · 30 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t2w6",
+"region": "cn",
+"group": "Tier 2 — Chapter of Soldiers",
+"title": "T2W6",
+"sub": "Boîte NR-CC-B006",
+"price": "2 ¥ / booster",
+"pack": "5 cartes/booster · 30 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t2w5",
+"region": "cn",
+"group": "Tier 2 — Chapter of Soldiers",
+"title": "T2W5",
+"sub": "Boîte NR-CC-B005",
+"price": "2 ¥ / booster",
+"pack": "5 cartes/booster · 30 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t2w4",
+"region": "cn",
+"group": "Tier 2 — Chapter of Soldiers",
+"title": "T2W4",
+"sub": "Boîte NR-CC-B004",
+"price": "2 ¥ / booster",
+"pack": "5 cartes/booster · 30 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t2w3",
+"region": "cn",
+"group": "Tier 2 — Chapter of Soldiers",
+"title": "T2W3",
+"sub": "Boîte NR-CC-B003",
+"price": "2 ¥ / booster",
+"pack": "5 cartes/booster · 30 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t2w2",
+"region": "cn",
+"group": "Tier 2 — Chapter of Soldiers",
+"title": "T2W2",
+"sub": "Boîte NR-CC-B002",
+"price": "2 ¥ / booster",
+"pack": "5 cartes/booster · 30 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t2w1",
+"region": "cn",
+"group": "Tier 2 — Chapter of Soldiers",
+"title": "T2W1",
+"sub": "Boîte NR-CC-B001",
+"price": "2 ¥ / booster",
+"pack": "5 cartes/booster · 30 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t1w4",
+"region": "cn",
+"group": "Tier 1 — Chapter of Pros",
+"title": "T1W4",
+"sub": "Boîte NR-CC-L004",
+"price": "1 ¥ / booster",
+"pack": "36 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t1w3",
+"region": "cn",
+"group": "Tier 1 — Chapter of Pros",
+"title": "T1W3",
+"sub": "Boîte NR-CC-L003",
+"price": "1 ¥ / booster",
+"pack": "36 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t1w2",
+"region": "cn",
+"group": "Tier 1 — Chapter of Pros",
+"title": "T1W2",
+"sub": "Boîte NR-CC-L002",
+"price": "1 ¥ / booster",
+"pack": "36 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-t1w1",
+"region": "cn",
+"group": "Tier 1 — Chapter of Pros",
+"title": "T1W1",
+"sub": "Boîte NR-CC-L001",
+"price": "1 ¥ / booster",
+"pack": "36 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-ninja-age-box",
+"region": "cn",
+"group": "Coffrets spéciaux",
+"title": "Ninja Age Box (CN)",
+"sub": "",
+"price": "prix ¥ non trouvé",
+"pack": "5 cartes/booster · 10 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-youth-scroll",
+"region": "cn",
+"group": "Coffrets spéciaux",
+"title": "Youth Scroll",
+"sub": "",
+"price": "prix ¥ non trouvé",
+"pack": "3 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-heaven-earth-gift-scroll",
+"region": "cn",
+"group": "Coffrets spéciaux",
+"title": "Heaven & Earth Gift Scroll",
+"sub": "",
+"price": "prix ¥ non trouvé",
+"pack": "2 boosters/boîte",
+"status": "wip"
+},
+{
+"id": "cn-coffret-nouvel-an",
+"region": "cn",
+"group": "Coffrets spéciaux",
+"title": "Coffret Nouvel An",
+"sub": "",
+"price": "prix ¥ non trouvé",
+"pack": "3 boosters/boîte",
+"status": "wip"
+}
 ]
+}

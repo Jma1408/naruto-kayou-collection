@@ -1,6 +1,6 @@
 // node scripts/update-prices.js  (Node 20+, env EBAY_CLIENT_ID / EBAY_CLIENT_SECRET)
 // Médiane des annonces eBay ACTIVES (prix fixe) par carte, FR/DE/US, convertie en EUR.
-import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 
 const { EBAY_CLIENT_ID: ID, EBAY_CLIENT_SECRET: SECRET } = process.env;
 if (!ID || !SECRET) { console.error('EBAY_CLIENT_ID / EBAY_CLIENT_SECRET manquants'); process.exit(1); }
@@ -36,7 +36,7 @@ async function search(tk, mkt, q) {
 }
 
 const [tk, fx] = await Promise.all([token(), rates()]);
-const sets = JSON.parse(readFileSync('data/sets.json', 'utf8'));
+const sets = JSON.parse(readFileSync('data/sets.json', 'utf8')).sets.filter(s => s.status === 'ok' && s.file);
 const out = { updated: new Date().toISOString(), source: 'eBay Browse API – annonces actives, médiane', markets: Object.values(MARKETS), cards: {} };
 
 for (const s of sets) {
@@ -44,11 +44,11 @@ for (const s of sets) {
   for (const c of set.cards) {
     const [, rar, num] = c.code.split('-'), n = +num;
     // le titre doit citer la rareté + le numéro (ex. "SSR-019", "SSR 19", "NRSA01-SSR-019L3")
-    const must = new RegExp(`\\b${rar}[\\s\\-#]*0*${n}(L\\d)?\\b`, 'i');
+    const must = new RegExp(`(?<![A-Z])${rar.replace(/[^A-Z]/gi, '.?')}[\\s\\-#]*0*${n}(L\\d)?\\b`, 'i');
     const raw = [], psa = [], markets = {};
     for (const [m, id] of Object.entries(MARKETS)) {
       const seen = new Set(), mp = [];
-      for (const q of [c.code, `kayou naruto heaven scroll ${rar} ${num}`]) {
+      for (const q of [c.code]) { // 1 requête/carte/marché : ~4 000 appels/jour, sous la limite eBay de 5 000
         for (const it of await search(tk, id, q)) {
           if (seen.has(it.itemId)) continue; seen.add(it.itemId);
           const t = it.title || '', p = it.price;

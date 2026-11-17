@@ -86,3 +86,10 @@ body.m #tabs,body.m #menu,body.m #pdate{display:none}body.m{padding-bottom:calc(
 .tile.soon{opacity:.45;filter:grayscale(1)}.tile.soon .cv{width:60px}
 .hl{color:var(--or);font-size:16px}.est{font-size:11px;color:#111;background:var(--or2);border-radius:5px;padding:0 5px}
 details summary{cursor:pointer;color:var(--or2);margin-top:8px}
+.seg{display:flex;gap:4px;background:var(--bg2);border-radius:14px;padding:4px;margin:4px 0 14px;position:sticky;top:calc(56px + var(--sat));z-index:5}
+.seg button{flex:1;min-height:44px;border:0;border-radius:10px;background:none;color:var(--mu);font-weight:700;font-size:14px}
+.seg button.on{background:var(--or);color:#111}
+.gh{font-size:13px;color:var(--or2);text-transform:uppercase;letter-spacing:.05em;margin:18px 0 8px}
+.tile.wip .cv{width:60px;font-size:24px}.tile.wip{opacity:.75}
+.tile .lk{display:block;margin-top:8px;font-size:12px;color:var(--or2);text-decoration:none}
+.tile.pop{animation:pop .5s 2}

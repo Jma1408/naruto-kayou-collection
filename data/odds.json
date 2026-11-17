@@ -1,115 +1,973 @@
 {
- "method": "1 chance sur X boosters. Rareté : 1/(nb attendu par booster) ou « ≥1 par booster ». Carte précise : 1 / (1-(1-1/n)^k), n = cartes de la rareté, k = nb attendu de cette rareté par booster.",
- "heaven-scroll": {
-  "EU": {
-   "label": "Édition EU (NRSA01)",
-   "packCards": 8,
-   "boxPacks": 24,
-   "rarities": {
-    "R": {
-     "k": 2,
-     "src": "Kayou, page officielle Heaven Scroll Series 1 (Appearance Probability : 2R+1SR+3 flex+2PTR)"
-    },
-    "SR": {
-     "k": 2.75,
-     "src": "1 garanti (Kayou, page officielle Heaven Scroll Series 1 (Appearance Probability : 2R+1SR+3 flex+2PTR)) + part estimée des cases flex",
-     "est": true
-    },
-    "SSR": {
-     "k": 0.6,
-     "est": true,
-     "src": "Estimation : 3 cases « flex » par booster ; 12 boosters sur 24 peuvent contenir une carte PU/MR/BP/SP/SE (officiel), on suppose 1 hit par booster éligible réparti PU 50 % · MR 25 % · BP 15 % · SP 6 % · SE 4 % ; UR/SSR calés sur les ratios publiés des boîtes Earth Scroll SEA (UR 4/30, SSR 9/30 boosters) ajustés aux 3 cases flex."
-    },
-    "UR": {
-     "k": 0.15,
-     "est": true,
-     "src": "Estimation : 3 cases « flex » par booster ; 12 boosters sur 24 peuvent contenir une carte PU/MR/BP/SP/SE (officiel), on suppose 1 hit par booster éligible réparti PU 50 % · MR 25 % · BP 15 % · SP 6 % · SE 4 % ; UR/SSR calés sur les ratios publiés des boîtes Earth Scroll SEA (UR 4/30, SSR 9/30 boosters) ajustés aux 3 cases flex."
-    },
-    "PTR": {
-     "k": 2,
-     "src": "Kayou, page officielle Heaven Scroll Series 1 (Appearance Probability : 2R+1SR+3 flex+2PTR)"
-    },
-    "PU": {
-     "k": 0.25,
-     "est": true,
-     "src": "Estimation : 3 cases « flex » par booster ; 12 boosters sur 24 peuvent contenir une carte PU/MR/BP/SP/SE (officiel), on suppose 1 hit par booster éligible réparti PU 50 % · MR 25 % · BP 15 % · SP 6 % · SE 4 % ; UR/SSR calés sur les ratios publiés des boîtes Earth Scroll SEA (UR 4/30, SSR 9/30 boosters) ajustés aux 3 cases flex."
-    },
-    "MR": {
-     "k": 0.125,
-     "est": true,
-     "src": "Estimation : 3 cases « flex » par booster ; 12 boosters sur 24 peuvent contenir une carte PU/MR/BP/SP/SE (officiel), on suppose 1 hit par booster éligible réparti PU 50 % · MR 25 % · BP 15 % · SP 6 % · SE 4 % ; UR/SSR calés sur les ratios publiés des boîtes Earth Scroll SEA (UR 4/30, SSR 9/30 boosters) ajustés aux 3 cases flex."
-    },
-    "BP": {
-     "k": 0.075,
-     "est": true,
-     "src": "Estimation : 3 cases « flex » par booster ; 12 boosters sur 24 peuvent contenir une carte PU/MR/BP/SP/SE (officiel), on suppose 1 hit par booster éligible réparti PU 50 % · MR 25 % · BP 15 % · SP 6 % · SE 4 % ; UR/SSR calés sur les ratios publiés des boîtes Earth Scroll SEA (UR 4/30, SSR 9/30 boosters) ajustés aux 3 cases flex."
-    },
-    "SP": {
-     "k": 0.03,
-     "est": true,
-     "src": "Estimation : 3 cases « flex » par booster ; 12 boosters sur 24 peuvent contenir une carte PU/MR/BP/SP/SE (officiel), on suppose 1 hit par booster éligible réparti PU 50 % · MR 25 % · BP 15 % · SP 6 % · SE 4 % ; UR/SSR calés sur les ratios publiés des boîtes Earth Scroll SEA (UR 4/30, SSR 9/30 boosters) ajustés aux 3 cases flex."
-    },
-    "SE": {
-     "k": 0.02,
-     "est": true,
-     "src": "Estimation : 3 cases « flex » par booster ; 12 boosters sur 24 peuvent contenir une carte PU/MR/BP/SP/SE (officiel), on suppose 1 hit par booster éligible réparti PU 50 % · MR 25 % · BP 15 % · SP 6 % · SE 4 % ; UR/SSR calés sur les ratios publiés des boîtes Earth Scroll SEA (UR 4/30, SSR 9/30 boosters) ajustés aux 3 cases flex."
-    }
-   }
-  },
-  "CN": {
-   "label": "Édition CN (T4W6)",
-   "packCards": 5,
-   "boxPacks": 18,
-   "rarities": {
-    "R": {
-     "k": 2,
-     "src": "Capsule Corp Gear (2R par booster Tier 4)"
-    },
-    "SR": {
-     "k": 1,
-     "src": "Capsule Corp Gear (1SR par booster Tier 4)"
-    },
-    "PTR": {
-     "k": 1,
-     "est": true,
-     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
-    },
-    "SSR": {
-     "k": 0.6,
-     "est": true,
-     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
-    },
-    "UR": {
-     "k": 0.2,
-     "est": true,
-     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
-    },
-    "PU": {
-     "k": 0.0746,
-     "est": true,
-     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
-    },
-    "MR": {
-     "k": 0.04,
-     "est": true,
-     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
-    },
-    "BP": {
-     "k": 0.03,
-     "est": true,
-     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
-    },
-    "SP": {
-     "k": 0.01,
-     "est": true,
-     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
-    },
-    "SE": {
-     "k": 0.005,
-     "est": true,
-     "src": "Estimation : structure Tier 4 = 2R + 1SR + 1 SSR-ou-plus + 1 holo (guide Capsule Corp Gear) ; case « SSR ou plus » répartie par hypothèse ; PU 7,46 % = taux annoncé par un revendeur (FansTradingCards) pour les PU L4 T4W6-W8. Nb de cartes par rareté supposé identique à l'EU."
-    }
-   }
-  }
- }
+"method": "« 1 chance sur X boosters » = 1 / (cartes de la rareté attendues par booster), calculé uniquement à partir des formules officielles Kayou. Si une rareté partage une case avec d'autres et qu'aucun comptage d'ouvertures publié n'existe, le taux est « inconnu ». Carte précise = taux de la rareté ÷ nombre de cartes de la rareté.",
+"openingData": "Aucun comptage d'ouvertures de boîtes publié trouvé (recherche web, nov. 2026) : échantillon = 0 boîte.",
+"heaven-scroll": {
+"edition": "Version A",
+"packCards": 8,
+"boxPacks": 24,
+"source": "Kayou, page officielle de la série (« Appearance Probability », édition Version A) — kayouofficial.com/en-US/series/series-5zdty4vj",
+"openingSample": null,
+"rarities": {
+"SE": {
+"possibleIn": "12:24",
+"sharedSlots": 1.5,
+"status": "taux inconnu",
+"sharedWith": [
+"BP",
+"MR",
+"PU",
+"SP",
+"SR",
+"SSR",
+"UR"
+]
+},
+"SP": {
+"possibleIn": "12:24",
+"sharedSlots": 1.5,
+"status": "taux inconnu",
+"sharedWith": [
+"BP",
+"MR",
+"PU",
+"SE",
+"SR",
+"SSR",
+"UR"
+]
+},
+"BP": {
+"possibleIn": "12:24",
+"sharedSlots": 1.5,
+"status": "taux inconnu",
+"sharedWith": [
+"MR",
+"PU",
+"SE",
+"SP",
+"SR",
+"SSR",
+"UR"
+]
+},
+"MR": {
+"possibleIn": "12:24",
+"sharedSlots": 1.5,
+"status": "taux inconnu",
+"sharedWith": [
+"BP",
+"PU",
+"SE",
+"SP",
+"SR",
+"SSR",
+"UR"
+]
+},
+"PU": {
+"possibleIn": "12:24",
+"sharedSlots": 1.5,
+"status": "taux inconnu",
+"sharedWith": [
+"BP",
+"MR",
+"SE",
+"SP",
+"SR",
+"SSR",
+"UR"
+]
+},
+"PTR": {
+"possibleIn": "24:24",
+"k": 2.0,
+"status": "officiel"
+},
+"UR": {
+"possibleIn": "24:24",
+"sharedSlots": 3.0,
+"status": "taux inconnu",
+"sharedWith": [
+"BP",
+"MR",
+"PU",
+"SE",
+"SP",
+"SR",
+"SSR"
+]
+},
+"SSR": {
+"possibleIn": "24:24",
+"sharedSlots": 3.0,
+"status": "taux inconnu",
+"sharedWith": [
+"BP",
+"MR",
+"PU",
+"SE",
+"SP",
+"SR",
+"UR"
+]
+},
+"SR": {
+"possibleIn": "24:24",
+"sharedSlots": 3.0,
+"min": 1.0,
+"status": "minimum officiel",
+"sharedWith": [
+"BP",
+"MR",
+"PU",
+"SE",
+"SP",
+"SSR",
+"UR"
+]
+},
+"R": {
+"possibleIn": "24:24",
+"k": 2.0,
+"status": "officiel"
+}
+},
+"checks": [
+"12:24 → 8 cartes/booster (attendu 8) OK",
+"12:24 → 8 cartes/booster (attendu 8) OK",
+"Total attendu par boîte : 192.0 cartes = 8×24 = 192 OK"
+]
+},
+"chapter-jin-2": {
+"edition": "Version A",
+"packCards": 8,
+"boxPacks": 12,
+"source": "Kayou, page officielle de la série (« Appearance Probability », édition Version A) — kayouofficial.com/en-US/series/series-jj9iw6u0",
+"openingSample": null,
+"rarities": {
+"SE": {
+"possibleIn": "10:12",
+"sharedSlots": 0.8333,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"BP",
+"MR",
+"PU",
+"SP",
+"SR",
+"SSR",
+"UR"
+]
+},
+"SP": {
+"possibleIn": "10:12",
+"sharedSlots": 0.8333,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"BP",
+"MR",
+"PU",
+"SE",
+"SR",
+"SSR",
+"UR"
+]
+},
+"AR": {
+"possibleIn": "10:12",
+"sharedSlots": 0.8333,
+"status": "taux inconnu",
+"sharedWith": [
+"BP",
+"MR",
+"PU",
+"SE",
+"SP",
+"SR",
+"SSR",
+"UR"
+]
+},
+"BP": {
+"possibleIn": "10:12",
+"sharedSlots": 0.8333,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"MR",
+"PU",
+"SE",
+"SP",
+"SR",
+"SSR",
+"UR"
+]
+},
+"MR": {
+"possibleIn": "10:12",
+"sharedSlots": 0.8333,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"BP",
+"PU",
+"SE",
+"SP",
+"SR",
+"SSR",
+"UR"
+]
+},
+"PU": {
+"possibleIn": "10:12",
+"sharedSlots": 0.8333,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"BP",
+"MR",
+"SE",
+"SP",
+"SR",
+"SSR",
+"UR"
+]
+},
+"PTR": {
+"possibleIn": "12:12",
+"k": 2.0,
+"status": "officiel"
+},
+"UR": {
+"possibleIn": "10:12",
+"sharedSlots": 1.6667,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"BP",
+"MR",
+"PU",
+"R",
+"SE",
+"SP",
+"SR",
+"SSR"
+]
+},
+"SSR": {
+"possibleIn": "12:12",
+"sharedSlots": 0.8333,
+"min": 1.0,
+"status": "minimum officiel",
+"sharedWith": [
+"AR",
+"BP",
+"MR",
+"PU",
+"SE",
+"SP",
+"SR",
+"UR"
+]
+},
+"SR": {
+"possibleIn": "12:12",
+"sharedSlots": 0.8333,
+"min": 1.1667,
+"status": "minimum officiel",
+"sharedWith": [
+"AR",
+"BP",
+"MR",
+"PU",
+"SE",
+"SP",
+"SSR",
+"UR"
+]
+},
+"R": {
+"possibleIn": "12:12",
+"sharedSlots": 0.8333,
+"min": 2.1667,
+"status": "minimum officiel",
+"sharedWith": [
+"UR"
+]
+}
+},
+"checks": [
+"2:12 → 8 cartes/booster (attendu 8) OK",
+"10:12 → 8 cartes/booster (attendu 8) OK",
+"Total attendu par boîte : 96.0 cartes = 8×12 = 96 OK"
+]
+},
+"chapter-jin-3": {
+"edition": "Version A",
+"packCards": 8,
+"boxPacks": 12,
+"source": "Kayou, page officielle de la série (« Appearance Probability », édition Version A) — kayouofficial.com/en-US/series/series-cv8e3pgi",
+"openingSample": null,
+"rarities": {
+"SE": {
+"possibleIn": "2:12",
+"sharedSlots": 0.1667,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"ASP",
+"BP",
+"HR",
+"PU",
+"◇ASP",
+"◇UR"
+]
+},
+"◇ASP": {
+"possibleIn": "2:12",
+"sharedSlots": 0.1667,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"ASP",
+"BP",
+"HR",
+"PU",
+"SE",
+"◇UR"
+]
+},
+"ASP": {
+"possibleIn": "2:12",
+"sharedSlots": 0.1667,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"BP",
+"HR",
+"PU",
+"SE",
+"◇ASP",
+"◇UR"
+]
+},
+"AR": {
+"possibleIn": "2:12",
+"sharedSlots": 0.1667,
+"status": "taux inconnu",
+"sharedWith": [
+"ASP",
+"BP",
+"HR",
+"PU",
+"SE",
+"◇ASP",
+"◇UR"
+]
+},
+"BP": {
+"possibleIn": "2:12",
+"sharedSlots": 0.1667,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"ASP",
+"HR",
+"PU",
+"SE",
+"◇ASP",
+"◇UR"
+]
+},
+"MR": {
+"possibleIn": "0:12",
+"status": "taux inconnu",
+"sharedWith": []
+},
+"PU": {
+"possibleIn": "2:12",
+"sharedSlots": 0.1667,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"ASP",
+"BP",
+"HR",
+"SE",
+"◇ASP",
+"◇UR"
+]
+},
+"HR": {
+"possibleIn": "12:12",
+"sharedSlots": 0.1667,
+"min": 2.0,
+"status": "minimum officiel",
+"sharedWith": [
+"AR",
+"ASP",
+"BP",
+"PU",
+"SE",
+"◇ASP",
+"◇UR"
+]
+},
+"◇UR": {
+"possibleIn": "2:12",
+"sharedSlots": 0.1667,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"ASP",
+"BP",
+"HR",
+"PU",
+"SE",
+"◇ASP"
+]
+},
+"UR": {
+"possibleIn": "10:12",
+"sharedSlots": 0.8333,
+"status": "taux inconnu",
+"sharedWith": [
+"SR",
+"SSR"
+]
+},
+"SSR": {
+"possibleIn": "12:12",
+"sharedSlots": 0.8333,
+"min": 1.0,
+"status": "minimum officiel",
+"sharedWith": [
+"SR",
+"UR"
+]
+},
+"SR": {
+"possibleIn": "12:12",
+"sharedSlots": 0.8333,
+"min": 1.0,
+"status": "minimum officiel",
+"sharedWith": [
+"SSR",
+"UR"
+]
+},
+"R": {
+"possibleIn": "12:12",
+"k": 3.0,
+"status": "officiel"
+}
+},
+"checks": [
+"10:12 → 8 cartes/booster (attendu 8) OK",
+"2:12 → 8 cartes/booster (attendu 8) OK",
+"Total attendu par boîte : 96.0 cartes = 8×12 = 96 OK"
+]
+},
+"chapter-jin-4": {
+"edition": "Version A",
+"packCards": 8,
+"boxPacks": 12,
+"source": "Kayou, page officielle de la série (« Appearance Probability », édition Version A) — kayouofficial.com/en-US/series/series-05l5tw1o",
+"openingSample": null,
+"rarities": {
+"SE": {
+"possibleIn": "5:12",
+"sharedSlots": 0.4167,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"BP",
+"MR",
+"PU",
+"SP",
+"SR",
+"SSR",
+"UR",
+"◇SP",
+"◇UR"
+]
+},
+"◇SP": {
+"possibleIn": "5:12",
+"sharedSlots": 0.4167,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"BP",
+"MR",
+"PU",
+"SE",
+"SP",
+"SR",
+"SSR",
+"UR",
+"◇UR"
+]
+},
+"SP": {
+"possibleIn": "5:12",
+"sharedSlots": 0.4167,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"BP",
+"MR",
+"PU",
+"SE",
+"SR",
+"SSR",
+"UR",
+"◇SP",
+"◇UR"
+]
+},
+"AR": {
+"possibleIn": "5:12",
+"sharedSlots": 0.4167,
+"status": "taux inconnu",
+"sharedWith": [
+"BP",
+"MR",
+"PU",
+"SE",
+"SP",
+"SR",
+"SSR",
+"UR",
+"◇SP",
+"◇UR"
+]
+},
+"BP": {
+"possibleIn": "5:12",
+"sharedSlots": 0.4167,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"MR",
+"PU",
+"SE",
+"SP",
+"SR",
+"SSR",
+"UR",
+"◇SP",
+"◇UR"
+]
+},
+"MR": {
+"possibleIn": "5:12",
+"sharedSlots": 0.4167,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"BP",
+"PU",
+"SE",
+"SP",
+"SR",
+"SSR",
+"UR",
+"◇SP",
+"◇UR"
+]
+},
+"PU": {
+"possibleIn": "5:12",
+"sharedSlots": 0.4167,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"BP",
+"MR",
+"SE",
+"SP",
+"SR",
+"SSR",
+"UR",
+"◇SP",
+"◇UR"
+]
+},
+"HR": {
+"possibleIn": "12:12",
+"k": 2.0,
+"status": "officiel"
+},
+"◇UR": {
+"possibleIn": "5:12",
+"sharedSlots": 0.4167,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"BP",
+"MR",
+"PU",
+"SE",
+"SP",
+"SR",
+"SSR",
+"UR",
+"◇SP"
+]
+},
+"UR": {
+"possibleIn": "12:12",
+"sharedSlots": 1.0,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"BP",
+"MR",
+"PU",
+"SE",
+"SP",
+"SR",
+"SSR",
+"◇SP",
+"◇UR"
+]
+},
+"SSR": {
+"possibleIn": "12:12",
+"sharedSlots": 1.0,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"BP",
+"MR",
+"PU",
+"SE",
+"SP",
+"SR",
+"UR",
+"◇SP",
+"◇UR"
+]
+},
+"SR": {
+"possibleIn": "12:12",
+"sharedSlots": 1.0,
+"min": 2.0,
+"status": "minimum officiel",
+"sharedWith": [
+"AR",
+"BP",
+"MR",
+"PU",
+"SE",
+"SP",
+"SSR",
+"UR",
+"◇SP",
+"◇UR"
+]
+},
+"R": {
+"possibleIn": "12:12",
+"k": 3.0,
+"status": "officiel"
+}
+},
+"checks": [
+"5:12 → 8 cartes/booster (attendu 8) OK",
+"7:12 → 8 cartes/booster (attendu 8) OK",
+"Total attendu par boîte : 96.0 cartes = 8×12 = 96 OK"
+]
+},
+"earth-scroll-1": {
+"edition": "Version A",
+"packCards": 8,
+"boxPacks": 20,
+"source": "Kayou, page officielle de la série (« Appearance Probability », édition Version A) — kayouofficial.com/en-US/series/series-ldbindyv",
+"openingSample": null,
+"rarities": {
+"CR": {
+"possibleIn": "16:20",
+"sharedSlots": 0.8,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"MR",
+"SP",
+"UR"
+]
+},
+"SP": {
+"possibleIn": "16:20",
+"sharedSlots": 0.8,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"CR",
+"MR",
+"UR"
+]
+},
+"AR": {
+"possibleIn": "16:20",
+"sharedSlots": 0.8,
+"status": "taux inconnu",
+"sharedWith": [
+"CR",
+"MR",
+"SP",
+"UR"
+]
+},
+"MR": {
+"possibleIn": "16:20",
+"sharedSlots": 0.8,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"CR",
+"SP",
+"UR"
+]
+},
+"UR": {
+"possibleIn": "20:20",
+"sharedSlots": 0.8,
+"min": 0.4,
+"status": "minimum officiel",
+"sharedWith": [
+"AR",
+"CR",
+"MR",
+"SP"
+]
+},
+"SSR": {
+"possibleIn": "20:20",
+"sharedSlots": 0.8,
+"min": 1.0,
+"status": "minimum officiel",
+"sharedWith": [
+"SR"
+]
+},
+"SR": {
+"possibleIn": "20:20",
+"sharedSlots": 0.8,
+"min": 2.0,
+"status": "minimum officiel",
+"sharedWith": [
+"SSR"
+]
+},
+"R": {
+"possibleIn": "20:20",
+"k": 3.0,
+"status": "officiel"
+}
+},
+"checks": [
+"4:20 → 8 cartes/booster (attendu 8) OK",
+"16:20 → 8 cartes/booster (attendu 8) OK",
+"Total attendu par boîte : 160.0 cartes = 8×20 = 160 OK"
+]
+},
+"earth-scroll-2": {
+"edition": "Version A",
+"packCards": 7,
+"boxPacks": 20,
+"source": "Kayou, page officielle de la série (« Appearance Probability », édition Version A) — kayouofficial.com/en-US/series/series-8idoe481",
+"openingSample": null,
+"rarities": {
+"CR": {
+"possibleIn": "5:10",
+"sharedSlots": 0.5,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"MR",
+"SSR",
+"◇UR"
+]
+},
+"AR": {
+"possibleIn": "5:10",
+"sharedSlots": 0.5,
+"status": "taux inconnu",
+"sharedWith": [
+"CR",
+"MR",
+"SSR",
+"◇UR"
+]
+},
+"MR": {
+"possibleIn": "5:10",
+"sharedSlots": 0.5,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"CR",
+"SSR",
+"◇UR"
+]
+},
+"◇UR": {
+"possibleIn": "5:10",
+"sharedSlots": 0.5,
+"status": "taux inconnu",
+"sharedWith": [
+"AR",
+"CR",
+"MR",
+"SSR"
+]
+},
+"UR": {
+"possibleIn": "5:10",
+"k": 0.5,
+"status": "officiel"
+},
+"SSR": {
+"possibleIn": "10:10",
+"sharedSlots": 0.5,
+"min": 1.0,
+"status": "minimum officiel",
+"sharedWith": [
+"AR",
+"CR",
+"MR",
+"◇UR"
+]
+},
+"SR": {
+"possibleIn": "10:10",
+"k": 2.0,
+"status": "officiel"
+},
+"R": {
+"possibleIn": "10:10",
+"k": 3.0,
+"status": "officiel"
+}
+},
+"checks": [
+"5:10 → 7 cartes/booster (attendu 7) OK",
+"5:10 → 7 cartes/booster (attendu 7) OK",
+"Total attendu par boîte : 140.0 cartes = 7×20 = 140 OK"
+]
+},
+"earth-scroll-3": {
+"edition": "Version A",
+"packCards": 8,
+"boxPacks": 20,
+"source": "Kayou, page officielle de la série (« Appearance Probability », édition Version A) — kayouofficial.com/en-US/series/series-md6xr8u7",
+"openingSample": null,
+"rarities": {
+"CR": {
+"possibleIn": "10:20",
+"sharedSlots": 0.5,
+"status": "taux inconnu",
+"sharedWith": [
+"MR",
+"SP",
+"SR"
+]
+},
+"SP": {
+"possibleIn": "10:20",
+"sharedSlots": 0.5,
+"status": "taux inconnu",
+"sharedWith": [
+"CR",
+"MR",
+"SR"
+]
+},
+"MR": {
+"possibleIn": "10:20",
+"sharedSlots": 0.5,
+"status": "taux inconnu",
+"sharedWith": [
+"CR",
+"SP",
+"SR"
+]
+},
+"UR": {
+"possibleIn": "10:20",
+"k": 0.5,
+"status": "officiel"
+},
+"SSR": {
+"possibleIn": "20:20",
+"k": 1.0,
+"status": "officiel"
+},
+"SR": {
+"possibleIn": "20:20",
+"sharedSlots": 0.5,
+"min": 2.5,
+"status": "minimum officiel",
+"sharedWith": [
+"CR",
+"MR",
+"SP"
+]
+},
+"R": {
+"possibleIn": "20:20",
+"k": 3.5,
+"status": "officiel"
+}
+},
+"checks": [
+"10:20 → 8 cartes/booster (attendu 8) OK",
+"10:20 → 8 cartes/booster (attendu 8) OK",
+"Total attendu par boîte : 160.0 cartes = 8×20 = 160 OK"
+]
+},
+"ninja-age": {
+"edition": "Collector Box",
+"packCards": 5,
+"boxPacks": 16,
+"source": "Kayou, page officielle de la série (« Appearance Probability », édition Collector Box) — kayouofficial.com/en-US/series/series-0nyket49",
+"openingSample": null,
+"rarities": {
+"◇XR": {
+"status": "taux inconnu"
+},
+"◇MR": {
+"status": "taux inconnu"
+},
+"◇QR": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"QR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+},
+"PTR": {
+"status": "taux inconnu"
+},
+"XR": {
+"status": "taux inconnu"
+},
+"SP": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+}
 }
