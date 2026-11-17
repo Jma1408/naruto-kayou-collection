@@ -1,5 +1,5 @@
 {
-"source": "Guide Capsule Corp Gear (capsulecorpgear.com/naruto-kayou-card-guide) — liste des boîtes, ¥/booster et boosters/boîte",
+"source": "Tiers/Waves : guide Capsule Corp Gear ; T4W6 et T4W9 : Qiandao (千岛)",
 "sets": [
 {
 "id": "heaven-scroll",
@@ -12,7 +12,10 @@
 "sub": "NRSA01 · September 2025",
 "pack": "8 cartes/booster · 24 boosters/boîte",
 "link": "cn-t4w6",
-"linkLabel": "Mêmes illustrations que T4W6 (Chine)"
+"linkLabel": "Mêmes illustrations que T4W6 (Chine)",
+"line": "Heaven Scroll",
+"box": "https://static-sg.kayouofficial.com/overseas/website/2026/06/11/be436b769463cb82414b444c76794627-1588-1857.png",
+"group": null
 },
 {
 "id": "chapter-jin-2",
@@ -25,7 +28,10 @@
 "sub": "NRSA02 · November 2025",
 "pack": "8 cartes/booster · 12 boosters/boîte",
 "link": "cn-t4w7",
-"linkLabel": "Mêmes illustrations que T4W7 (Chine) (selon un guide collector, non officiel)"
+"linkLabel": "Mêmes illustrations que T4W7 (Chine) (selon un guide collector, non officiel)",
+"line": "Chapter Jin",
+"box": "https://static-sg.kayouofficial.com/overseas/website/2026/06/16/a6b07c4dbabde82661f3fabae1d51010-1263-2188.png",
+"group": null
 },
 {
 "id": "chapter-jin-3",
@@ -36,7 +42,10 @@
 "cover": "https://static-sg.kayouofficial.com/overseas/website/2026/06/15/782c8c1fc98be9037dcdca738d2861d4-733-1029.png",
 "title": "Chapter Jin – Série 3",
 "sub": "NRSA03 · April 2026",
-"pack": "8 cartes/booster · 12 boosters/boîte"
+"pack": "8 cartes/booster · 12 boosters/boîte",
+"line": "Chapter Jin",
+"box": "https://static-sg.kayouofficial.com/overseas/website/2026/06/12/3b81817f85c1d3097555332b286a9f2f-1263-2188.png",
+"group": null
 },
 {
 "id": "chapter-jin-4",
@@ -47,7 +56,10 @@
 "cover": "https://static-sg.kayouofficial.com/overseas/website/2026/11/06/9deccf8dd67ddd5d3cebb8809deacf38-1217-1712.png",
 "title": "Chapter Jin – Série 4",
 "sub": "NRSA04 · November 2026",
-"pack": "8 cartes/booster · 12 boosters/boîte"
+"pack": "8 cartes/booster · 12 boosters/boîte",
+"line": "Chapter Jin",
+"box": "https://static-sg.kayouofficial.com/overseas/website/2026/11/03/6093ed8256737639e07f50ac254dc42b-1263-2188.png",
+"group": null
 },
 {
 "id": "earth-scroll-1",
@@ -58,7 +70,10 @@
 "cover": "https://static-sg.kayouofficial.com/overseas/website/2026/06/18/a0bc30ada514d2166f865f5144d6aefa-733-1028.png",
 "title": "Earth Scroll – Série 1",
 "sub": "NRI01 · December 2025",
-"pack": "8 cartes/booster · 20 boosters/boîte"
+"pack": "8 cartes/booster · 20 boosters/boîte",
+"line": "Earth Scroll",
+"box": "https://static-sg.kayouofficial.com/overseas/website/2026/06/15/b19025f6ad6052fa78c2469d2d7d343d-3226-2999.png",
+"group": null
 },
 {
 "id": "earth-scroll-2",
@@ -69,7 +84,10 @@
 "cover": "https://static-sg.kayouofficial.com/overseas/website/2026/06/17/407612a710e145e47068c0c50cfd8729-733-1028.png",
 "title": "Earth Scroll – Série 2",
 "sub": "NREA02 · March 2026",
-"pack": "7 cartes/booster · 20 boosters/boîte"
+"pack": "7 cartes/booster · 20 boosters/boîte",
+"line": "Earth Scroll",
+"box": "https://static-sg.kayouofficial.com/overseas/website/2026/06/16/eadd489352805d9d92b317987f31dd01-3366-3218.png",
+"group": null
 },
 {
 "id": "earth-scroll-3",
@@ -80,7 +98,10 @@
 "cover": "https://static-sg.kayouofficial.com/overseas/website/2026/10/21/2d4244f1eef7552c921761f3e91f412e-733-1029.png",
 "title": "Earth Scroll – Série 3",
 "sub": "NREA03 · October 2026",
-"pack": "8 cartes/booster · 20 boosters/boîte"
+"pack": "8 cartes/booster · 20 boosters/boîte",
+"line": "Earth Scroll",
+"box": "https://static-sg.kayouofficial.com/overseas/website/2026/10/21/0a3935fbfe0cb158dc892bd0512798bb-4724-4134.png",
+"group": null
 },
 {
 "id": "ninja-age",
@@ -91,7 +112,20 @@
 "cover": "https://static-sg.kayouofficial.com/overseas/website/2026/07/10/aa3d2e9553bf589711b6a69551016635-733-1029.png",
 "title": "Ninja Age – Premium Collector Box",
 "sub": "NRCCNA · August 2026",
-"pack": "5 cartes/booster · 16 boosters/boîte"
+"pack": "5 cartes/booster · 16 boosters/boîte",
+"line": "Ninja Age",
+"box": "https://static-sg.kayouofficial.com/overseas/website/2026/07/24/c8d50e0376c19975981cc430b6ca5c39-2000-2000.png",
+"group": null
+},
+{
+"id": "cn-t4w9",
+"region": "cn",
+"group": "Tier 4 — Chapter of the Array",
+"title": "T4W9",
+"sub": "阵之章第9弹 · sortie 29/10/2026",
+"price": "10 ¥ / booster (180 ¥ la boîte)",
+"pack": "5 cartes/booster · 18 boosters/boîte",
+"status": "wip"
 },
 {
 "id": "cn-t4w8",
@@ -120,12 +154,16 @@
 "region": "cn",
 "group": "Tier 4 — Chapter of the Array",
 "title": "T4W6",
-"sub": "Boîte NR-RD-Z006",
-"price": "10 ¥ / booster",
+"sub": "Boîte NR-RD-Z006 · 20/09/2024",
+"price": "10 ¥ / booster (180 ¥ la boîte)",
 "pack": "5 cartes/booster · 18 boosters/boîte",
-"status": "wip",
+"status": "ok",
 "link": "heaven-scroll",
-"linkLabel": "Mêmes illustrations que Heaven Scroll S1 (NRSA01)"
+"linkLabel": "Mêmes illustrations que Heaven Scroll S1 (NRSA01)",
+"file": "data/cn-t4w6.json",
+"count": 158,
+"cover": "https://treasure.qiandaocdn.com/treasure/images/g8xXJQ7sm6.png!lfit_w540_h540",
+"source": "Qiandao (千岛), fiches cartes « 阵之章第6弹 » (qiandao.com/spu?id=773754890777277279 à …7436), relevé le 2026-11-17 ; noms FR/EN repris de Heaven Scroll par correspondance d'illustration"
 },
 {
 "id": "cn-t4w5",

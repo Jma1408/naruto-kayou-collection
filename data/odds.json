@@ -969,5 +969,45 @@
 }
 },
 "checks": []
+},
+"cn-t4w6": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 18,
+"source": "Aucune formule officielle publiée pour T4W6 ; structure Tier 4 (1HR+2R+1SR+1 SSR ou plus) selon Capsule Corp Gear, non vérifiée pour cette wave",
+"openingSample": null,
+"rarities": {
+"SE": {
+"status": "taux inconnu"
+},
+"SP": {
+"status": "taux inconnu"
+},
+"BP": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"PU": {
+"status": "taux inconnu"
+},
+"PTR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"SR": {
+"status": "taux inconnu"
+},
+"R": {
+"status": "taux inconnu"
+}
+},
+"checks": []
 }
 }

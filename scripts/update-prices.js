@@ -5,8 +5,9 @@ import { readFileSync, writeFileSync } from 'node:fs';
 const { EBAY_CLIENT_ID: ID, EBAY_CLIENT_SECRET: SECRET } = process.env;
 if (!ID || !SECRET) { console.error('EBAY_CLIENT_ID / EBAY_CLIENT_SECRET manquants'); process.exit(1); }
 const MARKETS = { FR: 'EBAY_FR', DE: 'EBAY_DE', US: 'EBAY_US' };
-const EXCLUDE = /\b(lot|lots|bundle|set of|complete set|playset|x\s?\d+|\d+\s?x|choose|pick|au choix|wählen|auswahl|proxy|fake|replica|reprint|custom|fan\s?made|orica|unofficial|non officiel|sticker|sleeve|binder|sealed|scellé|chinese|chinois|t4w6|empty)\b/i;
+const EXCLUDE = /\b(lot|lots|bundle|set of|complete set|playset|x\s?\d+|\d+\s?x|choose|pick|au choix|wählen|auswahl|proxy|fake|replica|reprint|custom|fan\s?made|orica|unofficial|non officiel|sticker|sleeve|binder|sealed|scellé|empty)\b/i;
 const GRADED = /\b(psa|bgs|cgc|sgc|beckett|graded|gradée?|gradiert)\b/i;
+const CN_WORDS = /\b(chinese|chinois|chine|china|t\dw\d|nrz\d+)\b/i; // annonces de version chinoise
 const PSA = /\bpsa\s?(\d{1,2})\b/i;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const median = a => { if (!a.length) return null; const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return +(s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2).toFixed(2); };
@@ -53,6 +54,7 @@ for (const s of sets) {
           if (seen.has(it.itemId)) continue; seen.add(it.itemId);
           const t = it.title || '', p = it.price;
           if (!p || !must.test(t) || EXCLUDE.test(t) || !/naruto|kayou/i.test(t)) continue;
+          if (s.region !== 'cn' && CN_WORDS.test(t)) continue; // version EU : on écarte les cartes chinoises
           const eur = +p.value / (fx[p.currency] || NaN);
           if (!isFinite(eur) || eur <= 0) continue;
           if (GRADED.test(t)) { if (PSA.test(t)) psa.push(eur); continue; }
