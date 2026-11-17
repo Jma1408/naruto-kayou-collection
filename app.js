@@ -1,9 +1,9 @@
 'use strict';
 /* Données : IndexedDB « kayoudex » (stores col / photos), clé « <setId>|<code> » — NE PAS MODIFIER (voir CLAUDE.md). */
 const $ = (s, r = document) => r.querySelector(s);
-const V = $('#view'), SH = $('#sheet'), SB = $('#sheetBody');
+const V = $('#view');
 const CONDS = ['Mint', 'NM', 'EX', 'GD', 'LP', 'PL', 'Abîmée'];
-const S = { sets: [], setsSrc: '', odds: {}, col: {}, photos: {}, prices: null, data: {}, ctx: [], pack: [], opened: null, filt: { o: '' }, mf: { g: '', s: '', r: '', t: 'p' } };
+const S = { sets: [], setsSrc: '', odds: {}, col: {}, photos: {}, prices: null, data: {}, ctx: [], pack: [], opened: null, cls: {}, q: '' };
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const eur = v => v == null ? '—' : v.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' });
 const f1 = y => (Math.round(y * 10) / 10).toLocaleString('fr-FR');
@@ -11,11 +11,12 @@ const key = c => c.set + '|' + c.code;
 const qty = c => (S.col[key(c)] || {}).q || 0;
 const price = c => { const p = S.prices && S.prices.cards[c.code]; return p && p.n > 0 ? p : null; };
 const meta = id => S.sets.find(m => m.id === id);
+const rarOf = c => S.data[c.set].rarities.find(x => x.id === c.rarity) || { id: c.rarity, label: c.rarity };
 const rIdx = c => S.data[c.set].rarities.findIndex(x => x.id === c.rarity);
 const land = c => c.land ?? c.rarity === 'R';
 const isHigh = c => { const rs = S.data[c.set].rarities, u = rs.findIndex(x => x.id === 'UR'), i = rIdx(c); return c.rarity.includes('◇') || (u >= 0 ? i <= u : i < 4); };
 const ownedIn = id => Object.keys(S.col).filter(k => k.startsWith(id + '|') && S.col[k].q > 0).length;
-const vib = n => navigator.vibrate && navigator.vibrate(n);
+const vib = n => { try { navigator.vibrate && navigator.vibrate(n); } catch { } };
 
 /* ---------- IndexedDB ---------- */
 const dbp = new Promise((res, rej) => {
@@ -38,11 +39,14 @@ const saveCol = k => S.col[k] && (S.col[k].q || S.col[k].cond)
 let tt;
 function toast(m) { const t = $('#toast'); t.textContent = m; t.classList.add('on'); clearTimeout(tt); tt = setTimeout(() => t.classList.remove('on'), 1400); }
 function add(c, d = 1) { const k = key(c), e = S.col[k] || (S.col[k] = { q: 0, cond: 'NM' }); e.q = Math.max(0, e.q + d); saveCol(k); }
-const ph = c => `<div class="ph">${esc(c.name)}<br><small>${esc(c.code)}</small></div>`;
+// Carte sans image : placeholder nom + code + rareté (l'ajout n'est jamais bloqué).
+const ph = c => `<div class="ph"><b>${esc(c.rarity)}</b>${esc(c.name || '')}<small>${esc(c.code)}</small></div>`;
 function img(c) {
   const src = S.photos[key(c)] || c.img;
-  return src ? `<img src="${esc(src)}" loading="lazy" referrerpolicy="no-referrer" alt="${esc(c.name)}" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:this.alt}))">` : ph(c);
+  if (!src) return ph(c);
+  return `<img src="${esc(src)}" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.outerHTML=this.nextElementSibling.innerHTML"><template>${ph(c)}</template>`;
 }
+const ring = (o, t, size = 46) => `<div class="ring" style="--p:${t ? o / t * 100 : 0};--s:${size}px"><span>${t ? Math.round(o / t * 100) : 0}%</span></div>`;
 function pDate() { if (!S.prices || !S.prices.updated) return ''; const d = new Date(S.prices.updated); return `Prix du ${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}`; }
 async function loadPrices(force) {
   try { S.prices = await (await fetch('data/prices.json' + (force ? '?t=' + Date.now() : ''), { cache: 'no-store' })).json(); if (force) toast('Prix actualisés'); }
@@ -50,173 +54,140 @@ async function loadPrices(force) {
 }
 async function loadSet(id) {
   if (S.data[id]) return S.data[id];
-  const m = meta(id); if (!m || m.status !== 'ok') return null;
+  const m = meta(id); if (!m || !m.file) return null;
   const d = await (await fetch(m.file)).json(); d.cards.forEach(c => c.set = id); return (S.data[id] = d);
 }
-const loadAll = () => Promise.all(S.sets.filter(m => m.status === 'ok').map(m => loadSet(m.id)));
+const loadAll = () => Promise.all(S.sets.filter(m => m.file).map(m => loadSet(m.id)));
 const allCards = () => Object.values(S.data).flatMap(d => d.cards);
-const bar = (o, t) => `<div class="track"><i style="width:${t ? o / t * 100 : 0}%"></i></div><div class="mu">${o}/${t}</div>`;
 
-/* ---------- navigation ---------- */
-// Une entrée d'historique par écran (hash). « ! » sépare l'écran de base et la fiche carte ouverte en panneau.
-const TIERS = () => [...new Set(S.sets.filter(m => m.region === 'cn').map(m => m.group))];
-const LINES = () => [...new Set(S.sets.filter(m => m.region === 'intl').map(m => m.line))];
-const parse = h => { const [b, card] = decodeURIComponent(h.replace(/^#/, '') || 'c').split('!'); return { base: b, seg: b.split('/'), card }; };
+/* ---------- navigation : une entrée d'historique par écran ---------- */
+const parse = h => (decodeURIComponent(h.replace(/^#/, '')) || 'h').split('/');
 function parent(h) {
-  const { base, seg, card } = parse(h);
-  if (card) return '#' + base;
-  const [a, b] = seg;
-  if (a === 'c') return seg.length > 1 ? '#' + seg.slice(0, -1).join('/') : null;
-  if (a === 's' || a === 'w') { const m = meta(b); return m ? (m.region === 'intl' ? `#c/intl/${m.line}` : `#c/cn/${TIERS().indexOf(m.group)}`) : '#c'; }
-  if (a === 'i') return '#s/' + b;
-  if (a === 'q') return '#c';
-  if (a === 'b') return seg.length > 1 ? '#' + seg.slice(0, -1).join('/') : null;
+  const [a, b, c] = parse(h);
+  if (a === 's') return c ? '#s/' + b : '#h';
+  if (a === 'g') return meta(b) && meta(b).file ? '#s/' + b : '#h';
+  if (a === 'b') return c ? '#b/' + b : b ? '#b' : null;
+  if (a === 'k') return '#r';
   return null;
 }
-function crumbs(seg, card) {
-  const out = [], m = meta(seg[1]);
-  const regionC = r => out.push([r === 'intl' ? 'France / International' : 'Chine', '#c/' + r]);
-  const setC = m => { regionC(m.region); m.region === 'intl' ? out.push([m.line, `#c/intl/${m.line}`]) : out.push([m.group.split(' — ')[0], `#c/cn/${TIERS().indexOf(m.group)}`]); out.push([m.title, '#s/' + m.id]); };
-  switch (seg[0]) {
-    case 'c': if (seg[1]) regionC(seg[1]); if (seg[2] != null) out.push(seg[1] === 'intl' ? [seg[2], '#c/intl/' + seg[2]] : [TIERS()[seg[2]].split(' — ')[0], '#c/cn/' + seg[2]]); break;
-    case 's': case 'w': if (m) setC(m); break;
-    case 'i': if (m) { setC(m); out.push(["C'est quel set ?", '#i/' + m.id]); } break;
-    case 'q': out.push(['Recherche', '#q']); break;
-    case 'm': out.push(['Ma collection', '#m']); break;
-    case 'b': out.push(['Booster', '#b']); if (m) out.push([m.title, '#b/' + m.id]); if (seg[2]) out.push(['Ouverture', '#b/' + m.id + '/open']); break;
-    case 'r': out.push(['Réglages', '#r']); break;
-  }
-  if (card) out.push([card.name, '']);
-  return out;
-}
-let curBase = null, navN = ((history.state && history.state.n) || 0) + 1;
+let curBase = null, lastHash = null, navN = ((history.state && history.state.n) || 0) + 1;
 const SCR = {};
 history.scrollRestoration = 'manual';
-function go(h) { location.hash = h; }
-let lastHash = null;
+const go = h => { location.hash = h; };
 function replaceTo(h) { history.replaceState(history.state, '', h); route(); }
-// Retour : revient à l'écran d'où l'on vient s'il est connu, sinon au parent logique (lien direct, pas de cul-de-sac).
-function back() {
-  const st = history.state, cur = parse(location.hash), prev = st && st.prev ? parse(st.prev) : null;
-  if (cur.card) return prev && prev.base === cur.base && !prev.card ? history.back() : replaceTo('#' + cur.base);
-  if (prev) return history.back();
-  replaceTo(parent(location.hash) || '#c');
-}
+function back() { if (history.state && history.state.prev) history.back(); else replaceTo(parent(location.hash) || '#h'); }
 async function route() {
   if (!history.state) history.replaceState({ n: navN++, prev: lastHash }, '');
-  const { base, seg, card } = parse(location.hash);
-  if (base !== curBase) {
-    if (curBase != null) SCR[curBase] = scrollY;
-    curBase = base;
-    const html = await (views[seg[0]] || views.c)(...seg.slice(1));
-    if (base !== curBase) return; // navigation plus récente entre-temps
-    V.innerHTML = html; V.classList.remove('in'); void V.offsetWidth; V.classList.add('in');
-    (binds[seg[0]] || (() => { }))(...seg.slice(1));
-    scrollTo(0, SCR[base] || 0);
-  }
-  let cardObj = null;
-  if (card) { const [sid, code] = card.split('/'); const d = await loadSet(sid); cardObj = d && d.cards.find(c => c.code === code); }
-  cardObj ? openSheet(cardObj) : closeSheet();
-  const cr = crumbs(seg, cardObj);
-  $('#crumbs').innerHTML = cr.map(([l, h], i) => h && i < cr.length - 1 ? `<a href="${h}">${esc(l)}</a>` : `<span>${esc(l)}</span>`).join('<i>›</i>');
-  $('#crumbs').hidden = !cr.length; document.body.classList.toggle('nc', !cr.length);
+  const seg = parse(location.hash), base = seg.join('/');
+  if (curBase != null) SCR[curBase] = scrollY;
+  curBase = base;
+  const html = await (views[seg[0]] || views.h)(...seg.slice(1));
+  if (base !== curBase) return;
+  V.innerHTML = html; V.classList.remove('in'); void V.offsetWidth; V.classList.add('in');
+  (binds[seg[0]] || (() => { }))(...seg.slice(1));
+  scrollTo(0, SCR[base] || 0);
   $('#back').hidden = !parent(location.hash);
-  $('#title').innerHTML = TITLES[seg[0]] ? TITLES[seg[0]](seg) : 'Kayou <b>Dex</b>';
-  const tab = { c: 'c', s: 'c', w: 'c', i: 'c', q: 'c', m: 'm', b: 'b', r: 'r' }[seg[0]] || 'c';
+  $('#title').innerHTML = TITLE(seg);
+  const tab = { b: 'b', r: 'r', k: 'r' }[seg[0]] || 'h';
   document.querySelectorAll('#tabs a').forEach(a => a.classList.toggle('on', a.dataset.t === tab));
   lastHash = location.hash;
 }
-const TITLES = { s: s => esc(meta(s[1])?.title || ''), w: s => esc(meta(s[1])?.title || ''), m: () => 'Ma collection', b: () => 'Booster', r: () => 'Réglages', q: () => 'Recherche', i: () => "C'est quel set ?" };
+function TITLE(seg) {
+  const m = meta(seg[1]);
+  if (seg[0] === 's' || seg[0] === 'g') return esc((seg[0] === 'g' ? 'Guide · ' : '') + (m ? m.title : ''));
+  return { b: 'Booster', r: 'Réglages', k: 'Comprendre Kayou' }[seg[0]] || 'Kayou <b>Dex</b>';
+}
 $('#back').onclick = back;
 addEventListener('hashchange', route);
 
 /* ---------- vues ---------- */
-const catTile = (href, imgSrc, title, sub, o, t, extra = '') => `<a class="cat" href="${href}"><div class="cimg">${imgSrc ? `<img src="${esc(imgSrc)}" referrerpolicy="no-referrer" loading="lazy" alt="">` : '<span>⏳</span>'}</div>
-  <div class="cbody"><b>${esc(title)}</b>${sub ? `<div class="mu">${esc(sub)}</div>` : ''}${t ? bar(o, t) : ''}${extra}</div></a>`;
-const sum = list => list.filter(m => m.status === 'ok').reduce((a, m) => [a[0] + ownedIn(m.id), a[1] + m.count], [0, 0]);
-function setTile(m, href) {
-  const l = m.link && meta(m.link) ? `<span class="lk">↔ ${esc(m.linkLabel)}</span>` : '';
-  if (m.status !== 'ok') return catTile(`#w/${m.id}`, null, m.title, [m.price, m.pack].filter(Boolean).join(' · '), 0, 0, `<span class="rb">en cours</span>${l}`);
-  return catTile(href || `#s/${m.id}`, m.box || m.cover, m.title, m.sub, ownedIn(m.id), m.count, l);
+const ROWS = () => {
+  const intl = [...new Set(S.sets.filter(m => m.region === 'intl').map(m => m.line))].map(l => ({ title: l, region: 'intl', sets: S.sets.filter(m => m.line === l) }));
+  const cn = [...new Set(S.sets.filter(m => m.region === 'cn').map(m => m.group))].map(g => ({ title: 'Chine · ' + g, region: 'cn', sets: S.sets.filter(m => m.group === g) }));
+  return [...intl, ...cn];
+};
+function shelfTile(m, href) {
+  const t = m.count || 0, o = ownedIn(m.id), wip = !m.file;
+  return `<a class="st${wip ? ' wip' : ''}" href="${href || (wip ? '#g/' + m.id : '#s/' + m.id)}"><div class="sti">${m.box || m.cover ? `<img src="${esc(m.box || m.cover)}" referrerpolicy="no-referrer" loading="lazy" alt="">` : '<span>⏳</span>'}</div>
+    <b>${esc(m.title)}</b><span class="cn">${esc(m.titleCn || '')}</span>
+    <div class="stp">${wip ? '<span class="rb">en cours</span>' : `${ring(o, t, 30)}<span>${o}/${t}</span>${m.partial ? '<span class="rb">partiel</span>' : ''}`}</div></a>`;
 }
 const views = {
-  c(region, sub) {
-    if (!region) {
-      const i = sum(S.sets.filter(m => m.region === 'intl')), c = sum(S.sets.filter(m => m.region === 'cn'));
-      return `<a class="search" href="#q">🔍 Rechercher un perso ou un code…</a><div class="cats">
-        ${catTile('#c/intl', meta('heaven-scroll').box, 'France / International', 'Gamme Smriti (NRSA, NRI, NREA…)', ...i)}
-        ${catTile('#c/cn', meta('cn-t4w6')?.cover, 'Chine', 'Tier / Wave (T1 → T4)', ...c)}</div>`;
-    }
-    if (region === 'intl' && sub == null) return `<div class="cats">${LINES().map(l => { const ms = S.sets.filter(m => m.line === l); return catTile(`#c/intl/${l}`, ms[0].box, l, `${ms.length} série${ms.length > 1 ? 's' : ''}`, ...sum(ms)); }).join('')}</div>`;
-    if (region === 'intl') return `<div class="cats">${S.sets.filter(m => m.line === sub).map(m => setTile(m)).join('')}</div>`;
-    if (sub == null) return `<div class="cats">${TIERS().map((g, i) => { const ms = S.sets.filter(m => m.group === g), ok = ms.filter(m => m.status === 'ok'); return catTile(`#c/cn/${i}`, ok[0]?.cover, g.split(' — ')[0], `${g.split(' — ')[1] || ''} · ${ms.length} boîte${ms.length > 1 ? 's' : ''}${ok.length < ms.length ? ` · ${ms.length - ok.length} en cours` : ''}`, ...sum(ms)); }).join('')}</div>
-      <p class="note">Source : ${esc(S.setsSrc)}.</p>`;
-    return `<div class="cats">${S.sets.filter(m => m.group === TIERS()[sub]).map(m => setTile(m)).join('')}</div>`;
+  async h() {
+    const reg = localStorage.getItem('reg') || 'all';
+    return `<div class="band"><div class="seg">${[['fr', 'FR'], ['cn', 'Chine'], ['all', 'Tout']].map(([v, l]) => `<button data-reg="${v}" class="${reg === v ? 'on' : ''}">${l}</button>`).join('')}</div>
+      <input id="gq" type="search" placeholder="🔍 Perso, nom chinois ou code (tous les sets)" value="${esc(S.q)}" autocomplete="off"></div>
+      <div id="res"></div>
+      <div id="shelves">${ROWS().filter(r => reg === 'all' || (reg === 'fr' ? r.region === 'intl' : r.region === 'cn')).map(r => `<section class="shelf"><h3>${esc(r.title)}</h3><div class="row">${r.sets.map(m => shelfTile(m)).join('')}</div></section>`).join('')}</div>`;
   },
-  w(id) {
+  async s(id, code) {
+    const d = await loadSet(id); if (!d) return views.g(id);
+    return code ? views.card(d, code) : views.binder(d);
+  },
+  binder(d) {
+    const id = d.id, f = S.cls[id] || (S.cls[id] = { r: '', own: false });
+    const own = d.cards.filter(qty).length, t = d.cards.length, val = d.cards.reduce((a, c) => a + (price(c) ? price(c).median * qty(c) : 0), 0);
+    const tabs = [{ id: '', label: 'Tout' }, ...d.rarities.slice().reverse()];
+    S.ctx = d.cards.filter(c => (!f.r || c.rarity === f.r) && (!f.own || qty(c)));
+    return `<section class="bh">${ring(own, t, 64)}<div><div class="big">${own}/${t}</div><div class="mu">Valeur estimée : ${eur(val)}</div></div>
+      <a class="btn g" href="#g/${id}">📖 Guide</a></section>
+      ${d.partial ? '<p class="note">Liste partielle (codes et raretés publiés, sans noms ni images) : ajoute tes cartes, puis ta photo depuis la fiche.</p>' : ''}
+      <div class="ctabs">${tabs.map(r => { const cs = r.id ? d.cards.filter(c => c.rarity === r.id) : d.cards; return `<button data-r="${esc(r.id)}" class="${f.r === r.id ? 'on' : ''}">${esc(r.id || r.label)} <small>${cs.filter(qty).length}/${cs.length}</small></button>`; }).join('')}</div>
+      <label class="own"><input type="checkbox" id="own" ${f.own ? 'checked' : ''}> Possédées seulement</label>
+      <div class="grid" id="grid">${S.ctx.map(tile).join('') || '<p class="mu">Aucune carte.</p>'}</div>
+      <p class="note">Tap = fiche · appui long = +1.</p>`;
+  },
+  card(d, code) {
+    const c = d.cards.find(x => x.code === code); if (!c) return '<p>Carte introuvable.</p>';
+    if (!S.ctx.includes(c)) S.ctx = d.cards;
+    const e = S.col[key(c)] || { q: 0, cond: 'NM' }, p = price(c), r = rarOf(c), m = meta(c.set), i = S.ctx.indexOf(c);
+    const q = encodeURIComponent(`kayou naruto ${c.code}`);
+    const twin = (cd, sid) => sid && meta(sid) && meta(sid).file ? `<a href="#s/${sid}/${esc(cd)}">${esc(cd)}</a>` : esc(cd);
+    return `<div class="det"><div class="card3d ${land(c) ? 'l' : ''} ${isHigh(c) ? 'holo' : ''}" id="c3">${img(c)}</div></div>
+    <div class="nav"><button data-step="-1" ${i > 0 ? '' : 'disabled'}>‹</button><span class="mu">${i + 1}/${S.ctx.length} · glisse ← →</span><button data-step="1" ${i < S.ctx.length - 1 ? '' : 'disabled'}>›</button></div>
+    <section class="box"><div class="qty"><button data-d="-1" aria-label="Retirer">−</button><div><b id="qv">${e.q}</b><small>possédée(s)</small></div><button data-d="1" aria-label="Ajouter">+</button></div></section>
+    ${isHigh(c) && window.DeviceOrientationEvent && DeviceOrientationEvent.requestPermission ? '<button class="btn g w" id="gyro">Activer l\'effet gyroscope</button>' : ''}
+    <section class="box"><div style="font-size:20px;font-weight:800">${esc(c.name || c.code)}</div>${c.nameCn && c.nameCn !== c.name ? `<div>${esc(c.nameCn)}</div>` : ''}
+      <div class="mu"><span class="rb ${esc(c.rarity)}">${esc(c.rarity)}</span> ${esc(r.label)} · ${esc(m.title)}</div>
+      <table style="margin-top:10px"><tr><td>Code</td><td><b>${esc(c.full || c.code)}</b></td></tr>
+      ${c.alias && c.alias.eu && c.alias.eu !== c.code ? `<tr><td>Code FR/EU</td><td>${twin(c.alias.eu, m.link)}</td></tr>` : ''}
+      ${c.alias && c.alias.cn && c.alias.cn !== c.code ? `<tr><td>Code CN</td><td>${twin(c.alias.cn, m.link)}</td></tr>` : ''}
+      <tr><td>État</td><td><select id="cond">${CONDS.map(x => `<option${x === e.cond ? ' selected' : ''}>${x}</option>`).join('')}</select></td></tr></table></section>
+    <section class="box"><h2>Prix marché</h2>
+      ${p ? `<div class="big">${eur(p.median)}</div><div class="mu">Médiane de ${p.n} annonce${p.n > 1 ? 's' : ''} eBay actives · ${pDate()}</div>
+        ${p.psa ? `<div class="mu">Gradées PSA : ${eur(p.psa.median)} (${p.psa.n})</div>` : ''}`
+        : '<div class="big" style="color:var(--mu)">pas de prix</div><div class="mu">0 annonce trouvée lors de la dernière mise à jour.</div>'}
+      <div class="note">Estimation basée sur les annonces eBay, jamais une cote officielle.</div>
+      <div class="links">${['fr', 'de', 'com'].map(t => `<a class="btn g" target="_blank" rel="noopener" href="https://www.ebay.${t}/sch/i.html?_nkw=${q}">eBay ${t === 'com' ? 'US' : t.toUpperCase()}</a>`).join('')}</div></section>
+    <section class="box"><h2>Taux de drop</h2>${oddsLine(c)}<a class="mu" href="#g/${c.set}">Détail et source dans le guide ›</a></section>
+    <section class="box"><h2>Ma photo</h2>
+      <label class="btn w">📷 ${S.photos[key(c)] ? 'Remplacer ma photo' : 'Ajouter ma photo'}<input id="ph" type="file" accept="image/*" capture="environment" hidden></label>
+      ${S.photos[key(c)] ? '<button class="btn g w" id="phx">Revenir à l\'image officielle</button>' : ''}</section>`;
+  },
+  async g(id) {
     const m = meta(id); if (!m) return '<p>Set introuvable.</p>';
-    return `<section class="box"><h2>${esc(m.title)}</h2><p>${esc(m.sub || '')}</p><p>${esc(m.price || '')}</p><p>${esc(m.pack || '')}</p>
-      <p><span class="rb">en cours</span> La liste des cartes n'est pas encore saisie : aucune carte n'est inventée.</p>
-      ${m.link ? `<a class="btn g w" href="#s/${m.link}">${esc(m.linkLabel)}</a>` : ''}<p class="note">Source : ${esc(S.setsSrc)}.</p></section>`;
-  },
-  async s(id) {
-    const d = await loadSet(id); if (!d) return views.w(id);
-    localStorage.setItem('set', id);
-    const own = d.cards.filter(qty).length, t = d.cards.length, pct = Math.round(own / t * 1000) / 10;
-    const val = d.cards.reduce((a, c) => a + (price(c) ? price(c).median * qty(c) : 0), 0);
-    const closed = JSON.parse(sessionStorage.getItem('closed:' + id) || '[]');
-    const o = S.filt.o, keep = c => !o || (o === 'own' ? qty(c) : o === 'miss' ? !qty(c) : qty(c) > 1);
-    S.ctx = [];
-    const secs = d.rarities.map(r => {
-      const cs = d.cards.filter(c => c.rarity === r.id), vis = cs.filter(keep); vis.forEach(c => S.ctx.push(c));
-      if (!vis.length) return '';
-      return `<details class="sec" data-r="${esc(r.id)}"${closed.includes(r.id) ? '' : ' open'}><summary><span class="rb ${esc(r.id)}">${esc(r.id)}</span> ${esc(r.label)}<em>${cs.filter(qty).length}/${cs.length}</em></summary>
-        <div class="grid">${vis.map(tile).join('')}</div></details>`;
-    }).join('');
-    return `<section class="box hero"><div class="ring" style="--p:${pct}"><div><b>${pct}%</b>${own}/${t}</div></div>
-      <div><div class="mu">${esc(d.line)}</div><div style="font-weight:700">${esc(d.name)}</div>
-      <div class="mu">Valeur estimée : ${eur(val)}</div><a class="mu" href="#i/${id}">C'est quel set ?</a></div></section>
-      <div class="chipsel">${[['', 'Toutes'], ['own', 'Possédées'], ['miss', 'Manquantes'], ['dup', 'Doublons']].map(([v, l]) => `<button data-o="${v}" class="${o === v ? 'on' : ''}">${l}</button>`).join('')}</div>
-      <div id="secs">${secs || '<p class="mu">Aucune carte.</p>'}</div><p class="note">Appui long sur une carte = +1.</p>`;
-  },
-  async i(id) {
-    const st = await loadSet(id); if (!st) return '';
-    const o = st.origin, ex = st.cards.find(c => c.rarity === 'SSR') || st.cards[0];
-    return `<section class="box"><h2>C'est quel set ?</h2>
-      <table><tr><td>Nom</td><td><b>${esc(st.name)}</b><br>${esc(st.line)}</td></tr>
-      <tr><td>Code cartes</td><td><b>${esc(st.codePrefix)}</b>-RARETÉ-NNN<br><span class="mu">ex. ${esc(ex.full || ex.code)}</span></td></tr>
-      ${st.model ? `<tr><td>Boîte</td><td>${esc(st.model)} · ${esc(st.release || '')}<br>${st.pack ? `${st.pack.cards} cartes/booster · ${st.pack.box} boosters/boîte` : ''}</td></tr>` : ''}
-      ${o ? `<tr><td>Origine Chine</td><td><b>${esc(o.name)}</b><br>Boîte ${esc(o.box)}, cartes ${esc(o.codePrefix)}-…<br>${esc(o.pack)} · ${esc(o.price)}<br><span class="mu">${esc(o.note)}</span></td></tr>` : ''}
-      ${st.source ? `<tr><td>Source</td><td class="mu">${esc(st.source)}</td></tr>` : ''}
-      <tr><td>Contenu</td><td>${st.cards.length} cartes, ${st.rarities.length} raretés</td></tr></table></section>
-    <section class="box"><h2>Ne pas confondre</h2>
-      <p><b>Tier / Wave</b> (T1…T4, ex. « T2W1 », boosters de 1 à 10 ¥) : gamme chinoise. Certaines séries internationales reprennent les illustrations d'une wave chinoise (Heaven Scroll S1 ↔ T4W6), mais numérotation, promos et taux diffèrent : deux collections séparées dans l'app.</p>
-      <p><b>« Heaven & Earth Scroll »</b> (Chine) : autre produit, liste différente.</p></section>`;
-  },
-  async q(qs = '') {
-    await loadAll();
-    return `<div class="tools"><input id="gq" type="search" placeholder="Nom (FR/EN/中文) ou code, tous les sets" value="${esc(qs)}" autocomplete="off"></div><div class="mu" id="gcnt"></div><div class="grid" id="gres"></div>`;
-  },
-  async m() {
-    await Promise.all(S.sets.filter(m => m.status === 'ok' && ownedIn(m.id)).map(m => loadSet(m.id)));
-    const f = S.mf, sets = S.sets.filter(m => S.data[m.id] && ownedIn(m.id));
-    const rars = [...new Set(allCards().filter(qty).map(c => c.rarity))];
-    const opt = (v, l, cur) => `<option value="${esc(v)}"${v === cur ? ' selected' : ''}>${esc(l)}</option>`;
-    return `<div class="tools"><div class="sel">
-      <select id="mg" class="${f.g ? 'on' : ''}">${opt('', 'Gamme', f.g)}${opt('intl', 'France / Inter.', f.g)}${opt('cn', 'Chine', f.g)}</select>
-      <select id="ms" class="${f.s ? 'on' : ''}">${opt('', 'Set', f.s)}${sets.map(m => opt(m.id, m.title, f.s)).join('')}</select>
-      <select id="mr" class="${f.r ? 'on' : ''}">${opt('', 'Rareté', f.r)}${rars.map(r => opt(r, r, f.r)).join('')}</select>
-      <select id="mt">${opt('p', 'Tri : prix', f.t)}${opt('r', 'Tri : rareté', f.t)}${opt('s', 'Tri : set', f.t)}</select></div></div>
-      <div class="mu" id="mcnt"></div><div class="grid" id="mres"></div>`;
+    const d = await loadSet(id), o = S.odds[id], tw = m.link && meta(m.link);
+    const rows = d ? d.rarities.map(r => { const x = rateOf(id, r.id); return `<tr><td><span class="rb ${esc(r.id)}">${esc(r.id)}</span></td><td>${esc(r.label)}</td><td>${r.count}</td><td>${x.booster}</td><td>${x.box}</td></tr>`; }).join('') : '';
+    return `<section class="box"><h2>${esc(m.title)}</h2>${m.titleCn ? `<p>${esc(m.titleCn)}</p>` : ''}
+      <table><tr><td>Sortie</td><td>${esc((d && d.release) || m.release || 'non trouvée')}</td></tr>
+      <tr><td>Booster</td><td>${esc(d && d.pack && d.pack.cards ? d.pack.cards + ' cartes' : (m.pack || 'non trouvé'))}</td></tr>
+      <tr><td>Boîte</td><td>${esc(d && d.pack && d.pack.box ? d.pack.box + ' boosters' : '—')}${d && d.model ? ' · ' + esc(d.model) : ''}</td></tr>
+      <tr><td>Prix</td><td>${esc(m.price || (m.region === 'intl' ? 'prix public non indiqué par Kayou' : 'non trouvé'))}</td></tr>
+      <tr><td>Équivalence</td><td>${tw ? `<a href="${tw.file ? '#s/' + tw.id : '#g/' + tw.id}">${esc(tw.title)}${tw.titleCn ? ' · ' + esc(tw.titleCn) : ''}</a><br><span class="mu">${esc(m.linkLabel || '')}</span>` : '<span class="mu">aucune équivalence connue</span>'}</td></tr>
+      ${d && d.pack && d.pack.probabilities && d.pack.probabilities.length ? `<tr><td>Contenu officiel</td><td>${d.pack.probabilities.map(x => `${esc(x.ratio)} : ${esc(x.slots)}`).join('<br>')}</td></tr>` : ''}
+      ${d && d.source ? `<tr><td>Source liste</td><td class="mu">${esc(d.source)}</td></tr>` : ''}</table></section>
+      ${d ? `<section class="box"><h2>Raretés</h2><div class="tw"><table class="rt"><tr><th></th><th>Nom</th><th>Cartes</th><th>Par booster</th><th>Par boîte</th></tr>${rows}</table></div>
+        <p class="note">Source des taux : ${esc(o && o.source || 'aucune répartition publiée trouvée')}. ${esc(S.odds.openingData || '')}</p>
+        ${o && o.checks && o.checks.length ? `<p class="note">Contrôle : ${o.checks.map(esc).join(' · ')}</p>` : ''}</section>`
+        : `<section class="box"><p><span class="rb">en cours</span> Liste des cartes pas encore relevée : rien n'est inventé.</p></section>`}
+      <a class="btn g w" href="#k">Comprendre Kayou (Tier, Wave, codes, raretés)</a>`;
   },
   b(id, step) {
-    if (!id) return `<p class="mu" style="margin:4px 0 12px">Choisis le set du booster ouvert</p><div class="cats">${S.sets.filter(m => m.status === 'ok').map(m => setTile(m, '#b/' + m.id)).join('')}</div>`;
-    if (step === 'open') return views.reveal(id);
-    return views.pack(id);
+    if (!id) return `<p class="mu">Choisis le set du booster ouvert</p><div class="row wrap">${S.sets.filter(m => m.file).map(m => shelfTile(m, '#b/' + m.id)).join('')}</div>`;
+    return step === 'open' ? views.reveal(id) : views.pack(id);
   },
   async pack(id) {
     const d = await loadSet(id); if (!d) return '';
-    S.ctx = d.cards;
     return `<section class="box pk"><div class="pkh"><b>Booster : <span id="pn">0</span>/${PK(d)}</b><button class="btn" id="pv" disabled>Ouvrir ✦</button></div><div class="chips" id="pc"></div></section>
       <div id="pkg">${d.rarities.map(r => `<h3 class="gh">${esc(r.id)} · ${esc(r.label)}</h3><div class="grid g4">${d.cards.filter(c => c.rarity === r.id).map(c => tile(c).replace('class="c ', 'class="c b ')).join('')}</div>`).join('')}</div>`;
   },
@@ -225,28 +196,60 @@ const views = {
     return `<div class="reveal">${o.cards.map((c, i) => `<div class="flip" style="--d:${i * 0.45}s"><div class="fi"><div class="fb"></div><div class="ff ${land(c) ? 'l' : ''} ${isHigh(c) ? 'holo' : ''}">${img(c)}</div></div>
       <div class="fl">${o.isNew[i] ? '<b class="nw">NOUVELLE</b>' : '<span class="mu">doublon</span>'} <span class="rb ${esc(c.rarity)}">${esc(c.rarity)}</span></div></div>`).join('')}</div>
       <section class="box recap" style="--d:${o.cards.length * 0.45 + 0.3}s"><h2>Récap</h2>
-      <div class="row"><span>Nouvelles cartes</span><b>${o.isNew.filter(Boolean).length}</b></div>
-      <div class="row"><span>Doublons</span><b>${o.isNew.filter(x => !x).length}</b></div>
-      <div class="row"><span>Valeur estimée du booster</span><b>${eur(o.cards.reduce((a, c) => a + (price(c)?.median || 0), 0))}</b></div>
-      <p class="note">Valeur = somme des médianes eBay disponibles (${o.cards.filter(price).length}/${o.cards.length} cartes avec un prix).</p>
-      <a class="btn w" href="#b/${id}" data-replace>Nouveau booster</a><a class="btn g w" href="#s/${id}">Voir le set</a></section>`;
+      <div class="rw"><span>Nouvelles cartes</span><b>${o.isNew.filter(Boolean).length}</b></div>
+      <div class="rw"><span>Doublons</span><b>${o.isNew.filter(x => !x).length}</b></div>
+      <div class="rw"><span>Valeur estimée du booster</span><b>${eur(o.cards.reduce((a, c) => a + (price(c)?.median || 0), 0))}</b></div>
+      <p class="note">Somme des médianes eBay disponibles (${o.cards.filter(price).length}/${o.cards.length} cartes avec un prix).</p>
+      <a class="btn w" href="#b/${id}" data-replace>Nouveau booster</a><a class="btn g w" href="#s/${id}">Voir le classeur</a></section>`;
   },
   r() {
-    return `<section class="box"><h2>Sauvegarde</h2><p class="mu">Ta collection est stockée sur ce téléphone (IndexedDB). Exporte-la régulièrement.</p>
+    return `<a class="btn w" href="#k">📖 Comprendre Kayou</a>
+    <section class="box"><h2>Sauvegarde</h2><p class="mu">Ta collection est stockée sur ce téléphone (IndexedDB). Exporte-la régulièrement.</p>
       <button class="btn w" id="ex">⤓ Exporter (JSON)</button>
       <label class="btn g w">⤒ Importer un backup<input id="im" type="file" accept="application/json,.json" hidden></label></section>
     <section class="box"><h2>Prix</h2><p class="mu">${pDate() || 'Aucun prix'} — ${S.prices ? Object.values(S.prices.cards).filter(p => p.n).length : 0} cartes avec au moins une annonce. Estimation basée sur les annonces eBay actives, pas une cote officielle.</p>
       <button class="btn g w" id="refresh">↻ Actualiser</button></section>
-    <section class="box"><h2>Données</h2><p class="mu">Cartes internationales : kayouofficial.com. Chine : ${esc(S.setsSrc)}.</p></section>`;
+    <section class="box"><h2>Données</h2><p class="mu">International : kayouofficial.com. Chine : ${esc(S.setsSrc)}.</p></section>`;
+  },
+  k() {
+    return `<section class="box"><h2>Tier, Wave et Yuan</h2>
+      <p>En Chine, Kayou vend Naruto en <b>Tiers</b> (niveaux de gamme) découpés en <b>Waves</b> (vagues de sortie). « T4W6 » = Tier 4, Wave 6.</p>
+      <p>Le <b>prix du booster en ¥</b> indique le niveau : plus il est cher, plus il contient de raretés hautes. Tier 1 ≈ 1 ¥, Tier 2 ≈ 2 ¥, Tier 3 ≈ 5 ¥, Tier 4 ≈ 10 ¥ (boîte de 18 boosters à 180 ¥).</p>
+      <p>Chaque Tier a son nom chinois : 阵之章 = Tier 4 (Chapter of the Array), 兵之章 = Tier 2 (Chapter of Soldiers)…</p></section>
+    <section class="box"><h2>Chine ou international ?</h2>
+      <p>La gamme internationale <b>Smriti</b> (Heaven Scroll, Chapter Jin, Earth Scroll, Ninja Age) reprend souvent les illustrations d'une wave chinoise (Heaven Scroll S1 ↔ T4W6), mais avec d'autres codes, d'autres boosters (8 cartes au lieu de 5) et d'autres taux. Ce sont deux cartes différentes à collectionner, avec des prix différents.</p></section>
+    <section class="box"><h2>Lire un code de carte</h2>
+      <p class="code">NRZ06-SSR-149L3</p>
+      <table><tr><td><b>NR</b></td><td>Naruto</td></tr><tr><td><b>Z</b></td><td>la gamme : Z = 阵之章 (Tier 4), B = 兵之章 (Tier 2) ; SA / I / EA = international (Smriti, Earth Scroll)</td></tr>
+      <tr><td><b>06</b></td><td>la wave / série</td></tr><tr><td><b>SSR</b></td><td>la rareté</td></tr><tr><td><b>149</b></td><td>le numéro dans la rareté</td></tr><tr><td><b>L3</b></td><td>niveau de rareté imprimé (L1 = commune … L5 = la plus haute)</td></tr></table>
+      <p class="note">Les anciennes waves (avant T4W6 / T2W7) utilisent un code court « NR-SSR-081 », numéroté sur toute la gamme.</p></section>
+    <section class="box"><h2>Lexique des raretés</h2><table>
+      ${[['R', 'Rare — commune'], ['SR', 'Super Rare'], ['SSR', 'Super Secret / Super Super Rare'], ['UR', 'Ultra Rare'], ['HR', 'Hologram Rare — holo (Tier 4)'], ['PTR', 'Platinum Rare — affiches'], ['PU', 'Parallel Universe'], ['AR', 'Art Rare'], ['MR', 'Miracle Rare'], ['BP', 'Brush Rare (pinceau)'], ['SP', 'Special'], ['CR', 'Cosplay / Character Rare'], ['OR', 'Origin Rare'], ['ZR', 'Z Rare (Tier 2)'], ['SLR', 'Super Limited Rare'], ['NR', 'Ninja Rare / arc-en-ciel'], ['TR / TGR', 'Transparent / Transparent Gold Rare (Tier 3)'], ['GP', 'Gold Plated (Tier 1)'], ['SE', 'Scenario-E / Special Edition — la plus haute'], ['◇', 'variante « diamant » d\'une rareté']].map(([a, b]) => `<tr><td><b>${a}</b></td><td>${b}</td></tr>`).join('')}</table>
+      <p class="note">Les noms complets varient selon les sets et les guides ; ceux de l'international viennent de kayouofficial.com.</p></section>`;
   }
 };
 const PK = d => (d.pack && d.pack.cards) || 8;
-const tile = c => `<div class="c ${land(c) ? 'l' : ''} ${qty(c) ? '' : 'no'}" data-k="${esc(c.set + '/' + c.code)}">${img(c)}${qty(c) ? `<span class="q">×${qty(c)}</span>` : ''}<span class="n">${esc(c.rarity)} · ${esc(c.name)}</span></div>`;
-const byKey = k => { const [s, c] = k.split('/'); return S.data[s] && S.data[s].cards.find(x => x.code === c); };
-function refreshTile(el) { const c = byKey(el.dataset.k), n = document.createElement('div'); n.innerHTML = tile(c); const nc = n.firstChild; if (el.classList.contains('b')) nc.classList.add('b'); el.replaceWith(nc); return nc; }
+const tile = c => `<div class="c ${land(c) ? 'l' : ''} ${qty(c) ? '' : 'no'}" data-k="${esc(c.set + '/' + c.code)}">${img(c)}${qty(c) > 1 ? `<span class="q">×${qty(c)}</span>` : ''}</div>`;
+const byKey = k => { const i = k.indexOf('/'), s = k.slice(0, i), c = k.slice(i + 1); return S.data[s] && S.data[s].cards.find(x => x.code === c); };
+function refreshTile(el) { const n = document.createElement('div'); n.innerHTML = tile(byKey(el.dataset.k)); const nc = n.firstChild; if (el.classList.contains('b')) nc.classList.add('b'); el.replaceWith(nc); return nc; }
+
+/* taux par rareté : officiel / minimum officiel / inconnu */
+function rateOf(id, rar) {
+  const o = S.odds[id], r = o && o.rarities && o.rarities[rar], B = o && o.boxPacks;
+  if (!r || (!r.k && !r.min)) return { booster: 'taux inconnu', box: '—', r };
+  if (r.k) return { booster: r.k >= 1 ? `${f1(r.k)} (garanti)` : `1 sur ${f1(1 / r.k)}`, box: `≈ ${f1(r.k * B)}`, r };
+  return { booster: `≥ ${f1(r.min)}`, box: `≥ ${f1(r.min * B)}`, r };
+}
+function oddsLine(c) {
+  const x = rateOf(c.set, c.rarity), n = rarOf(c).count, r = x.r;
+  if (!r || (!r.k && !r.min)) return `<p><b>${esc(c.rarity)}</b> : taux inconnu</p>`;
+  const k = r.k || r.min, pc = 1 - Math.pow(1 - 1 / n, k);
+  return `<p><b>${esc(c.rarity)}</b> : ${x.booster} par booster · ${x.box} par boîte${r.k ? '' : ' (minimum officiel)'}</p><p class="note">Cette carte : ${r.k ? '' : 'au moins '}1 chance sur ${f1(1 / pc)} boosters.</p>`;
+}
 
 /* appui court = ouvrir, appui long = +1 */
 function press(el, onTap, onLong) {
+  if (!el) return;
   let t, x, y, fired, moved;
   el.addEventListener('pointerdown', e => { if (!e.target.closest('.c')) return; fired = moved = false; x = e.clientX; y = e.clientY; t = setTimeout(() => { fired = true; onLong(e.target.closest('.c')); }, 450); });
   el.addEventListener('pointermove', e => { if (Math.hypot(e.clientX - x, e.clientY - y) > 10) { moved = true; clearTimeout(t); } });
@@ -254,44 +257,40 @@ function press(el, onTap, onLong) {
   el.addEventListener('pointercancel', () => clearTimeout(t));
   el.addEventListener('contextmenu', e => e.preventDefault());
 }
-const openCard = c => go(`#${curBase}!${c.dataset.k}`);
-const longAdd = c => { const card = byKey(c.dataset.k); add(card); vib(25); refreshTile(c).classList.add('pop'); toast(`+1 ${card.name} (×${qty(card)})`); };
+const openCard = c => go('#s/' + c.dataset.k);
+const longAdd = c => { const card = byKey(c.dataset.k); add(card); vib(25); refreshTile(c).classList.add('pop'); toast(`+1 ${card.name || card.code} (×${qty(card)})`); };
 
 const binds = {
-  s(id) {
-    press($('#secs'), openCard, longAdd);
-    V.querySelectorAll('.chipsel button').forEach(b => b.onclick = () => { S.filt.o = b.dataset.o; curBase = null; route(); });
-    V.querySelectorAll('details.sec').forEach(d => d.addEventListener('toggle', () => {
-      const cl = [...V.querySelectorAll('details.sec:not([open])')].map(x => x.dataset.r); sessionStorage.setItem('closed:' + id, JSON.stringify(cl));
-    }));
-  },
-  q() {
-    const inp = $('#gq'), draw = () => {
-      const q = inp.value.trim().toLowerCase(); curBase = 'q/' + inp.value; history.replaceState(history.state, '', '#q/' + encodeURIComponent(inp.value));
-      const res = q.length < 2 ? [] : allCards().filter(c => [c.name, c.nameCn, c.code, c.full, c.alias && c.alias.cn, c.alias && c.alias.eu].join(' ').toLowerCase().includes(q)).slice(0, 120);
-      S.ctx = res; $('#gres').innerHTML = res.map(c => tile(c).replace(/<\/span><\/div>$/, ` · ${esc(meta(c.set).title)}</span></div>`)).join('');
-      $('#gcnt').textContent = q.length < 2 ? 'Tape au moins 2 caractères.' : `${res.length} résultat${res.length > 1 ? 's' : ''}${res.length === 120 ? ' (120 max)' : ''}`;
+  h() {
+    const inp = $('#gq');
+    const draw = async () => {
+      S.q = inp.value.trim(); const q = S.q.toLowerCase(), on = q.length >= 2;
+      $('#shelves').hidden = on;
+      if (!on) { $('#res').innerHTML = ''; return; }
+      await loadAll(); if (S.q.toLowerCase() !== q) return;
+      const reg = localStorage.getItem('reg') || 'all';
+      const res = allCards().filter(c => (reg === 'all' || (meta(c.set).region === 'intl') === (reg === 'fr')) && [c.name, c.nameCn, c.code, c.full, c.alias && c.alias.cn, c.alias && c.alias.eu].join(' ').toLowerCase().includes(q)).slice(0, 150);
+      S.ctx = res;
+      $('#res').innerHTML = `<p class="mu">${res.length} résultat${res.length > 1 ? 's' : ''}${res.length === 150 ? ' (150 max)' : ''}</p><div class="grid">${res.map(tile).join('')}</div>`;
     };
-    inp.oninput = draw; draw(); if (!inp.value) inp.focus();
-    press($('#gres'), openCard, longAdd);
+    inp.oninput = draw; draw();
+    press($('#res'), openCard, longAdd);
+    V.querySelectorAll('[data-reg]').forEach(b => b.onclick = () => { localStorage.setItem('reg', b.dataset.reg); curBase = null; route(); });
   },
-  m() {
-    const draw = () => {
-      const f = S.mf; let cs = allCards().filter(c => qty(c) && (!f.g || meta(c.set).region === f.g) && (!f.s || c.set === f.s) && (!f.r || c.rarity === f.r));
-      cs.sort(f.t === 'p' ? (a, b) => (price(b)?.median ?? -1) - (price(a)?.median ?? -1) : f.t === 'r' ? (a, b) => rIdx(a) - rIdx(b) : (a, b) => S.sets.indexOf(meta(a.set)) - S.sets.indexOf(meta(b.set)) || a.n - b.n);
-      S.ctx = cs; $('#mres').innerHTML = cs.map(c => tile(c).replace(/<\/span><\/div>$/, `${price(c) ? ' · ' + eur(price(c).median) : ''}</span></div>`)).join('');
-      const tot = cs.reduce((a, c) => a + (price(c) ? price(c).median * qty(c) : 0), 0);
-      $('#mcnt').textContent = cs.length ? `${cs.length} carte${cs.length > 1 ? 's' : ''} · ${cs.reduce((a, c) => a + qty(c), 0)} exemplaires · ${eur(tot)} estimés` : 'Aucune carte possédée pour ces filtres.';
-    };
-    [['mg', 'g'], ['ms', 's'], ['mr', 'r'], ['mt', 't']].forEach(([id, k]) => $('#' + id).onchange = e => { S.mf[k] = e.target.value; e.target.classList.toggle('on', !!e.target.value && k !== 't'); draw(); });
-    draw(); press($('#mres'), openCard, longAdd);
+  s(id, code) {
+    if (code) return bindCard(byKey(id + '/' + code));
+    const f = S.cls[id]; if (!f) return;
+    V.querySelectorAll('.ctabs button').forEach(b => b.onclick = () => { f.r = b.dataset.r; SCR[curBase] = 0; curBase = null; route(); });
+    $('#own').onchange = e => { f.own = e.target.checked; curBase = null; route(); };
+    press($('#grid'), openCard, longAdd);
+    const on = V.querySelector('.ctabs .on'); if (on) on.scrollIntoView({ inline: 'center', block: 'nearest' });
   },
   b(id, step) {
     if (!id || step) return;
     const d = S.data[id];
     const draw = () => {
       $('#pn').textContent = S.pack.length; $('#pv').disabled = !S.pack.length;
-      $('#pc').innerHTML = S.pack.map((k, i) => `<button class="chip" data-i="${i}">${esc(k.split('/')[1].replace(d.codePrefix + '-', ''))}</button>`).join('') || '<span class="mu">Tape les cartes tirées.</span>';
+      $('#pc').innerHTML = S.pack.map((k, i) => `<button class="chip" data-i="${i}">${esc(k.slice(k.indexOf('/') + 1).replace(d.codePrefix + '-', ''))}</button>`).join('') || '<span class="mu">Tape les cartes tirées.</span>';
     };
     if (S.pack.some(k => !k.startsWith(id + '/'))) S.pack = [];
     draw();
@@ -304,92 +303,20 @@ const binds = {
       go(`#b/${id}/open`);
     };
   },
-  r() {
-    $('#ex').onclick = exportJSON;
-    $('#im').onchange = e => e.target.files[0] && importJSON(e.target.files[0]);
-  }
+  r() { $('#ex').onclick = exportJSON; $('#im').onchange = e => e.target.files[0] && importJSON(e.target.files[0]); }
 };
 document.addEventListener('click', async e => {
   const r = e.target.closest('#refresh'); if (r) { await loadPrices(true); curBase = null; route(); return; }
   const a = e.target.closest('a[data-replace]'); if (a) { e.preventDefault(); replaceTo(a.getAttribute('href')); }
 });
 
-/* ---------- fiche carte (panneau) ---------- */
-function oddsHTML(c) {
-  const o = S.odds[c.set]; if (!o || !o.rarities) return '';
-  const r = o.rarities[c.rarity] || { status: 'taux inconnu' }, n = S.data[c.set].rarities.find(x => x.id === c.rarity).count, B = o.boxPacks;
-  const [pn, pd] = (r.possibleIn || '').split(':');
-  let main, sub = '', card = '';
-  if (r.k) {
-    main = r.k >= 1 ? `${f1(r.k)} par booster (garanti)` : `1 chance sur ${f1(1 / r.k)} boosters`;
-    sub = `environ ${f1(r.k * B)} par boîte de ${B}`;
-    const pc = 1 - Math.pow(1 - 1 / n, r.k); card = `Cette carte : 1 chance sur ${f1(1 / pc)} boosters (≈ ${f1(pc * B)} par boîte)`;
-  } else if (r.min) {
-    main = 'taux exact inconnu'; sub = `au moins ${f1(r.min)} par booster · au moins ${f1(r.min * B)} par boîte (officiel)`;
-    card = `Cette carte : au moins 1 chance sur ${f1(1 / (1 - Math.pow(1 - 1 / n, r.min)))} boosters`;
-  } else main = 'taux inconnu';
-  const shared = r.sharedWith ? `<p class="mu">Peut aussi sortir d'une case partagée avec ${r.sharedWith.map(esc).join(', ')} : ${f1(r.sharedSlots)} case(s) par booster (${f1(r.sharedSlots * B)} par boîte), répartition non publiée.</p>` : '';
-  const poss = pn && pn !== pd ? `<p class="mu">Possible seulement dans ${pn} boosters sur ${pd}.</p>` : '';
-  const pack = S.data[c.set].pack;
-  return `<section class="box"><h2>Taux de drop — rareté ${esc(c.rarity)}</h2>
-    <div class="big" style="${r.k ? '' : 'color:var(--mu)'}">${main}</div><div>${sub}</div>${poss}${shared}
-    ${card ? `<p class="note">${card} (${n} cartes ${esc(c.rarity)}).</p>` : ''}
-    <details class="note"><summary>Méthode, source et contrôle</summary><p>${esc(S.odds.method)}</p><p>Source : ${esc(o.source)}.</p>
-    <p>Booster : ${o.packCards} cartes · boîte : ${B} boosters.${pack && pack.probabilities ? pack.probabilities.map(x => `<br>${esc(x.ratio)} : ${esc(x.slots)}`).join('') : ''}</p>
-    <p>${(o.checks || []).map(esc).join('<br>')}</p><p>${esc(S.odds.openingData)}</p></details></section>`;
-}
-function sheetHTML(c) {
-  const e = S.col[key(c)] || { q: 0, cond: 'NM' }, p = price(c), d = S.data[c.set], r = d.rarities.find(x => x.id === c.rarity), m = meta(c.set);
-  const q = encodeURIComponent(`kayou naruto ${c.code}`), i = S.ctx.indexOf(c);
-  const twin = (code, sid) => sid && meta(sid) && meta(sid).status === 'ok' ? `<a href="#${curBase}!${sid}/${esc(code)}" data-replace>${esc(code)}</a>` : esc(code);
-  return `<div class="grab"></div>
-    <div class="det"><div class="card3d ${land(c) ? 'l' : ''} ${isHigh(c) ? 'holo' : ''}" id="c3">${img(c)}</div></div>
-    ${i >= 0 ? `<div class="nav"><button data-step="-1" ${i ? '' : 'disabled'}>‹</button><span class="mu">${i + 1}/${S.ctx.length} · glisse ← →</span><button data-step="1" ${i < S.ctx.length - 1 ? '' : 'disabled'}>›</button></div>` : ''}
-    ${isHigh(c) && window.DeviceOrientationEvent && DeviceOrientationEvent.requestPermission ? '<button class="btn g w" id="gyro">Activer l\'effet gyroscope</button>' : ''}
-    <section class="box"><div style="font-size:20px;font-weight:800">${esc(c.name)}</div>${c.nameCn ? `<div>${esc(c.nameCn)}</div>` : ''}
-      <div class="mu"><span class="rb ${esc(c.rarity)}">${esc(c.rarity)}</span> ${esc(r.label)} · ${esc(m.title)}</div>
-      <table style="margin-top:10px"><tr><td>Code</td><td><b>${esc(c.full || c.code)}</b></td></tr>
-      ${m.region === 'cn' && c.alias && c.alias.eu ? `<tr><td>Code EU</td><td>${twin(c.alias.eu, m.link)}</td></tr>` : ''}
-      ${d.origin ? `<tr><td>Code CN</td><td>${c.alias.cn ? twin(c.alias.cn, m.link) : `<span class="mu">à compléter (${esc(d.origin.codePrefix)}-…)</span>`}</td></tr>` : ''}
-      <tr><td>Possédée</td><td><b id="qv2">×${e.q}</b></td></tr></table></section>
-    <section class="box">
-      <div class="row"><span>Quantité</span><div class="qty"><button data-d="-1">−</button><b id="qv">${e.q}</b><button data-d="1">+</button></div></div>
-      <div class="row"><span>Doublons</span><b id="dv">${Math.max(0, e.q - 1)}</b></div>
-      <div class="row"><span>État</span><select id="cond">${CONDS.map(x => `<option${x === e.cond ? ' selected' : ''}>${x}</option>`).join('')}</select></div></section>
-    <section class="box"><h2>Prix marché</h2>
-      ${p ? `<div class="big">${eur(p.median)}</div><div class="mu">Médiane de ${p.n} annonce${p.n > 1 ? 's' : ''} eBay actives · ${pDate()}</div>
-        ${p.markets ? `<div class="mu">${Object.entries(p.markets).map(([k, v]) => `${k} : ${eur(v.median)} (${v.n})`).join(' · ')}</div>` : ''}
-        ${p.psa ? `<div class="mu" style="margin-top:6px">Gradées PSA : ${eur(p.psa.median)} (${p.psa.n} annonces)</div>` : ''}`
-        : '<div class="big" style="color:var(--mu)">pas de prix</div><div class="mu">0 annonce trouvée lors de la dernière mise à jour.</div>'}
-      <div class="note">Estimation basée sur les annonces eBay, jamais une cote officielle.</div>
-      <div class="links" style="margin-top:10px">${['fr', 'de', 'com'].map(t => `<a class="btn g" target="_blank" rel="noopener" href="https://www.ebay.${t}/sch/i.html?_nkw=${q}">eBay ${t === 'com' ? 'US' : t.toUpperCase()}</a>`).join('')}</div></section>
-    ${oddsHTML(c)}
-    <section class="box"><h2>Ma photo</h2>
-      <label class="btn w">📷 ${S.photos[key(c)] ? 'Remplacer ma photo' : 'Ajouter ma photo'}<input id="ph" type="file" accept="image/*" capture="environment" hidden></label>
-      ${S.photos[key(c)] ? '<button class="btn g w" id="phx">Revenir à l\'image officielle</button>' : ''}</section>`;
-}
-let sheetCard = null;
-function openSheet(c) {
-  const wasOpen = SH.classList.contains('on');
-  sheetCard = c; SB.innerHTML = sheetHTML(c); SB.scrollTop = 0;
-  if (!wasOpen) { SH.hidden = false; void SH.offsetWidth; SH.classList.add('on'); document.documentElement.classList.add('lock'); }
-  bindSheet(c);
-}
-function closeSheet() {
-  if (SH.hidden) return;
-  SH.classList.remove('on'); document.documentElement.classList.remove('lock'); SB.style.transform = '';
-  const k = sheetCard && V.querySelector(`.c[data-k="${CSS.escape(sheetCard.set + '/' + sheetCard.code)}"]`); if (k) refreshTile(k);
-  sheetCard = null; setTimeout(() => { if (!SH.classList.contains('on')) SH.hidden = true; }, 300);
-}
-function step(dir) {
-  const i = S.ctx.indexOf(sheetCard), n = S.ctx[i + dir]; if (!n) return;
-  SB.classList.add(dir > 0 ? 'sl' : 'sr'); setTimeout(() => SB.classList.remove('sl', 'sr'), 250);
-  replaceTo(`#${curBase}!${n.set}/${n.code}`);
-}
-function bindSheet(c) {
+/* ---------- fiche plein écran ---------- */
+function step(cur, dir) { const n = S.ctx[S.ctx.indexOf(cur) + dir]; if (!n) return; V.classList.add(dir > 0 ? 'sl' : 'sr'); setTimeout(() => V.classList.remove('sl', 'sr'), 250); replaceTo(`#s/${n.set}/${n.code}`); }
+function bindCard(c) {
+  if (!c) return;
   const k = key(c), c3 = $('#c3');
-  SB.querySelectorAll('.qty button').forEach(b => b.onclick = () => { add(c, +b.dataset.d); $('#qv').textContent = qty(c); $('#qv2').textContent = '×' + qty(c); $('#dv').textContent = Math.max(0, qty(c) - 1); vib(15); });
-  SB.querySelectorAll('.nav button').forEach(b => b.onclick = () => step(+b.dataset.step));
+  V.querySelectorAll('.qty button').forEach(b => b.onclick = () => { add(c, +b.dataset.d); $('#qv').textContent = qty(c); vib(15); });
+  V.querySelectorAll('.nav button').forEach(b => b.onclick = () => step(c, +b.dataset.step));
   $('#cond').onchange = e => { (S.col[k] || (S.col[k] = { q: 0 })).cond = e.target.value; saveCol(k); };
   const tilt = (px, py) => { c3.style.setProperty('--mx', px * 100 + '%'); c3.style.setProperty('--my', py * 100 + '%'); c3.style.setProperty('--ry', (px - .5) * 24 + 'deg'); c3.style.setProperty('--rx', (.5 - py) * 24 + 'deg'); };
   if (isHigh(c)) {
@@ -402,27 +329,14 @@ function bindSheet(c) {
   }
   $('#ph').onchange = async e => {
     const f = e.target.files[0]; if (!f) return;
-    const b = await shrink(f); await idb('photos', 'readwrite', s => s.put(b, k)); S.photos[k] = URL.createObjectURL(b); toast('Photo enregistrée'); openSheet(c);
+    const b = await shrink(f); await idb('photos', 'readwrite', s => s.put(b, k)); S.photos[k] = URL.createObjectURL(b); toast('Photo enregistrée'); curBase = null; route();
   };
-  if ($('#phx')) $('#phx').onclick = async () => { await idb('photos', 'readwrite', s => s.delete(k)); delete S.photos[k]; openSheet(c); };
+  if ($('#phx')) $('#phx').onclick = async () => { await idb('photos', 'readwrite', s => s.delete(k)); delete S.photos[k]; curBase = null; route(); };
+  let x0, y0; // glisser gauche/droite = carte suivante/précédente (bord gauche laissé au geste retour iOS)
+  V.ontouchstart = e => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; };
+  V.ontouchend = e => { const t = e.changedTouches[0], dx = t.clientX - x0, dy = t.clientY - y0; if (x0 > 30 && Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.5) step(c, dx < 0 ? 1 : -1); };
 }
-/* gestes : glisser vers le bas pour fermer, gauche/droite pour carte suivante/précédente */
-(() => {
-  let x0, y0, dx, dy, mode;
-  SB.addEventListener('touchstart', e => { const t = e.touches[0]; x0 = t.clientX; y0 = t.clientY; dx = dy = 0; mode = null; }, { passive: true });
-  SB.addEventListener('touchmove', e => {
-    const t = e.touches[0]; dx = t.clientX - x0; dy = t.clientY - y0;
-    if (!mode && Math.hypot(dx, dy) > 12) mode = Math.abs(dx) > Math.abs(dy) ? 'h' : (dy > 0 && SB.scrollTop <= 0 ? 'v' : 's');
-    if (mode === 'v') { e.preventDefault(); SB.style.transform = `translateY(${Math.max(0, dy)}px)`; }
-    if (mode === 'h') SB.style.transform = `translateX(${dx * .4}px)`;
-  }, { passive: false });
-  SB.addEventListener('touchend', () => {
-    SB.style.transform = '';
-    if (mode === 'v' && dy > 110) back();
-    else if (mode === 'h' && Math.abs(dx) > 70) step(dx < 0 ? 1 : -1);
-  });
-  $('#backdrop').onclick = back;
-})();
+addEventListener('hashchange', () => { if (!/^#s\/[^/]+\/./.test(location.hash)) V.ontouchstart = V.ontouchend = null; });
 
 /* ---------- photos / backup (format v1 inchangé) ---------- */
 function shrink(f) {
@@ -460,7 +374,9 @@ async function init() {
   S.col = await allOf('col');
   const ph = await allOf('photos'); for (const k in ph) S.photos[k] = URL.createObjectURL(ph[k]);
   await loadPrices();
-  if (!location.hash || location.hash === '#menu') history.replaceState(history.state, '', '#c'); route();
+  const h = parse(location.hash)[0];
+  if (!location.hash || !views[h] || ['c', 'm', 'q', 'i', 'w', 'menu'].includes(h)) history.replaceState(history.state, '', '#h'); // anciennes URL → accueil
+  route();
 }
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 init();

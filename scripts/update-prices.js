@@ -37,7 +37,8 @@ async function search(tk, mkt, q) {
 }
 
 const [tk, fx] = await Promise.all([token(), rates()]);
-const sets = JSON.parse(readFileSync('data/sets.json', 'utf8')).sets.filter(s => s.status === 'ok' && s.file);
+// listes partielles (codes seuls) ignorées ; sets chinois interrogés sur eBay US seulement → ~3 900 appels/jour (< 5 000)
+const sets = JSON.parse(readFileSync('data/sets.json', 'utf8')).sets.filter(s => s.status === 'ok' && s.file && !s.partial);
 const out = { updated: new Date().toISOString(), source: 'eBay Browse API – annonces actives, médiane', markets: Object.values(MARKETS), cards: {} };
 
 for (const s of sets) {
@@ -47,7 +48,7 @@ for (const s of sets) {
     // le titre doit citer la rareté + le numéro (ex. "SSR-019", "SSR 19", "NRSA01-SSR-019L3")
     const must = new RegExp(`(?<![A-Z])${rar.replace(/[^A-Z]/gi, '.?')}[\\s\\-#]*0*${n}(L\\d)?\\b`, 'i');
     const raw = [], psa = [], markets = {};
-    for (const [m, id] of Object.entries(MARKETS)) {
+    for (const [m, id] of Object.entries(MARKETS).filter(([m]) => s.region !== 'cn' || m === 'US')) {
       const seen = new Set(), mp = [];
       for (const q of [c.code]) { // 1 requête/carte/marché : ~4 000 appels/jour, sous la limite eBay de 5 000
         for (const it of await search(tk, id, q)) {

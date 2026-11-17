@@ -15,7 +15,8 @@
 "linkLabel": "Mêmes illustrations que T4W6 (Chine)",
 "line": "Heaven Scroll",
 "box": "https://static-sg.kayouofficial.com/overseas/website/2026/06/11/be436b769463cb82414b444c76794627-1588-1857.png",
-"group": null
+"group": null,
+"titleCn": "≈ 阵之章第6弹 (T4W6)"
 },
 {
 "id": "chapter-jin-2",
@@ -28,10 +29,11 @@
 "sub": "NRSA02 · November 2025",
 "pack": "8 cartes/booster · 12 boosters/boîte",
 "link": "cn-t4w7",
-"linkLabel": "Mêmes illustrations que T4W7 (Chine) (selon un guide collector, non officiel)",
+"linkLabel": "Mêmes illustrations que T4W7 : 168 cartes, répartition par rareté identique (selon un guide collector et le relevé Qiandao)",
 "line": "Chapter Jin",
 "box": "https://static-sg.kayouofficial.com/overseas/website/2026/06/16/a6b07c4dbabde82661f3fabae1d51010-1263-2188.png",
-"group": null
+"group": null,
+"titleCn": "≈ 阵之章第7弹 (T4W7)"
 },
 {
 "id": "chapter-jin-3",
@@ -125,7 +127,8 @@
 "sub": "阵之章第9弹 · sortie 29/10/2026",
 "price": "10 ¥ / booster (180 ¥ la boîte)",
 "pack": "5 cartes/booster · 18 boosters/boîte",
-"status": "wip"
+"status": "wip",
+"titleCn": "阵之章第9弹"
 },
 {
 "id": "cn-t4w8",
@@ -135,7 +138,8 @@
 "sub": "Boîte NR-RD-Z008",
 "price": "10 ¥ / booster",
 "pack": "5 cartes/booster · 18 boosters/boîte",
-"status": "wip"
+"status": "wip",
+"titleCn": "阵之章第8弹"
 },
 {
 "id": "cn-t4w7",
@@ -145,9 +149,14 @@
 "sub": "Boîte NR-RD-Z007",
 "price": "10 ¥ / booster",
 "pack": "5 cartes/booster · 18 boosters/boîte",
-"status": "wip",
+"status": "ok",
 "link": "chapter-jin-2",
-"linkLabel": "Mêmes illustrations que Chapter Jin S2 (NRSA02) (selon un guide collector, non officiel)"
+"linkLabel": "Mêmes illustrations que Chapter Jin S2 (NRSA02)",
+"file": "data/cn-t4w7.json",
+"count": 168,
+"cover": "https://treasure.qiandaocdn.com/treasure/images/fiRJcDlNSM3.png!lfit_w540_h540",
+"titleCn": "阵之章第7弹",
+"source": "Qiandao (千岛), fiches cartes « 阵之章第7弹 » (qiandao.com/spu?id=…, 168 fiches parcourues autour de l'id 877793321328632386), relevé le 2026-11-17"
 },
 {
 "id": "cn-t4w6",
@@ -163,7 +172,8 @@
 "file": "data/cn-t4w6.json",
 "count": 158,
 "cover": "https://treasure.qiandaocdn.com/treasure/images/g8xXJQ7sm6.png!lfit_w540_h540",
-"source": "Qiandao (千岛), fiches cartes « 阵之章第6弹 » (qiandao.com/spu?id=773754890777277279 à …7436), relevé le 2026-11-17 ; noms FR/EN repris de Heaven Scroll par correspondance d'illustration"
+"source": "Qiandao (千岛), fiches cartes « 阵之章第6弹 » (qiandao.com/spu?id=773754890777277279 à …7436), relevé le 2026-11-17 ; noms FR/EN repris de Heaven Scroll par correspondance d'illustration",
+"titleCn": "阵之章第6弹"
 },
 {
 "id": "cn-t4w5",
@@ -173,7 +183,12 @@
 "sub": "Boîte NR-RD-Z005",
 "price": "10 ¥ / booster",
 "pack": "5 cartes/booster · 18 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "阵之章第5弹",
+"partial": true,
+"file": "data/cn-t4w5.json",
+"count": 85,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t4w4",
@@ -183,7 +198,12 @@
 "sub": "Boîte NR-RD-Z004",
 "price": "10 ¥ / booster",
 "pack": "5 cartes/booster · 18 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "阵之章第4弹",
+"partial": true,
+"file": "data/cn-t4w4.json",
+"count": 86,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t4w3",
@@ -193,7 +213,12 @@
 "sub": "Boîte NR-RD-Z003",
 "price": "10 ¥ / booster",
 "pack": "5 cartes/booster · 18 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "阵之章第3弹",
+"partial": true,
+"file": "data/cn-t4w3.json",
+"count": 233,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t4w2",
@@ -203,7 +228,12 @@
 "sub": "Boîte NR-RD-Z002",
 "price": "10 ¥ / booster",
 "pack": "5 cartes/booster · 18 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "阵之章第2弹",
+"partial": true,
+"file": "data/cn-t4w2.json",
+"count": 152,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t4w1",
@@ -213,7 +243,12 @@
 "sub": "Boîte NR-RD-Z001",
 "price": "10 ¥ / booster",
 "pack": "5 cartes/booster · 18 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "阵之章第1弹",
+"partial": true,
+"file": "data/cn-t4w1.json",
+"count": 63,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t3w5",
@@ -223,7 +258,12 @@
 "sub": "Boîte NR-CC-D005",
 "price": "5 ¥ / booster",
 "pack": "5 cartes/booster · 20 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "斗之章第5弹",
+"partial": true,
+"file": "data/cn-t3w5.json",
+"count": 42,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t3w4",
@@ -233,7 +273,12 @@
 "sub": "Boîte NR-CC-D004",
 "price": "5 ¥ / booster",
 "pack": "5 cartes/booster · 20 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "斗之章第4弹",
+"partial": true,
+"file": "data/cn-t3w4.json",
+"count": 42,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t3w3",
@@ -243,7 +288,12 @@
 "sub": "Boîte NR-CC-D003",
 "price": "5 ¥ / booster",
 "pack": "5 cartes/booster · 20 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "斗之章第3弹",
+"partial": true,
+"file": "data/cn-t3w3.json",
+"count": 26,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t3w2",
@@ -253,7 +303,12 @@
 "sub": "Boîte NR-CC-D002",
 "price": "5 ¥ / booster",
 "pack": "5 cartes/booster · 20 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "斗之章第2弹",
+"partial": true,
+"file": "data/cn-t3w2.json",
+"count": 25,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t3w1",
@@ -263,7 +318,12 @@
 "sub": "Boîte NR-CC-D001",
 "price": "5 ¥ / booster",
 "pack": "5 cartes/booster · 20 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "斗之章第1弹",
+"partial": true,
+"file": "data/cn-t3w1.json",
+"count": 132,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t25w1",
@@ -273,7 +333,11 @@
 "sub": "Boîte NR-RD-J001",
 "price": "prix ¥ non trouvé",
 "pack": "50 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"partial": true,
+"file": "data/cn-t25w1.json",
+"count": 30,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t2w9",
@@ -283,7 +347,8 @@
 "sub": "Boîte NR-CC-B009",
 "price": "2 ¥ / booster",
 "pack": "5 cartes/booster · 30 boosters/boîte",
-"status": "wip"
+"status": "wip",
+"titleCn": "兵之章第9弹"
 },
 {
 "id": "cn-t2w8",
@@ -293,7 +358,12 @@
 "sub": "Boîte NR-CC-B008",
 "price": "2 ¥ / booster",
 "pack": "5 cartes/booster · 30 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "兵之章第8弹",
+"partial": true,
+"file": "data/cn-t2w8.json",
+"count": 131,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t2w7",
@@ -303,7 +373,12 @@
 "sub": "Boîte NR-CC-B007",
 "price": "2 ¥ / booster",
 "pack": "5 cartes/booster · 30 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "兵之章第7弹",
+"partial": true,
+"file": "data/cn-t2w7.json",
+"count": 122,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t2w6",
@@ -313,7 +388,12 @@
 "sub": "Boîte NR-CC-B006",
 "price": "2 ¥ / booster",
 "pack": "5 cartes/booster · 30 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "兵之章第6弹",
+"partial": true,
+"file": "data/cn-t2w6.json",
+"count": 78,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t2w5",
@@ -323,7 +403,12 @@
 "sub": "Boîte NR-CC-B005",
 "price": "2 ¥ / booster",
 "pack": "5 cartes/booster · 30 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "兵之章第5弹",
+"partial": true,
+"file": "data/cn-t2w5.json",
+"count": 94,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t2w4",
@@ -333,7 +418,12 @@
 "sub": "Boîte NR-CC-B004",
 "price": "2 ¥ / booster",
 "pack": "5 cartes/booster · 30 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "兵之章第4弹",
+"partial": true,
+"file": "data/cn-t2w4.json",
+"count": 52,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t2w3",
@@ -343,7 +433,12 @@
 "sub": "Boîte NR-CC-B003",
 "price": "2 ¥ / booster",
 "pack": "5 cartes/booster · 30 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "兵之章第3弹",
+"partial": true,
+"file": "data/cn-t2w3.json",
+"count": 22,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t2w2",
@@ -353,7 +448,12 @@
 "sub": "Boîte NR-CC-B002",
 "price": "2 ¥ / booster",
 "pack": "5 cartes/booster · 30 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "兵之章第2弹",
+"partial": true,
+"file": "data/cn-t2w2.json",
+"count": 14,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t2w1",
@@ -363,7 +463,12 @@
 "sub": "Boîte NR-CC-B001",
 "price": "2 ¥ / booster",
 "pack": "5 cartes/booster · 30 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "兵之章第1弹",
+"partial": true,
+"file": "data/cn-t2w1.json",
+"count": 11,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t1w4",
@@ -373,7 +478,12 @@
 "sub": "Boîte NR-CC-L004",
 "price": "1 ¥ / booster",
 "pack": "36 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "临之章第4弹",
+"partial": true,
+"file": "data/cn-t1w4.json",
+"count": 10,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t1w3",
@@ -383,7 +493,12 @@
 "sub": "Boîte NR-CC-L003",
 "price": "1 ¥ / booster",
 "pack": "36 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "临之章第3弹",
+"partial": true,
+"file": "data/cn-t1w3.json",
+"count": 10,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t1w2",
@@ -393,7 +508,12 @@
 "sub": "Boîte NR-CC-L002",
 "price": "1 ¥ / booster",
 "pack": "36 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "临之章第2弹",
+"partial": true,
+"file": "data/cn-t1w2.json",
+"count": 17,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-t1w1",
@@ -403,7 +523,12 @@
 "sub": "Boîte NR-CC-L001",
 "price": "1 ¥ / booster",
 "pack": "36 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"titleCn": "临之章第1弹",
+"partial": true,
+"file": "data/cn-t1w1.json",
+"count": 9,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-ninja-age-box",
@@ -423,7 +548,11 @@
 "sub": "",
 "price": "prix ¥ non trouvé",
 "pack": "3 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"partial": true,
+"file": "data/cn-youth-scroll.json",
+"count": 12,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-heaven-earth-gift-scroll",
@@ -433,7 +562,11 @@
 "sub": "",
 "price": "prix ¥ non trouvé",
 "pack": "2 boosters/boîte",
-"status": "wip"
+"status": "ok",
+"partial": true,
+"file": "data/cn-heaven-earth-gift-scroll.json",
+"count": 41,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 },
 {
 "id": "cn-coffret-nouvel-an",
@@ -444,6 +577,17 @@
 "price": "prix ¥ non trouvé",
 "pack": "3 boosters/boîte",
 "status": "wip"
+},
+{
+"id": "cn-legend",
+"region": "cn",
+"group": "Coffrets spéciaux",
+"title": "Legendary Scroll (coffret 2023)",
+"status": "ok",
+"partial": true,
+"file": "data/cn-legend.json",
+"count": 36,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
 }
 ]
 }

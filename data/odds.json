@@ -1009,5 +1009,791 @@
 }
 },
 "checks": []
+},
+"cn-t4w7": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 18,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte (fiches Qiandao, recherches web) ; structure Tier 4 « 1 HR + 2 R + 1 SR + 1 SSR ou plus » selon Capsule Corp Gear, non vérifiée",
+"openingSample": null,
+"rarities": {
+"SE": {
+"status": "taux inconnu"
+},
+"SP": {
+"status": "taux inconnu"
+},
+"BP": {
+"status": "taux inconnu"
+},
+"AR": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"PU": {
+"status": "taux inconnu"
+},
+"PTR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"SR": {
+"status": "taux inconnu"
+},
+"R": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t1w1": {
+"edition": "Chine",
+"packCards": null,
+"boxPacks": 36,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t2w1": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 30,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t3w1": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 20,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"AR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+},
+"TGR": {
+"status": "taux inconnu"
+},
+"TR": {
+"status": "taux inconnu"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"SR": {
+"status": "taux inconnu"
+},
+"R": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t4w1": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 18,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"AR": {
+"status": "taux inconnu"
+},
+"SLR": {
+"status": "taux inconnu"
+},
+"HR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t25w1": {
+"edition": "Chine",
+"packCards": null,
+"boxPacks": 50,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"OR": {
+"status": "taux inconnu"
+},
+"CP": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t2w2": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 30,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"CR": {
+"status": "taux inconnu"
+},
+"OR": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t1w2": {
+"edition": "Chine",
+"packCards": null,
+"boxPacks": 36,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"OR": {
+"status": "taux inconnu"
+},
+"GP": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t4w2": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 18,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"BP": {
+"status": "taux inconnu"
+},
+"AR": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"SLR": {
+"status": "taux inconnu"
+},
+"OR": {
+"status": "taux inconnu"
+},
+"HR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"SR": {
+"status": "taux inconnu"
+},
+"R": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t3w2": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 20,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"NR": {
+"status": "taux inconnu"
+},
+"TGR": {
+"status": "taux inconnu"
+},
+"TR": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t2w3": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 30,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"CR": {
+"status": "taux inconnu"
+},
+"OR": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t1w3": {
+"edition": "Chine",
+"packCards": null,
+"boxPacks": 36,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"GP": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t3w3": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 20,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"NR": {
+"status": "taux inconnu"
+},
+"TGR": {
+"status": "taux inconnu"
+},
+"TR": {
+"status": "taux inconnu"
+},
+"SSR": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t4w3": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 18,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"BP": {
+"status": "taux inconnu"
+},
+"AR": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"SLR": {
+"status": "taux inconnu"
+},
+"OR": {
+"status": "taux inconnu"
+},
+"HR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"SR": {
+"status": "taux inconnu"
+},
+"R": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-youth-scroll": {
+"edition": "Chine",
+"packCards": null,
+"boxPacks": null,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SCR": {
+"status": "taux inconnu"
+},
+"SP": {
+"status": "taux inconnu"
+},
+"BP": {
+"status": "taux inconnu"
+},
+"CR": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t2w4": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 30,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"AR": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"CR": {
+"status": "taux inconnu"
+},
+"ZR": {
+"status": "taux inconnu"
+},
+"OR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t3w4": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 20,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"AR": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"OR": {
+"status": "taux inconnu"
+},
+"NR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+},
+"TGR": {
+"status": "taux inconnu"
+},
+"TR": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t4w4": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 18,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SE": {
+"status": "taux inconnu"
+},
+"SP": {
+"status": "taux inconnu"
+},
+"BP": {
+"status": "taux inconnu"
+},
+"AR": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"SLR": {
+"status": "taux inconnu"
+},
+"OR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"SR": {
+"status": "taux inconnu"
+},
+"R": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t1w4": {
+"edition": "Chine",
+"packCards": null,
+"boxPacks": 36,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"GP": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t2w5": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 30,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"AR": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"CR": {
+"status": "taux inconnu"
+},
+"ZR": {
+"status": "taux inconnu"
+},
+"OR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"SR": {
+"status": "taux inconnu"
+},
+"R": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t3w5": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 20,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"AR": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"OR": {
+"status": "taux inconnu"
+},
+"NR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+},
+"TGR": {
+"status": "taux inconnu"
+},
+"TR": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-heaven-earth-gift-scroll": {
+"edition": "Chine",
+"packCards": null,
+"boxPacks": null,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SV": {
+"status": "taux inconnu"
+},
+"SP": {
+"status": "taux inconnu"
+},
+"OR": {
+"status": "taux inconnu"
+},
+"HR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+},
+"SSR": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t2w6": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 30,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"AR": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"CR": {
+"status": "taux inconnu"
+},
+"ZR": {
+"status": "taux inconnu"
+},
+"OR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"SR": {
+"status": "taux inconnu"
+},
+"R": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t4w5": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 18,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SE": {
+"status": "taux inconnu"
+},
+"SP": {
+"status": "taux inconnu"
+},
+"BP": {
+"status": "taux inconnu"
+},
+"AR": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"SLR": {
+"status": "taux inconnu"
+},
+"OR": {
+"status": "taux inconnu"
+},
+"HR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-legend": {
+"edition": "Chine",
+"packCards": null,
+"boxPacks": null,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SE": {
+"status": "taux inconnu"
+},
+"SV": {
+"status": "taux inconnu"
+},
+"SP": {
+"status": "taux inconnu"
+},
+"AR": {
+"status": "taux inconnu"
+},
+"HR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t2w7": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 30,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"CR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"SR": {
+"status": "taux inconnu"
+},
+"R": {
+"status": "taux inconnu"
+}
+},
+"checks": []
+},
+"cn-t2w8": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 30,
+"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
+"openingSample": null,
+"rarities": {
+"SP": {
+"status": "taux inconnu"
+},
+"AR": {
+"status": "taux inconnu"
+},
+"MR": {
+"status": "taux inconnu"
+},
+"CR": {
+"status": "taux inconnu"
+},
+"UR": {
+"status": "taux inconnu"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"SR": {
+"status": "taux inconnu"
+},
+"R": {
+"status": "taux inconnu"
+}
+},
+"checks": []
 }
 }
