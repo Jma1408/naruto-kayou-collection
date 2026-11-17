@@ -125,3 +125,4 @@ main.sl{animation:sl .25s}main.sr{animation:sr .25s}
 .recap{opacity:0;animation:fade .4s var(--d) forwards}@keyframes fade{to{opacity:1}}
 .rw{display:flex;justify-content:space-between;padding:8px 0;border-top:1px solid #ffffff0d}
 table td{overflow-wrap:anywhere}.rt td{overflow-wrap:normal}
+td select{background:var(--bg3);color:var(--tx);border:0;border-radius:8px;height:40px;padding:0 10px}

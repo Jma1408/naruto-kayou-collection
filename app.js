@@ -175,6 +175,7 @@ const views = {
       <tr><td>Prix</td><td>${esc(m.price || (m.region === 'intl' ? 'prix public non indiqué par Kayou' : 'non trouvé'))}</td></tr>
       <tr><td>Équivalence</td><td>${tw ? `<a href="${tw.file ? '#s/' + tw.id : '#g/' + tw.id}">${esc(tw.title)}${tw.titleCn ? ' · ' + esc(tw.titleCn) : ''}</a><br><span class="mu">${esc(m.linkLabel || '')}</span>` : '<span class="mu">aucune équivalence connue</span>'}</td></tr>
       ${d && d.pack && d.pack.probabilities && d.pack.probabilities.length ? `<tr><td>Contenu officiel</td><td>${d.pack.probabilities.map(x => `${esc(x.ratio)} : ${esc(x.slots)}`).join('<br>')}</td></tr>` : ''}
+      ${TIERX(m) ? `<tr><td>Ce tier</td><td>${TIERX(m)}</td></tr>` : ''}
       ${d && d.source ? `<tr><td>Source liste</td><td class="mu">${esc(d.source)}</td></tr>` : ''}</table></section>
       ${d ? `<section class="box"><h2>Raretés</h2><div class="tw"><table class="rt"><tr><th></th><th>Nom</th><th>Cartes</th><th>Par booster</th><th>Par boîte</th></tr>${rows}</table></div>
         <p class="note">Source des taux : ${esc(o && o.source || 'aucune répartition publiée trouvée')}. ${esc(S.odds.openingData || '')}</p>
@@ -212,22 +213,30 @@ const views = {
     <section class="box"><h2>Données</h2><p class="mu">International : kayouofficial.com. Chine : ${esc(S.setsSrc)}.</p></section>`;
   },
   k() {
+    const LEX = [['R', 'Rare', 'commune'], ['SR', 'Super Rare', ''], ['SSR', 'Super Super Rare', ''], ['TR / TGR', 'Transparent (Gold) Rare', '5 ¥ seulement'], ['HR', 'Holographique Rare', '10 ¥ seulement'], ['UR', 'Ultra Rare', '3 à 5 par boîte en moyenne'], ['ZR', 'Zekkyou Rare', '2 ¥, dès la wave 4'], ['AR', 'Absolute Rare', '1 à 4 par boîte'], ['OR', 'Over Rare', '1 à 4 par boîte'], ['SLR', 'Shadow Light Rare', '10 ¥, versions noire et blanche'], ['CP', 'Character Partner', '3 ¥ (T2.5) seulement'], ['SP', 'Special Portrait', '≈ 1 boîte sur 2'], ['MR', 'Memorial Rare', '≈ 1 boîte sur 3, dès la wave 2'], ['GP', 'Gold Pack', '1 ¥, ≈ 1 boîte sur 6'], ['CR', 'Commemorative Rare', '2 ¥, ≈ 1 boîte sur 24'], ['NR', 'New Rare', '5 ¥, ≈ 1 boîte sur 24'], ['BP', 'Bonus Pack', '10 ¥, ≈ 1 boîte sur 18'], ['SE', 'Special Edition', 'tirage limité, ≈ 1 boîte sur 180 (10 ¥, waves 4-5)'], ['PTR / PU', 'Platinum Rare / Parallel Universe', 'apparues avec T4W6'], ['◇', 'version « diamant » (Ninja Age)', 'plus rare que la version simple'], ['NRSS-…', 'cartes de coffrets (collector)', 'SSR < UR < AR < OR < HR < SP < SE < SV argent < SV or']];
     return `<section class="box"><h2>Tier, Wave et Yuan</h2>
-      <p>En Chine, Kayou vend Naruto en <b>Tiers</b> (niveaux de gamme) découpés en <b>Waves</b> (vagues de sortie). « T4W6 » = Tier 4, Wave 6.</p>
-      <p>Le <b>prix du booster en ¥</b> indique le niveau : plus il est cher, plus il contient de raretés hautes. Tier 1 ≈ 1 ¥, Tier 2 ≈ 2 ¥, Tier 3 ≈ 5 ¥, Tier 4 ≈ 10 ¥ (boîte de 18 boosters à 180 ¥).</p>
-      <p>Chaque Tier a son nom chinois : 阵之章 = Tier 4 (Chapter of the Array), 兵之章 = Tier 2 (Chapter of Soldiers)…</p></section>
+      <p>En Chine, Kayou range Naruto par <b>yuan</b> (prix du booster) et par <b>série</b>. En anglais on dit <b>Tier</b> et <b>Wave</b> : « T4W6 » = 10 ¥, série 6.</p>
+      <table><tr><td><b>1 ¥</b> = Tier 1</td><td>36 boosters · garanti : 1 R non brillante · exclusivité GP</td></tr>
+      <tr><td><b>2 ¥</b> = Tier 2</td><td>30 boosters · garanti : 1 SR · exclusivités CR, ZR</td></tr>
+      <tr><td><b>3 ¥</b> = Tier 2.5</td><td>50 boosters · série 1 uniquement · exclusivité CP</td></tr>
+      <tr><td><b>5 ¥</b> = Tier 3</td><td>20 boosters · garanti : 1 TR ou TGR · exclusivité NR</td></tr>
+      <tr><td><b>10 ¥</b> = Tier 4</td><td>18 boosters · garanti : 1 HR · exclusivités BP, SE, SLR</td></tr></table>
+      <p class="note">Toujours 5 cartes par booster. Plus le yuan est élevé, moins il y a de boosters par boîte, mais meilleures sont les cartes. Le chiffre du yuan est dans le cercle en haut de la boîte, la série en caractère chinois sur le bandeau du bas.</p>
+      <p>Les boîtes sortent d'usine par cartons (48 boîtes pour 1, 2 et 5 ¥ ; 36 pour 3 et 10 ¥). Kayou fixe les raretés les plus hautes par carton, d'où par exemple « 2 BP par carton de 10 ¥ » (≈ 1 boîte sur 18).</p>
+      <p>Hits moyens par boîte (hors SSR) : 2-3 en 1 ¥, 4-7 en 2 ¥, 7-10 en 3 ¥, 6-7 en 5 ¥, 7-8 en 10 ¥.</p></section>
     <section class="box"><h2>Chine ou international ?</h2>
-      <p>La gamme internationale <b>Smriti</b> (Heaven Scroll, Chapter Jin, Earth Scroll, Ninja Age) reprend souvent les illustrations d'une wave chinoise (Heaven Scroll S1 ↔ T4W6), mais avec d'autres codes, d'autres boosters (8 cartes au lieu de 5) et d'autres taux. Ce sont deux cartes différentes à collectionner, avec des prix différents.</p></section>
+      <p>La gamme internationale <b>Smriti</b> (Heaven Scroll, Chapter Jin, Earth Scroll, Ninja Age) reprend souvent les illustrations d'une wave chinoise (Heaven Scroll S1 ↔ T4W6, Chapter Jin S2 ↔ T4W7), mais avec d'autres codes, des boosters de 8 cartes au lieu de 5 et d'autres taux. Ce sont deux cartes différentes à collectionner, avec des prix différents.</p></section>
     <section class="box"><h2>Lire un code de carte</h2>
       <p class="code">NRZ06-SSR-149L3</p>
-      <table><tr><td><b>NR</b></td><td>Naruto</td></tr><tr><td><b>Z</b></td><td>la gamme : Z = 阵之章 (Tier 4), B = 兵之章 (Tier 2) ; SA / I / EA = international (Smriti, Earth Scroll)</td></tr>
-      <tr><td><b>06</b></td><td>la wave / série</td></tr><tr><td><b>SSR</b></td><td>la rareté</td></tr><tr><td><b>149</b></td><td>le numéro dans la rareté</td></tr><tr><td><b>L3</b></td><td>niveau de rareté imprimé (L1 = commune … L5 = la plus haute)</td></tr></table>
-      <p class="note">Les anciennes waves (avant T4W6 / T2W7) utilisent un code court « NR-SSR-081 », numéroté sur toute la gamme.</p></section>
-    <section class="box"><h2>Lexique des raretés</h2><table>
-      ${[['R', 'Rare — commune'], ['SR', 'Super Rare'], ['SSR', 'Super Secret / Super Super Rare'], ['UR', 'Ultra Rare'], ['HR', 'Hologram Rare — holo (Tier 4)'], ['PTR', 'Platinum Rare — affiches'], ['PU', 'Parallel Universe'], ['AR', 'Art Rare'], ['MR', 'Miracle Rare'], ['BP', 'Brush Rare (pinceau)'], ['SP', 'Special'], ['CR', 'Cosplay / Character Rare'], ['OR', 'Origin Rare'], ['ZR', 'Z Rare (Tier 2)'], ['SLR', 'Super Limited Rare'], ['NR', 'Ninja Rare / arc-en-ciel'], ['TR / TGR', 'Transparent / Transparent Gold Rare (Tier 3)'], ['GP', 'Gold Plated (Tier 1)'], ['SE', 'Scenario-E / Special Edition — la plus haute'], ['◇', 'variante « diamant » d\'une rareté']].map(([a, b]) => `<tr><td><b>${a}</b></td><td>${b}</td></tr>`).join('')}</table>
-      <p class="note">Les noms complets varient selon les sets et les guides ; ceux de l'international viennent de kayouofficial.com.</p></section>`;
+      <table><tr><td><b>NR</b></td><td>Naruto</td></tr><tr><td><b>Z</b></td><td>la gamme : Z = 10 ¥ (阵之章, Tier 4), B = 2 ¥ (兵之章, Tier 2) ; SA / I / EA = international</td></tr>
+      <tr><td><b>06</b></td><td>la série (wave)</td></tr><tr><td><b>SSR</b></td><td>la rareté</td></tr><tr><td><b>149</b></td><td>le numéro dans la rareté</td></tr><tr><td><b>L3</b></td><td>niveau de rareté imprimé (L1 = commune … L5 = la plus haute)</td></tr></table>
+      <p class="note">Avant T4W6 / T2W7, les cartes portent un code court (« UR-013 », « NR-SP-016 ») numéroté sur toute la gamme, toutes boîtes confondues.</p></section>
+    <section class="box"><h2>Lexique des raretés</h2><table>${LEX.map(([a, b, c]) => `<tr><td><b>${a}</b></td><td>${b}${c ? `<br><span class="mu">${c}</span>` : ''}</td></tr>`).join('')}</table>
+      <p class="note">Noms, exclusivités et moyennes : guides de la boutique Narutopia (narutopia.fr) ; raretés internationales : kayouofficial.com. Les moyennes sont indicatives, une boîte peut en contenir plus ou moins.</p></section>`;
   }
 };
+const YUAN = { 1: ['1 ¥', 36, 'R non brillante', 'GP'], 2: ['2 ¥', 30, '1 SR', 'CR (+ ZR dès la wave 4)'], 25: ['3 ¥', 50, 'SR minimum', 'CP'], 3: ['5 ¥', 20, '1 TR ou TGR', 'NR (+ TR/TGR)'], 4: ['10 ¥', 18, '1 HR (waves 1-5)', 'BP, SE (+ HR, SLR)'] };
+const TIERX = m => { const t = (m.id.match(/^cn-t(\d+)w/) || [])[1]; const y = YUAN[t]; return y ? `${y[0]} le booster · ${y[1]} boosters de 5 cartes par boîte · garanti par booster : ${y[2]} · exclusivités : ${y[3]} <span class="mu">(Narutopia)</span>` : ''; };
 const PK = d => (d.pack && d.pack.cards) || 8;
 const tile = c => `<div class="c ${land(c) ? 'l' : ''} ${qty(c) ? '' : 'no'}" data-k="${esc(c.set + '/' + c.code)}">${img(c)}${qty(c) > 1 ? `<span class="q">×${qty(c)}</span>` : ''}</div>`;
 const byKey = k => { const i = k.indexOf('/'), s = k.slice(0, i), c = k.slice(i + 1); return S.data[s] && S.data[s].cards.find(x => x.code === c); };
@@ -237,14 +246,14 @@ function refreshTile(el) { const n = document.createElement('div'); n.innerHTML 
 function rateOf(id, rar) {
   const o = S.odds[id], r = o && o.rarities && o.rarities[rar], B = o && o.boxPacks;
   if (!r || (!r.k && !r.min)) return { booster: 'taux inconnu', box: '—', r };
-  if (r.k) return { booster: r.k >= 1 ? `${f1(r.k)} (garanti)` : `1 sur ${f1(1 / r.k)}`, box: `≈ ${f1(r.k * B)}`, r };
+  if (r.k) return { booster: r.k >= 1 ? `${f1(r.k)} (garanti)` : `1 sur ${f1(1 / r.k)}`, box: r.range ? r.range.replace(' par boîte', '') : `≈ ${f1(r.k * B)}`, r };
   return { booster: `≥ ${f1(r.min)}`, box: `≥ ${f1(r.min * B)}`, r };
 }
 function oddsLine(c) {
   const x = rateOf(c.set, c.rarity), n = rarOf(c).count, r = x.r;
   if (!r || (!r.k && !r.min)) return `<p><b>${esc(c.rarity)}</b> : taux inconnu</p>`;
   const k = r.k || r.min, pc = 1 - Math.pow(1 - 1 / n, k);
-  return `<p><b>${esc(c.rarity)}</b> : ${x.booster} par booster · ${x.box} par boîte${r.k ? '' : ' (minimum officiel)'}</p><p class="note">Cette carte : ${r.k ? '' : 'au moins '}1 chance sur ${f1(1 / pc)} boosters.</p>`;
+  return `<p><b>${esc(c.rarity)}</b> : ${x.booster} par booster · ${x.box} par boîte${r.k ? '' : ' (minimum)'}${r.status && r.status.startsWith('moyenne') ? ' <span class="mu">(moyenne)</span>' : ''}</p><p class="note">Cette carte : ${r.k ? '' : 'au moins '}1 chance sur ${f1(1 / pc)} boosters.</p>`;
 }
 
 /* appui court = ouvrir, appui long = +1 */

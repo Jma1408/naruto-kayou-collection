@@ -1,6 +1,6 @@
 {
 "method": "« 1 chance sur X boosters » = 1 / (cartes de la rareté attendues par booster), calculé uniquement à partir des formules officielles Kayou. Si une rareté partage une case avec d'autres et qu'aucun comptage d'ouvertures publié n'existe, le taux est « inconnu ». Carte précise = taux de la rareté ÷ nombre de cartes de la rareté.",
-"openingData": "Aucun comptage d'ouvertures de boîtes publié trouvé (recherche web, nov. 2026) : échantillon = 0 boîte.",
+"openingData": "Taux Chine : moyennes publiées par Narutopia sur les milliers de produits ouverts par la boutique (pas de taille d'échantillon précise). International : aucun comptage d'ouvertures publié trouvé.",
 "heaven-scroll": {
 "edition": "Version A",
 "packCards": 8,
@@ -974,134 +974,180 @@
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 18,
-"source": "Aucune formule officielle publiée pour T4W6 ; structure Tier 4 (1HR+2R+1SR+1 SSR ou plus) selon Capsule Corp Gear, non vérifiée pour cette wave",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SE": {
-"status": "taux inconnu"
+"UR": {
+"k": 0.22222,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
 },
 "SP": {
-"status": "taux inconnu"
-},
-"BP": {
-"status": "taux inconnu"
+"k": 0.02778,
+"status": "moyenne Narutopia",
+"range": null
 },
 "MR": {
-"status": "taux inconnu"
+"k": 0.01852,
+"status": "moyenne Narutopia",
+"range": null
 },
-"PU": {
-"status": "taux inconnu"
+"BP": {
+"k": 0.00309,
+"status": "moyenne Narutopia",
+"range": null
 },
-"PTR": {
-"status": "taux inconnu"
-},
-"UR": {
-"status": "taux inconnu"
-},
-"SSR": {
+"R": {
 "status": "taux inconnu"
 },
 "SR": {
 "status": "taux inconnu"
 },
-"R": {
+"SSR": {
+"status": "taux inconnu"
+},
+"PTR": {
+"status": "taux inconnu"
+},
+"SE": {
+"status": "taux inconnu"
+},
+"PU": {
 "status": "taux inconnu"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 18 = 90 cartes ; cartes chiffrées par les moyennes : ≈ 4.9 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t4w7": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 18,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte (fiches Qiandao, recherches web) ; structure Tier 4 « 1 HR + 2 R + 1 SR + 1 SSR ou plus » selon Capsule Corp Gear, non vérifiée",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SE": {
-"status": "taux inconnu"
-},
-"SP": {
-"status": "taux inconnu"
-},
-"BP": {
-"status": "taux inconnu"
+"UR": {
+"k": 0.22222,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
 },
 "AR": {
-"status": "taux inconnu"
+"k": 0.13889,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"SP": {
+"k": 0.02778,
+"status": "moyenne Narutopia",
+"range": null
 },
 "MR": {
+"k": 0.01852,
+"status": "moyenne Narutopia",
+"range": null
+},
+"BP": {
+"k": 0.00309,
+"status": "moyenne Narutopia",
+"range": null
+},
+"R": {
 "status": "taux inconnu"
 },
-"PU": {
+"SR": {
+"status": "taux inconnu"
+},
+"SSR": {
 "status": "taux inconnu"
 },
 "PTR": {
 "status": "taux inconnu"
 },
-"UR": {
+"SE": {
 "status": "taux inconnu"
 },
-"SSR": {
-"status": "taux inconnu"
-},
-"SR": {
-"status": "taux inconnu"
-},
-"R": {
+"PU": {
 "status": "taux inconnu"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 18 = 90 cartes ; cartes chiffrées par les moyennes : ≈ 7.4 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t1w1": {
 "edition": "Chine",
-"packCards": null,
+"packCards": 5,
 "boxPacks": 36,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SP": {
-"status": "taux inconnu"
-},
 "UR": {
-"status": "taux inconnu"
+"k": 0.11111,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
+},
+"SP": {
+"k": 0.01389,
+"status": "moyenne Narutopia",
+"range": null
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 36 = 180 cartes ; cartes chiffrées par les moyennes : ≈ 4.5 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t2w1": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 30,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SP": {
-"status": "taux inconnu"
-},
 "UR": {
-"status": "taux inconnu"
+"k": 0.13333,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
+},
+"SP": {
+"k": 0.01667,
+"status": "moyenne Narutopia",
+"range": null
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 30 = 150 cartes ; cartes chiffrées par les moyennes : ≈ 4.5 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t3w1": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 20,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SP": {
-"status": "taux inconnu"
+"UR": {
+"k": 0.2,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
 },
 "AR": {
-"status": "taux inconnu"
+"k": 0.125,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
 },
-"UR": {
-"status": "taux inconnu"
+"SP": {
+"k": 0.025,
+"status": "moyenne Narutopia",
+"range": null
 },
 "TGR": {
+"status": "taux inconnu"
+},
+"R": {
+"status": "taux inconnu"
+},
+"SR": {
 "status": "taux inconnu"
 },
 "TR": {
@@ -1109,159 +1155,215 @@
 },
 "SSR": {
 "status": "taux inconnu"
-},
-"SR": {
-"status": "taux inconnu"
-},
-"R": {
-"status": "taux inconnu"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 20 = 100 cartes ; cartes chiffrées par les moyennes : ≈ 7.0 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t4w1": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 18,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SP": {
-"status": "taux inconnu"
+"UR": {
+"k": 0.22222,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
 },
 "AR": {
-"status": "taux inconnu"
+"k": 0.13889,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"SP": {
+"k": 0.02778,
+"status": "moyenne Narutopia",
+"range": null
 },
 "SLR": {
-"status": "taux inconnu"
+"k": 0.11111,
+"status": "moyenne Narutopia",
+"range": "0 à 4 par boîte"
 },
 "HR": {
-"status": "taux inconnu"
-},
-"UR": {
-"status": "taux inconnu"
+"k": 1,
+"status": "garanti (Narutopia : 1 HR par booster)"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 18 = 90 cartes ; cartes chiffrées par les moyennes : ≈ 27.0 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t25w1": {
 "edition": "Chine",
-"packCards": null,
+"packCards": 5,
 "boxPacks": 50,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SP": {
-"status": "taux inconnu"
-},
 "OR": {
-"status": "taux inconnu"
+"k": 0.05,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"SP": {
+"k": 0.01,
+"status": "moyenne Narutopia",
+"range": null
 },
 "CP": {
-"status": "taux inconnu"
+"k": 0.03,
+"status": "moyenne Narutopia",
+"range": "1 à 2 par boîte"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 50 = 250 cartes ; cartes chiffrées par les moyennes : ≈ 4.5 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t2w2": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 30,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
+"OR": {
+"k": 0.08333,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
 "SP": {
-"status": "taux inconnu"
+"k": 0.01667,
+"status": "moyenne Narutopia",
+"range": null
 },
 "MR": {
-"status": "taux inconnu"
+"k": 0.01111,
+"status": "moyenne Narutopia",
+"range": null
 },
 "CR": {
-"status": "taux inconnu"
-},
-"OR": {
-"status": "taux inconnu"
+"k": 0.00139,
+"status": "moyenne Narutopia",
+"range": null
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 30 = 150 cartes ; cartes chiffrées par les moyennes : ≈ 3.4 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t1w2": {
 "edition": "Chine",
-"packCards": null,
+"packCards": 5,
 "boxPacks": 36,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
+"OR": {
+"k": 0.06944,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
 "SP": {
-"status": "taux inconnu"
+"k": 0.01389,
+"status": "moyenne Narutopia",
+"range": null
 },
 "MR": {
-"status": "taux inconnu"
-},
-"OR": {
-"status": "taux inconnu"
+"k": 0.00926,
+"status": "moyenne Narutopia",
+"range": null
 },
 "GP": {
-"status": "taux inconnu"
+"k": 0.00463,
+"status": "moyenne Narutopia",
+"range": null
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 36 = 180 cartes ; cartes chiffrées par les moyennes : ≈ 3.5 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t4w2": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 18,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SP": {
-"status": "taux inconnu"
-},
-"BP": {
-"status": "taux inconnu"
+"UR": {
+"k": 0.22222,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
 },
 "AR": {
-"status": "taux inconnu"
-},
-"MR": {
-"status": "taux inconnu"
-},
-"SLR": {
-"status": "taux inconnu"
+"k": 0.13889,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
 },
 "OR": {
-"status": "taux inconnu"
+"k": 0.13889,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"SP": {
+"k": 0.02778,
+"status": "moyenne Narutopia",
+"range": null
+},
+"MR": {
+"k": 0.01852,
+"status": "moyenne Narutopia",
+"range": null
+},
+"SLR": {
+"k": 0.11111,
+"status": "moyenne Narutopia",
+"range": "0 à 4 par boîte"
+},
+"BP": {
+"k": 0.00309,
+"status": "moyenne Narutopia",
+"range": null
 },
 "HR": {
-"status": "taux inconnu"
+"k": 1,
+"status": "garanti (Narutopia : 1 HR par booster)"
 },
-"UR": {
-"status": "taux inconnu"
-},
-"SSR": {
+"R": {
 "status": "taux inconnu"
 },
 "SR": {
 "status": "taux inconnu"
 },
-"R": {
+"SSR": {
 "status": "taux inconnu"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 18 = 90 cartes ; cartes chiffrées par les moyennes : ≈ 29.9 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t3w2": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 20,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
 "SP": {
-"status": "taux inconnu"
+"k": 0.025,
+"status": "moyenne Narutopia",
+"range": null
 },
 "NR": {
-"status": "taux inconnu"
+"k": 0.00208,
+"status": "moyenne Narutopia",
+"range": null
 },
 "TGR": {
 "status": "taux inconnu"
@@ -1270,58 +1372,80 @@
 "status": "taux inconnu"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 20 = 100 cartes ; cartes chiffrées par les moyennes : ≈ 0.5 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t2w3": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 30,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
+"OR": {
+"k": 0.08333,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
 "SP": {
-"status": "taux inconnu"
+"k": 0.01667,
+"status": "moyenne Narutopia",
+"range": null
 },
 "MR": {
-"status": "taux inconnu"
+"k": 0.01111,
+"status": "moyenne Narutopia",
+"range": null
 },
 "CR": {
-"status": "taux inconnu"
-},
-"OR": {
-"status": "taux inconnu"
+"k": 0.00139,
+"status": "moyenne Narutopia",
+"range": null
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 30 = 150 cartes ; cartes chiffrées par les moyennes : ≈ 3.4 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t1w3": {
 "edition": "Chine",
-"packCards": null,
+"packCards": 5,
 "boxPacks": 36,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
 "SP": {
-"status": "taux inconnu"
+"k": 0.01389,
+"status": "moyenne Narutopia",
+"range": null
 },
 "GP": {
-"status": "taux inconnu"
+"k": 0.00463,
+"status": "moyenne Narutopia",
+"range": null
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 36 = 180 cartes ; cartes chiffrées par les moyennes : ≈ 0.7 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t3w3": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 20,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
 "SP": {
-"status": "taux inconnu"
+"k": 0.025,
+"status": "moyenne Narutopia",
+"range": null
 },
 "NR": {
-"status": "taux inconnu"
+"k": 0.00208,
+"status": "moyenne Narutopia",
+"range": null
 },
 "TGR": {
 "status": "taux inconnu"
@@ -1333,50 +1457,69 @@
 "status": "taux inconnu"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 20 = 100 cartes ; cartes chiffrées par les moyennes : ≈ 0.5 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t4w3": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 18,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SP": {
-"status": "taux inconnu"
-},
-"BP": {
-"status": "taux inconnu"
+"UR": {
+"k": 0.22222,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
 },
 "AR": {
-"status": "taux inconnu"
-},
-"MR": {
-"status": "taux inconnu"
-},
-"SLR": {
-"status": "taux inconnu"
+"k": 0.13889,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
 },
 "OR": {
-"status": "taux inconnu"
+"k": 0.13889,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"SP": {
+"k": 0.02778,
+"status": "moyenne Narutopia",
+"range": null
+},
+"MR": {
+"k": 0.01852,
+"status": "moyenne Narutopia",
+"range": null
+},
+"SLR": {
+"k": 0.11111,
+"status": "moyenne Narutopia",
+"range": "0 à 4 par boîte"
+},
+"BP": {
+"k": 0.00309,
+"status": "moyenne Narutopia",
+"range": null
 },
 "HR": {
-"status": "taux inconnu"
+"k": 1,
+"status": "garanti (Narutopia : 1 HR par booster)"
 },
-"UR": {
-"status": "taux inconnu"
-},
-"SSR": {
+"R": {
 "status": "taux inconnu"
 },
 "SR": {
 "status": "taux inconnu"
 },
-"R": {
+"SSR": {
 "status": "taux inconnu"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 18 = 90 cartes ; cartes chiffrées par les moyennes : ≈ 29.9 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-youth-scroll": {
 "edition": "Chine",
@@ -1404,57 +1547,83 @@
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 30,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SP": {
-"status": "taux inconnu"
+"UR": {
+"k": 0.13333,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
 },
 "AR": {
-"status": "taux inconnu"
+"k": 0.08333,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"OR": {
+"k": 0.08333,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"SP": {
+"k": 0.01667,
+"status": "moyenne Narutopia",
+"range": null
 },
 "MR": {
-"status": "taux inconnu"
+"k": 0.01111,
+"status": "moyenne Narutopia",
+"range": null
 },
 "CR": {
-"status": "taux inconnu"
+"k": 0.00139,
+"status": "moyenne Narutopia",
+"range": null
 },
 "ZR": {
 "status": "taux inconnu"
-},
-"OR": {
-"status": "taux inconnu"
-},
-"UR": {
-"status": "taux inconnu"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 30 = 150 cartes ; cartes chiffrées par les moyennes : ≈ 9.9 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t3w4": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 20,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SP": {
-"status": "taux inconnu"
+"UR": {
+"k": 0.2,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
 },
 "AR": {
-"status": "taux inconnu"
-},
-"MR": {
-"status": "taux inconnu"
+"k": 0.125,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
 },
 "OR": {
-"status": "taux inconnu"
+"k": 0.125,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"SP": {
+"k": 0.025,
+"status": "moyenne Narutopia",
+"range": null
+},
+"MR": {
+"k": 0.01667,
+"status": "moyenne Narutopia",
+"range": null
 },
 "NR": {
-"status": "taux inconnu"
-},
-"UR": {
-"status": "taux inconnu"
+"k": 0.00208,
+"status": "moyenne Narutopia",
+"range": null
 },
 "TGR": {
 "status": "taux inconnu"
@@ -1463,131 +1632,184 @@
 "status": "taux inconnu"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 20 = 100 cartes ; cartes chiffrées par les moyennes : ≈ 9.9 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t4w4": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 18,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SE": {
-"status": "taux inconnu"
-},
-"SP": {
-"status": "taux inconnu"
-},
-"BP": {
-"status": "taux inconnu"
+"UR": {
+"k": 0.22222,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
 },
 "AR": {
-"status": "taux inconnu"
-},
-"MR": {
-"status": "taux inconnu"
-},
-"SLR": {
-"status": "taux inconnu"
+"k": 0.13889,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
 },
 "OR": {
-"status": "taux inconnu"
+"k": 0.13889,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
 },
-"UR": {
-"status": "taux inconnu"
+"SP": {
+"k": 0.02778,
+"status": "moyenne Narutopia",
+"range": null
 },
-"SSR": {
+"MR": {
+"k": 0.01852,
+"status": "moyenne Narutopia",
+"range": null
+},
+"SLR": {
+"k": 0.11111,
+"status": "moyenne Narutopia",
+"range": "0 à 4 par boîte"
+},
+"BP": {
+"k": 0.00309,
+"status": "moyenne Narutopia",
+"range": null
+},
+"SE": {
+"k": 0.00031,
+"status": "moyenne Narutopia",
+"range": null
+},
+"R": {
 "status": "taux inconnu"
 },
 "SR": {
 "status": "taux inconnu"
 },
-"R": {
+"SSR": {
 "status": "taux inconnu"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 18 = 90 cartes ; cartes chiffrées par les moyennes : ≈ 11.9 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t1w4": {
 "edition": "Chine",
-"packCards": null,
+"packCards": 5,
 "boxPacks": 36,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
 "SP": {
-"status": "taux inconnu"
+"k": 0.01389,
+"status": "moyenne Narutopia",
+"range": null
 },
 "GP": {
-"status": "taux inconnu"
+"k": 0.00463,
+"status": "moyenne Narutopia",
+"range": null
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 36 = 180 cartes ; cartes chiffrées par les moyennes : ≈ 0.7 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t2w5": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 30,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SP": {
-"status": "taux inconnu"
+"UR": {
+"k": 0.13333,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
 },
 "AR": {
-"status": "taux inconnu"
+"k": 0.08333,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"OR": {
+"k": 0.08333,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"SP": {
+"k": 0.01667,
+"status": "moyenne Narutopia",
+"range": null
 },
 "MR": {
-"status": "taux inconnu"
+"k": 0.01111,
+"status": "moyenne Narutopia",
+"range": null
 },
 "CR": {
+"k": 0.00139,
+"status": "moyenne Narutopia",
+"range": null
+},
+"SR": {
+"min": 1,
+"status": "minimum (Narutopia : 1 SR assurée par booster)"
+},
+"R": {
 "status": "taux inconnu"
 },
 "ZR": {
 "status": "taux inconnu"
 },
-"OR": {
-"status": "taux inconnu"
-},
-"UR": {
-"status": "taux inconnu"
-},
 "SSR": {
-"status": "taux inconnu"
-},
-"SR": {
-"status": "taux inconnu"
-},
-"R": {
 "status": "taux inconnu"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 30 = 150 cartes ; cartes chiffrées par les moyennes : ≈ 39.9 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t3w5": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 20,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SP": {
-"status": "taux inconnu"
+"UR": {
+"k": 0.2,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
 },
 "AR": {
-"status": "taux inconnu"
-},
-"MR": {
-"status": "taux inconnu"
+"k": 0.125,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
 },
 "OR": {
-"status": "taux inconnu"
+"k": 0.125,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"SP": {
+"k": 0.025,
+"status": "moyenne Narutopia",
+"range": null
+},
+"MR": {
+"k": 0.01667,
+"status": "moyenne Narutopia",
+"range": null
 },
 "NR": {
-"status": "taux inconnu"
-},
-"UR": {
-"status": "taux inconnu"
+"k": 0.00208,
+"status": "moyenne Narutopia",
+"range": null
 },
 "TGR": {
 "status": "taux inconnu"
@@ -1596,7 +1818,9 @@
 "status": "taux inconnu"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 20 = 100 cartes ; cartes chiffrées par les moyennes : ≈ 9.9 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-heaven-earth-gift-scroll": {
 "edition": "Chine",
@@ -1630,78 +1854,112 @@
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 30,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SP": {
-"status": "taux inconnu"
+"UR": {
+"k": 0.13333,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
 },
 "AR": {
-"status": "taux inconnu"
+"k": 0.08333,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"OR": {
+"k": 0.08333,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"SP": {
+"k": 0.01667,
+"status": "moyenne Narutopia",
+"range": null
 },
 "MR": {
-"status": "taux inconnu"
+"k": 0.01111,
+"status": "moyenne Narutopia",
+"range": null
 },
 "CR": {
+"k": 0.00139,
+"status": "moyenne Narutopia",
+"range": null
+},
+"SR": {
+"min": 1,
+"status": "minimum (Narutopia : 1 SR assurée par booster)"
+},
+"R": {
 "status": "taux inconnu"
 },
 "ZR": {
 "status": "taux inconnu"
 },
-"OR": {
-"status": "taux inconnu"
-},
-"UR": {
-"status": "taux inconnu"
-},
 "SSR": {
-"status": "taux inconnu"
-},
-"SR": {
-"status": "taux inconnu"
-},
-"R": {
 "status": "taux inconnu"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 30 = 150 cartes ; cartes chiffrées par les moyennes : ≈ 39.9 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t4w5": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 18,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SE": {
-"status": "taux inconnu"
-},
-"SP": {
-"status": "taux inconnu"
-},
-"BP": {
-"status": "taux inconnu"
+"UR": {
+"k": 0.22222,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
 },
 "AR": {
-"status": "taux inconnu"
-},
-"MR": {
-"status": "taux inconnu"
-},
-"SLR": {
-"status": "taux inconnu"
+"k": 0.13889,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
 },
 "OR": {
-"status": "taux inconnu"
+"k": 0.13889,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"SP": {
+"k": 0.02778,
+"status": "moyenne Narutopia",
+"range": null
+},
+"MR": {
+"k": 0.01852,
+"status": "moyenne Narutopia",
+"range": null
+},
+"SLR": {
+"k": 0.11111,
+"status": "moyenne Narutopia",
+"range": "0 à 4 par boîte"
+},
+"BP": {
+"k": 0.00309,
+"status": "moyenne Narutopia",
+"range": null
+},
+"SE": {
+"k": 0.00031,
+"status": "moyenne Narutopia",
+"range": null
 },
 "HR": {
-"status": "taux inconnu"
-},
-"UR": {
-"status": "taux inconnu"
+"k": 1,
+"status": "garanti (Narutopia : 1 HR par booster)"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 18 = 90 cartes ; cartes chiffrées par les moyennes : ≈ 29.9 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-legend": {
 "edition": "Chine",
@@ -1735,65 +1993,185 @@
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 30,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
+"UR": {
+"k": 0.13333,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
+},
 "SP": {
-"status": "taux inconnu"
+"k": 0.01667,
+"status": "moyenne Narutopia",
+"range": null
 },
 "MR": {
-"status": "taux inconnu"
+"k": 0.01111,
+"status": "moyenne Narutopia",
+"range": null
 },
 "CR": {
-"status": "taux inconnu"
+"k": 0.00139,
+"status": "moyenne Narutopia",
+"range": null
 },
-"UR": {
+"SR": {
+"min": 1,
+"status": "minimum (Narutopia : 1 SR assurée par booster)"
+},
+"R": {
 "status": "taux inconnu"
 },
 "SSR": {
 "status": "taux inconnu"
-},
-"SR": {
-"status": "taux inconnu"
-},
-"R": {
-"status": "taux inconnu"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 30 = 150 cartes ; cartes chiffrées par les moyennes : ≈ 34.9 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 },
 "cn-t2w8": {
 "edition": "Chine",
 "packCards": 5,
 "boxPacks": 30,
-"source": "Aucune répartition par rareté publiée trouvée pour cette boîte",
-"openingSample": null,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
 "rarities": {
-"SP": {
-"status": "taux inconnu"
+"UR": {
+"k": 0.13333,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
 },
 "AR": {
-"status": "taux inconnu"
+"k": 0.08333,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"SP": {
+"k": 0.01667,
+"status": "moyenne Narutopia",
+"range": null
 },
 "MR": {
-"status": "taux inconnu"
+"k": 0.01111,
+"status": "moyenne Narutopia",
+"range": null
 },
 "CR": {
-"status": "taux inconnu"
+"k": 0.00139,
+"status": "moyenne Narutopia",
+"range": null
 },
-"UR": {
+"SR": {
+"min": 1,
+"status": "minimum (Narutopia : 1 SR assurée par booster)"
+},
+"R": {
 "status": "taux inconnu"
 },
 "SSR": {
+"status": "taux inconnu"
+}
+},
+"checks": [
+"Boîte : 5 × 30 = 150 cartes ; cartes chiffrées par les moyennes : ≈ 37.4 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
+},
+"cn-t4w8": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 18,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
+"rarities": {
+"UR": {
+"k": 0.22222,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
+},
+"AR": {
+"k": 0.13889,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"MR": {
+"k": 0.01852,
+"status": "moyenne Narutopia",
+"range": null
+},
+"BP": {
+"k": 0.00309,
+"status": "moyenne Narutopia",
+"range": null
+},
+"HR": {
+"k": 1,
+"status": "garanti (Narutopia : 1 HR par booster)"
+},
+"R": {
+"status": "taux inconnu"
+},
+"UAR": {
 "status": "taux inconnu"
 },
 "SR": {
 "status": "taux inconnu"
 },
-"R": {
+"SSR": {
+"status": "taux inconnu"
+},
+"SE": {
 "status": "taux inconnu"
 }
 },
-"checks": []
+"checks": [
+"Boîte : 5 × 18 = 90 cartes ; cartes chiffrées par les moyennes : ≈ 24.9 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
+},
+"cn-t2w9": {
+"edition": "Chine",
+"packCards": 5,
+"boxPacks": 30,
+"source": "Narutopia, « Taux de drop des raretés » et « Séries et Yuan » (moyennes constatées sur leurs ouvertures, narutopia.fr), relevé le 2026-11-17",
+"openingSample": "moyennes Narutopia (échantillon non chiffré)",
+"rarities": {
+"UR": {
+"k": 0.13333,
+"status": "moyenne Narutopia",
+"range": "3 à 5 par boîte"
+},
+"AR": {
+"k": 0.08333,
+"status": "moyenne Narutopia",
+"range": "1 à 4 par boîte"
+},
+"MR": {
+"k": 0.01111,
+"status": "moyenne Narutopia",
+"range": null
+},
+"CR": {
+"k": 0.00139,
+"status": "moyenne Narutopia",
+"range": null
+},
+"SR": {
+"min": 1,
+"status": "minimum (Narutopia : 1 SR assurée par booster)"
+},
+"URA": {
+"status": "taux inconnu"
+},
+"R": {
+"status": "taux inconnu"
+},
+"SSR": {
+"status": "taux inconnu"
+}
+},
+"checks": [
+"Boîte : 5 × 30 = 150 cartes ; cartes chiffrées par les moyennes : ≈ 36.9 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
+]
 }
 }

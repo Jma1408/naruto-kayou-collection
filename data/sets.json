@@ -138,8 +138,13 @@
 "sub": "Boîte NR-RD-Z008",
 "price": "10 ¥ / booster",
 "pack": "5 cartes/booster · 18 boosters/boîte",
-"status": "wip",
-"titleCn": "阵之章第8弹"
+"status": "ok",
+"titleCn": "阵之章第8弹",
+"file": "data/cn-t4w8.json",
+"count": 160,
+"source": "Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"partial": false,
+"cover": "https://narutopia.fr/wp-content/uploads/2026/04/NRZ08-MR-001.webp"
 },
 {
 "id": "cn-t4w7",
@@ -156,7 +161,7 @@
 "count": 168,
 "cover": "https://treasure.qiandaocdn.com/treasure/images/fiRJcDlNSM3.png!lfit_w540_h540",
 "titleCn": "阵之章第7弹",
-"source": "Qiandao (千岛), fiches cartes « 阵之章第7弹 » (qiandao.com/spu?id=…, 168 fiches parcourues autour de l'id 877793321328632386), relevé le 2026-11-17"
+"source": "Qiandao (千岛), fiches cartes « 阵之章第7弹 » (qiandao.com/spu?id=…, 168 fiches parcourues autour de l'id 877793321328632386), relevé le 2026-11-17 ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17"
 },
 {
 "id": "cn-t4w6",
@@ -172,7 +177,7 @@
 "file": "data/cn-t4w6.json",
 "count": 158,
 "cover": "https://treasure.qiandaocdn.com/treasure/images/g8xXJQ7sm6.png!lfit_w540_h540",
-"source": "Qiandao (千岛), fiches cartes « 阵之章第6弹 » (qiandao.com/spu?id=773754890777277279 à …7436), relevé le 2026-11-17 ; noms FR/EN repris de Heaven Scroll par correspondance d'illustration",
+"source": "Qiandao (千岛), fiches cartes « 阵之章第6弹 » (qiandao.com/spu?id=773754890777277279 à …7436), relevé le 2026-11-17 ; noms FR/EN repris de Heaven Scroll par correspondance d'illustration ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
 "titleCn": "阵之章第6弹"
 },
 {
@@ -188,7 +193,8 @@
 "partial": true,
 "file": "data/cn-t4w5.json",
 "count": 85,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-61.webp"
 },
 {
 "id": "cn-t4w4",
@@ -203,7 +209,8 @@
 "partial": true,
 "file": "data/cn-t4w4.json",
 "count": 86,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-46.webp"
 },
 {
 "id": "cn-t4w3",
@@ -218,7 +225,8 @@
 "partial": true,
 "file": "data/cn-t4w3.json",
 "count": 233,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-31.webp"
 },
 {
 "id": "cn-t4w2",
@@ -233,7 +241,8 @@
 "partial": true,
 "file": "data/cn-t4w2.json",
 "count": 152,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-17.webp"
 },
 {
 "id": "cn-t4w1",
@@ -248,7 +257,8 @@
 "partial": true,
 "file": "data/cn-t4w1.json",
 "count": 63,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-5.webp"
 },
 {
 "id": "cn-t3w5",
@@ -263,7 +273,8 @@
 "partial": true,
 "file": "data/cn-t3w5.json",
 "count": 42,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-57.webp"
 },
 {
 "id": "cn-t3w4",
@@ -277,8 +288,9 @@
 "titleCn": "斗之章第4弹",
 "partial": true,
 "file": "data/cn-t3w4.json",
-"count": 42,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"count": 43,
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-39.webp"
 },
 {
 "id": "cn-t3w3",
@@ -293,7 +305,8 @@
 "partial": true,
 "file": "data/cn-t3w3.json",
 "count": 26,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-28.webp"
 },
 {
 "id": "cn-t3w2",
@@ -308,7 +321,8 @@
 "partial": true,
 "file": "data/cn-t3w2.json",
 "count": 25,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-18.webp"
 },
 {
 "id": "cn-t3w1",
@@ -323,7 +337,8 @@
 "partial": true,
 "file": "data/cn-t3w1.json",
 "count": 132,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-1.webp"
 },
 {
 "id": "cn-t25w1",
@@ -337,7 +352,8 @@
 "partial": true,
 "file": "data/cn-t25w1.json",
 "count": 30,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-12.webp"
 },
 {
 "id": "cn-t2w9",
@@ -347,8 +363,13 @@
 "sub": "Boîte NR-CC-B009",
 "price": "2 ¥ / booster",
 "pack": "5 cartes/booster · 30 boosters/boîte",
-"status": "wip",
-"titleCn": "兵之章第9弹"
+"status": "ok",
+"titleCn": "兵之章第9弹",
+"file": "data/cn-t2w9.json",
+"count": 132,
+"source": "Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"partial": false,
+"cover": "https://narutopia.fr/wp-content/uploads/2026/03/NRB09-MR-001.webp"
 },
 {
 "id": "cn-t2w8",
@@ -360,10 +381,11 @@
 "pack": "5 cartes/booster · 30 boosters/boîte",
 "status": "ok",
 "titleCn": "兵之章第8弹",
-"partial": true,
+"partial": false,
 "file": "data/cn-t2w8.json",
 "count": 131,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2026/03/NRB08-SP-001.webp"
 },
 {
 "id": "cn-t2w7",
@@ -378,7 +400,8 @@
 "partial": true,
 "file": "data/cn-t2w7.json",
 "count": 122,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2024/11/NRB07-SP-074L5.webp"
 },
 {
 "id": "cn-t2w6",
@@ -393,7 +416,8 @@
 "partial": true,
 "file": "data/cn-t2w6.json",
 "count": 78,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-66.webp"
 },
 {
 "id": "cn-t2w5",
@@ -408,7 +432,8 @@
 "partial": true,
 "file": "data/cn-t2w5.json",
 "count": 94,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-51.webp"
 },
 {
 "id": "cn-t2w4",
@@ -423,7 +448,8 @@
 "partial": true,
 "file": "data/cn-t2w4.json",
 "count": 52,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-40.webp"
 },
 {
 "id": "cn-t2w3",
@@ -438,7 +464,8 @@
 "partial": true,
 "file": "data/cn-t2w3.json",
 "count": 22,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-24.webp"
 },
 {
 "id": "cn-t2w2",
@@ -453,7 +480,8 @@
 "partial": true,
 "file": "data/cn-t2w2.json",
 "count": 14,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-3.webp"
 },
 {
 "id": "cn-t2w1",
@@ -468,7 +496,8 @@
 "partial": true,
 "file": "data/cn-t2w1.json",
 "count": 11,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-3.webp"
 },
 {
 "id": "cn-t1w4",
@@ -483,7 +512,8 @@
 "partial": true,
 "file": "data/cn-t1w4.json",
 "count": 10,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-55.webp"
 },
 {
 "id": "cn-t1w3",
@@ -498,7 +528,8 @@
 "partial": true,
 "file": "data/cn-t1w3.json",
 "count": 10,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-26.webp"
 },
 {
 "id": "cn-t1w2",
@@ -513,7 +544,8 @@
 "partial": true,
 "file": "data/cn-t1w2.json",
 "count": 17,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-14.webp"
 },
 {
 "id": "cn-t1w1",
@@ -528,7 +560,8 @@
 "partial": true,
 "file": "data/cn-t1w1.json",
 "count": 9,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-2.webp"
 },
 {
 "id": "cn-ninja-age-box",
@@ -552,7 +585,8 @@
 "partial": true,
 "file": "data/cn-youth-scroll.json",
 "count": 12,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-35.webp"
 },
 {
 "id": "cn-heaven-earth-gift-scroll",
@@ -566,7 +600,8 @@
 "partial": true,
 "file": "data/cn-heaven-earth-gift-scroll.json",
 "count": 41,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/06/SP-7.webp"
 },
 {
 "id": "cn-coffret-nouvel-an",
@@ -587,7 +622,8 @@
 "partial": true,
 "file": "data/cn-legend.json",
 "count": 36,
-"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées."
+"source": "Checklist FansTradingCards « KAYOU Naruto Box Checklist » (fanstradingcards.com/blogs/checklist/kayou-naruto-box-list) : plages de numéros par rareté, sans noms ni images. Liste partielle : les raretés communes déjà sorties dans une boîte précédente n'y sont pas répétées. ; Narutopia (narutopia.fr/liste-des-cartes-naruto-kayou, pages par rareté), relevé le 2026-11-17",
+"cover": "https://narutopia.fr/wp-content/uploads/2023/08/NRSS-SP-004.webp"
 }
 ]
 }
