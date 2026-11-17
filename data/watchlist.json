@@ -1,0 +1,2022 @@
+{
+"rule": "Séries internationales ; raretés strictement au-dessus de UR (ordre officiel de chaque série, sans PTR/HR qui sont garanties dans chaque booster ; Ninja Age : ordre Narutopia), ◇ inclus.",
+"generated": "2026-11-18",
+"cards": [
+{
+"set": "heaven-scroll",
+"code": "NRSA01-SE-001",
+"name": "Sasuke Uchiha",
+"rarity": "SE",
+"q": "NRSA01-SE-001 Sasuke Uchiha"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-SE-002",
+"name": "Naruto Uzumaki",
+"rarity": "SE",
+"q": "NRSA01-SE-002 Naruto Uzumaki"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-SE-003",
+"name": "Zabuza Momochi",
+"rarity": "SE",
+"q": "NRSA01-SE-003 Zabuza Momochi"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-SE-004",
+"name": "Haku",
+"rarity": "SE",
+"q": "NRSA01-SE-004 Haku"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-SP-001",
+"name": "Naruto Uzumaki",
+"rarity": "SP",
+"q": "NRSA01-SP-001 Naruto Uzumaki"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-SP-002",
+"name": "Sasuke Uchiha",
+"rarity": "SP",
+"q": "NRSA01-SP-002 Sasuke Uchiha"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-SP-003",
+"name": "Sakura Haruno",
+"rarity": "SP",
+"q": "NRSA01-SP-003 Sakura Haruno"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-SP-004",
+"name": "Kakashi Hatake",
+"rarity": "SP",
+"q": "NRSA01-SP-004 Kakashi Hatake"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-BP-001",
+"name": "Naruto Uzumaki",
+"rarity": "BP",
+"q": "NRSA01-BP-001 Naruto Uzumaki"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-BP-002",
+"name": "Sasuke Uchiha",
+"rarity": "BP",
+"q": "NRSA01-BP-002 Sasuke Uchiha"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-BP-003",
+"name": "Sakura Haruno",
+"rarity": "BP",
+"q": "NRSA01-BP-003 Sakura Haruno"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-BP-004",
+"name": "Kakashi Hatake",
+"rarity": "BP",
+"q": "NRSA01-BP-004 Kakashi Hatake"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-BP-005",
+"name": "Hiruzen Sarutobi",
+"rarity": "BP",
+"q": "NRSA01-BP-005 Hiruzen Sarutobi"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-BP-006",
+"name": "Konohamaru",
+"rarity": "BP",
+"q": "NRSA01-BP-006 Konohamaru"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-BP-007",
+"name": "Haku",
+"rarity": "BP",
+"q": "NRSA01-BP-007 Haku"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-MR-001",
+"name": "Naruto Uzumaki",
+"rarity": "MR",
+"q": "NRSA01-MR-001 Naruto Uzumaki"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-MR-002",
+"name": "Sasuke Uchiha",
+"rarity": "MR",
+"q": "NRSA01-MR-002 Sasuke Uchiha"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-MR-003",
+"name": "Sakura Haruno",
+"rarity": "MR",
+"q": "NRSA01-MR-003 Sakura Haruno"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-MR-004",
+"name": "Kakashi Hatake",
+"rarity": "MR",
+"q": "NRSA01-MR-004 Kakashi Hatake"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-MR-005",
+"name": "Zabuza Momochi",
+"rarity": "MR",
+"q": "NRSA01-MR-005 Zabuza Momochi"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-MR-006",
+"name": "Haku",
+"rarity": "MR",
+"q": "NRSA01-MR-006 Haku"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-PU-001",
+"name": "Sasuke Uchiha",
+"rarity": "PU",
+"q": "NRSA01-PU-001 Sasuke Uchiha"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-PU-002",
+"name": "Sakura Haruno",
+"rarity": "PU",
+"q": "NRSA01-PU-002 Sakura Haruno"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-PU-003",
+"name": "Naruto Uzumaki",
+"rarity": "PU",
+"q": "NRSA01-PU-003 Naruto Uzumaki"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-PU-004",
+"name": "Kakashi Hatake",
+"rarity": "PU",
+"q": "NRSA01-PU-004 Kakashi Hatake"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-PU-005",
+"name": "Sasuke Uchiha",
+"rarity": "PU",
+"q": "NRSA01-PU-005 Sasuke Uchiha"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-PU-006",
+"name": "Naruto Uzumaki",
+"rarity": "PU",
+"q": "NRSA01-PU-006 Naruto Uzumaki"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-PU-007",
+"name": "Zabuza Momochi",
+"rarity": "PU",
+"q": "NRSA01-PU-007 Zabuza Momochi"
+},
+{
+"set": "heaven-scroll",
+"code": "NRSA01-PU-008",
+"name": "Haku",
+"rarity": "PU",
+"q": "NRSA01-PU-008 Haku"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-SE-001",
+"name": "Yashamaru",
+"rarity": "SE",
+"q": "NRSA02-SE-001 Yashamaru"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-SE-002",
+"name": "Gaara",
+"rarity": "SE",
+"q": "NRSA02-SE-002 Gaara"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-SE-003",
+"name": "Might Guy",
+"rarity": "SE",
+"q": "NRSA02-SE-003 Might Guy"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-SE-004",
+"name": "Rock Lee",
+"rarity": "SE",
+"q": "NRSA02-SE-004 Rock Lee"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-SP-001",
+"name": "Hinata Hyuga",
+"rarity": "SP",
+"q": "NRSA02-SP-001 Hinata Hyuga"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-SP-002",
+"name": "Neji Hyuga",
+"rarity": "SP",
+"q": "NRSA02-SP-002 Neji Hyuga"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-SP-003",
+"name": "Gaara",
+"rarity": "SP",
+"q": "NRSA02-SP-003 Gaara"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-SP-004",
+"name": "Rock Lee",
+"rarity": "SP",
+"q": "NRSA02-SP-004 Rock Lee"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-AR-001",
+"name": "Gaara",
+"rarity": "AR",
+"q": "NRSA02-AR-001 Gaara"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-AR-002",
+"name": "Rock Lee",
+"rarity": "AR",
+"q": "NRSA02-AR-002 Rock Lee"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-AR-003",
+"name": "Naruto Uzumaki",
+"rarity": "AR",
+"q": "NRSA02-AR-003 Naruto Uzumaki"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-AR-004",
+"name": "Neji Hyuga",
+"rarity": "AR",
+"q": "NRSA02-AR-004 Neji Hyuga"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-AR-005",
+"name": "Shikamaru Nara",
+"rarity": "AR",
+"q": "NRSA02-AR-005 Shikamaru Nara"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-AR-006",
+"name": "Temari",
+"rarity": "AR",
+"q": "NRSA02-AR-006 Temari"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-AR-007",
+"name": "Gaara",
+"rarity": "AR",
+"q": "NRSA02-AR-007 Gaara"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-AR-008",
+"name": "Sasuke Uchiha",
+"rarity": "AR",
+"q": "NRSA02-AR-008 Sasuke Uchiha"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-AR-009",
+"name": "Naruto Uzumaki",
+"rarity": "AR",
+"q": "NRSA02-AR-009 Naruto Uzumaki"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-AR-010",
+"name": "Sasuke Uchiha",
+"rarity": "AR",
+"q": "NRSA02-AR-010 Sasuke Uchiha"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-BP-001",
+"name": "Hinata Hyuga",
+"rarity": "BP",
+"q": "NRSA02-BP-001 Hinata Hyuga"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-BP-002",
+"name": "Orochimaru",
+"rarity": "BP",
+"q": "NRSA02-BP-002 Orochimaru"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-BP-003",
+"name": "Chouji Akimichi",
+"rarity": "BP",
+"q": "NRSA02-BP-003 Chouji Akimichi"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-BP-004",
+"name": "Shikamaru Nara",
+"rarity": "BP",
+"q": "NRSA02-BP-004 Shikamaru Nara"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-BP-005",
+"name": "Neji Hyuga",
+"rarity": "BP",
+"q": "NRSA02-BP-005 Neji Hyuga"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-BP-006",
+"name": "Kiba Inuzuka",
+"rarity": "BP",
+"q": "NRSA02-BP-006 Kiba Inuzuka"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-BP-007",
+"name": "Rock Lee",
+"rarity": "BP",
+"q": "NRSA02-BP-007 Rock Lee"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-MR-001",
+"name": "NARUTO",
+"rarity": "MR",
+"q": "NRSA02-MR-001 NARUTO"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-MR-002",
+"name": "SASUKE",
+"rarity": "MR",
+"q": "NRSA02-MR-002 SASUKE"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-MR-003",
+"name": "GAARA",
+"rarity": "MR",
+"q": "NRSA02-MR-003 GAARA"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-MR-004",
+"name": "SHIKAMARU",
+"rarity": "MR",
+"q": "NRSA02-MR-004 SHIKAMARU"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-MR-005",
+"name": "NEJI",
+"rarity": "MR",
+"q": "NRSA02-MR-005 NEJI"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-MR-006",
+"name": "HIRUZEN",
+"rarity": "MR",
+"q": "NRSA02-MR-006 HIRUZEN"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-MR-007",
+"name": "OROCHIMARU",
+"rarity": "MR",
+"q": "NRSA02-MR-007 OROCHIMARU"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-PU-001",
+"name": "Kabuto Yakushi",
+"rarity": "PU",
+"q": "NRSA02-PU-001 Kabuto Yakushi"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-PU-002",
+"name": "Orochimaru",
+"rarity": "PU",
+"q": "NRSA02-PU-002 Orochimaru"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-PU-003",
+"name": "Naruto Uzumaki",
+"rarity": "PU",
+"q": "NRSA02-PU-003 Naruto Uzumaki"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-PU-004",
+"name": "Jiraiya",
+"rarity": "PU",
+"q": "NRSA02-PU-004 Jiraiya"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-PU-005",
+"name": "Tenten",
+"rarity": "PU",
+"q": "NRSA02-PU-005 Tenten"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-PU-006",
+"name": "Might Guy",
+"rarity": "PU",
+"q": "NRSA02-PU-006 Might Guy"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-PU-007",
+"name": "Rock Lee",
+"rarity": "PU",
+"q": "NRSA02-PU-007 Rock Lee"
+},
+{
+"set": "chapter-jin-2",
+"code": "NRSA02-PU-008",
+"name": "Neji Hyuga",
+"rarity": "PU",
+"q": "NRSA02-PU-008 Neji Hyuga"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-SE-001",
+"name": "NARUTO",
+"rarity": "SE",
+"q": "NRSA03-SE-001 NARUTO"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-SE-002",
+"name": "SASUKE",
+"rarity": "SE",
+"q": "NRSA03-SE-002 SASUKE"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-SE-003",
+"name": "GAARA",
+"rarity": "SE",
+"q": "NRSA03-SE-003 GAARA"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-SE-004",
+"name": "SHIKAMARU",
+"rarity": "SE",
+"q": "NRSA03-SE-004 SHIKAMARU"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇ASP-001",
+"name": "NARUTO",
+"rarity": "◇ASP",
+"q": "NRSA03-◇ASP-001 NARUTO"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇ASP-002",
+"name": "SASUKE",
+"rarity": "◇ASP",
+"q": "NRSA03-◇ASP-002 SASUKE"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇ASP-003",
+"name": "SHIKAMARU",
+"rarity": "◇ASP",
+"q": "NRSA03-◇ASP-003 SHIKAMARU"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇ASP-004",
+"name": "LEE",
+"rarity": "◇ASP",
+"q": "NRSA03-◇ASP-004 LEE"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇ASP-005",
+"name": "CHOJI",
+"rarity": "◇ASP",
+"q": "NRSA03-◇ASP-005 CHOJI"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇ASP-006",
+"name": "NEJI",
+"rarity": "◇ASP",
+"q": "NRSA03-◇ASP-006 NEJI"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇ASP-007",
+"name": "GAARA",
+"rarity": "◇ASP",
+"q": "NRSA03-◇ASP-007 GAARA"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇ASP-008",
+"name": "KIMIMARO",
+"rarity": "◇ASP",
+"q": "NRSA03-◇ASP-008 KIMIMARO"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-ASP-001",
+"name": "NARUTO",
+"rarity": "ASP",
+"q": "NRSA03-ASP-001 NARUTO"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-ASP-002",
+"name": "SASUKE",
+"rarity": "ASP",
+"q": "NRSA03-ASP-002 SASUKE"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-ASP-003",
+"name": "SHIKAMARU",
+"rarity": "ASP",
+"q": "NRSA03-ASP-003 SHIKAMARU"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-ASP-004",
+"name": "LEE",
+"rarity": "ASP",
+"q": "NRSA03-ASP-004 LEE"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-ASP-005",
+"name": "CHOJI",
+"rarity": "ASP",
+"q": "NRSA03-ASP-005 CHOJI"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-ASP-006",
+"name": "NEJI",
+"rarity": "ASP",
+"q": "NRSA03-ASP-006 NEJI"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-ASP-007",
+"name": "GAARA",
+"rarity": "ASP",
+"q": "NRSA03-ASP-007 GAARA"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-ASP-008",
+"name": "KIMIMARO",
+"rarity": "ASP",
+"q": "NRSA03-ASP-008 KIMIMARO"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-AR-001",
+"name": "OROCHIMARU",
+"rarity": "AR",
+"q": "NRSA03-AR-001 OROCHIMARU"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-AR-002",
+"name": "HIRUZEN SARUTOBI",
+"rarity": "AR",
+"q": "NRSA03-AR-002 HIRUZEN SARUTOBI"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-AR-003",
+"name": "JIRAIYA",
+"rarity": "AR",
+"q": "NRSA03-AR-003 JIRAIYA"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-AR-004",
+"name": "OROCHIMARU",
+"rarity": "AR",
+"q": "NRSA03-AR-004 OROCHIMARU"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-AR-005",
+"name": "TSUNADE",
+"rarity": "AR",
+"q": "NRSA03-AR-005 TSUNADE"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-AR-006",
+"name": "JIRAIYA",
+"rarity": "AR",
+"q": "NRSA03-AR-006 JIRAIYA"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-BP-001",
+"name": "Tsunade",
+"rarity": "BP",
+"q": "NRSA03-BP-001 Tsunade"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-BP-002",
+"name": "Kimimaro",
+"rarity": "BP",
+"q": "NRSA03-BP-002 Kimimaro"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-BP-003",
+"name": "Might·Guy",
+"rarity": "BP",
+"q": "NRSA03-BP-003 Might·Guy"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-BP-004",
+"name": "Sakura Haruno",
+"rarity": "BP",
+"q": "NRSA03-BP-004 Sakura Haruno"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-BP-005",
+"name": "Itachi Uchiha",
+"rarity": "BP",
+"q": "NRSA03-BP-005 Itachi Uchiha"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-BP-006",
+"name": "Jiraiya",
+"rarity": "BP",
+"q": "NRSA03-BP-006 Jiraiya"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-BP-007",
+"name": "Sasuke Uchiha",
+"rarity": "BP",
+"q": "NRSA03-BP-007 Sasuke Uchiha"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-MR-001",
+"name": "CHOJI AKIMICHI",
+"rarity": "MR",
+"q": "NRSA03-MR-001 CHOJI AKIMICHI"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-MR-002",
+"name": "NEJI HYUGA",
+"rarity": "MR",
+"q": "NRSA03-MR-002 NEJI HYUGA"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-MR-003",
+"name": "ROCK·LEE",
+"rarity": "MR",
+"q": "NRSA03-MR-003 ROCK·LEE"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-MR-004",
+"name": "KIMIMARO",
+"rarity": "MR",
+"q": "NRSA03-MR-004 KIMIMARO"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-MR-005",
+"name": "GAARA",
+"rarity": "MR",
+"q": "NRSA03-MR-005 GAARA"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-MR-006",
+"name": "SHIKAMARU NARA",
+"rarity": "MR",
+"q": "NRSA03-MR-006 SHIKAMARU NARA"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-MR-007",
+"name": "NARUTO UZUMAKI",
+"rarity": "MR",
+"q": "NRSA03-MR-007 NARUTO UZUMAKI"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-MR-008",
+"name": "SASUKE UCHIHA",
+"rarity": "MR",
+"q": "NRSA03-MR-008 SASUKE UCHIHA"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-PU-001",
+"name": "Naruto Uzumaki",
+"rarity": "PU",
+"q": "NRSA03-PU-001 Naruto Uzumaki"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-PU-002",
+"name": "Sasuke Uchiha",
+"rarity": "PU",
+"q": "NRSA03-PU-002 Sasuke Uchiha"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-PU-003",
+"name": "Sakura Haruno",
+"rarity": "PU",
+"q": "NRSA03-PU-003 Sakura Haruno"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-PU-004",
+"name": "Orochimaru",
+"rarity": "PU",
+"q": "NRSA03-PU-004 Orochimaru"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-PU-005",
+"name": "Jiraiya",
+"rarity": "PU",
+"q": "NRSA03-PU-005 Jiraiya"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-PU-006",
+"name": "Tsunade",
+"rarity": "PU",
+"q": "NRSA03-PU-006 Tsunade"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-PU-007",
+"name": "Itachi Uchiha",
+"rarity": "PU",
+"q": "NRSA03-PU-007 Itachi Uchiha"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-PU-008",
+"name": "Kisame Hoshigaki",
+"rarity": "PU",
+"q": "NRSA03-PU-008 Kisame Hoshigaki"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇UR-001",
+"name": "NARUTO",
+"rarity": "◇UR",
+"q": "NRSA03-◇UR-001 NARUTO"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇UR-002",
+"name": "SASUKE",
+"rarity": "◇UR",
+"q": "NRSA03-◇UR-002 SASUKE"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇UR-003",
+"name": "SAKURA",
+"rarity": "◇UR",
+"q": "NRSA03-◇UR-003 SAKURA"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇UR-004",
+"name": "KAKASHI",
+"rarity": "◇UR",
+"q": "NRSA03-◇UR-004 KAKASHI"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇UR-005",
+"name": "TSUNADE",
+"rarity": "◇UR",
+"q": "NRSA03-◇UR-005 TSUNADE"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇UR-006",
+"name": "MINATO",
+"rarity": "◇UR",
+"q": "NRSA03-◇UR-006 MINATO"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇UR-007",
+"name": "KIBA",
+"rarity": "◇UR",
+"q": "NRSA03-◇UR-007 KIBA"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇UR-008",
+"name": "SHIKAMARU",
+"rarity": "◇UR",
+"q": "NRSA03-◇UR-008 SHIKAMARU"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇UR-009",
+"name": "ITACHI",
+"rarity": "◇UR",
+"q": "NRSA03-◇UR-009 ITACHI"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇UR-010",
+"name": "LEE",
+"rarity": "◇UR",
+"q": "NRSA03-◇UR-010 LEE"
+},
+{
+"set": "chapter-jin-3",
+"code": "NRSA03-◇UR-011",
+"name": "KIMIMARO",
+"rarity": "◇UR",
+"q": "NRSA03-◇UR-011 KIMIMARO"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-SE-001",
+"name": "Kakashi Hatake",
+"rarity": "SE",
+"q": "NRSA04-SE-001 Kakashi Hatake"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-SE-002",
+"name": "Hinata Hyuga",
+"rarity": "SE",
+"q": "NRSA04-SE-002 Hinata Hyuga"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-SE-003",
+"name": "Sakura Haruno",
+"rarity": "SE",
+"q": "NRSA04-SE-003 Sakura Haruno"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-SE-004",
+"name": "Temari",
+"rarity": "SE",
+"q": "NRSA04-SE-004 Temari"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇SP-001",
+"name": "Naruto Uzumaki",
+"rarity": "◇SP",
+"q": "NRSA04-◇SP-001 Naruto Uzumaki"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇SP-002",
+"name": "Kabuto Yakushi",
+"rarity": "◇SP",
+"q": "NRSA04-◇SP-002 Kabuto Yakushi"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇SP-003",
+"name": "OROCHIMARU",
+"rarity": "◇SP",
+"q": "NRSA04-◇SP-003 OROCHIMARU"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇SP-004",
+"name": "Jiraiya",
+"rarity": "◇SP",
+"q": "NRSA04-◇SP-004 Jiraiya"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇SP-005",
+"name": "Tsunade",
+"rarity": "◇SP",
+"q": "NRSA04-◇SP-005 Tsunade"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇SP-006",
+"name": "Mighty Guy",
+"rarity": "◇SP",
+"q": "NRSA04-◇SP-006 Mighty Guy"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇SP-007",
+"name": "Kakashi Hatake",
+"rarity": "◇SP",
+"q": "NRSA04-◇SP-007 Kakashi Hatake"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇SP-008",
+"name": "Ichiha Uchiha",
+"rarity": "◇SP",
+"q": "NRSA04-◇SP-008 Ichiha Uchiha"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-SP-001",
+"name": "Naruto Uzumaki",
+"rarity": "SP",
+"q": "NRSA04-SP-001 Naruto Uzumaki"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-SP-002",
+"name": "Kabuto Yakushi",
+"rarity": "SP",
+"q": "NRSA04-SP-002 Kabuto Yakushi"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-SP-003",
+"name": "OROCHIMARU",
+"rarity": "SP",
+"q": "NRSA04-SP-003 OROCHIMARU"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-SP-004",
+"name": "Jiraiya",
+"rarity": "SP",
+"q": "NRSA04-SP-004 Jiraiya"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-SP-005",
+"name": "Tsunade",
+"rarity": "SP",
+"q": "NRSA04-SP-005 Tsunade"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-SP-006",
+"name": "Mighty Guy",
+"rarity": "SP",
+"q": "NRSA04-SP-006 Mighty Guy"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-SP-007",
+"name": "Kakashi Hayake",
+"rarity": "SP",
+"q": "NRSA04-SP-007 Kakashi Hayake"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-SP-008",
+"name": "Ichiha Uchiha",
+"rarity": "SP",
+"q": "NRSA04-SP-008 Ichiha Uchiha"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-AR-001",
+"name": "Naruto Uzumaki",
+"rarity": "AR",
+"q": "NRSA04-AR-001 Naruto Uzumaki"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-AR-002",
+"name": "Orochimaru",
+"rarity": "AR",
+"q": "NRSA04-AR-002 Orochimaru"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-AR-003",
+"name": "Sakura Haruno",
+"rarity": "AR",
+"q": "NRSA04-AR-003 Sakura Haruno"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-AR-004",
+"name": "Sasori",
+"rarity": "AR",
+"q": "NRSA04-AR-004 Sasori"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-AR-005",
+"name": "Deidara",
+"rarity": "AR",
+"q": "NRSA04-AR-005 Deidara"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-AR-006",
+"name": "Gaara",
+"rarity": "AR",
+"q": "NRSA04-AR-006 Gaara"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-AR-007",
+"name": "Sai",
+"rarity": "AR",
+"q": "NRSA04-AR-007 Sai"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-AR-008",
+"name": "Sasuke Uchiha",
+"rarity": "AR",
+"q": "NRSA04-AR-008 Sasuke Uchiha"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-BP-001",
+"name": "Sasuk Uchiha",
+"rarity": "BP",
+"q": "NRSA04-BP-001 Sasuk Uchiha"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-BP-002",
+"name": "Gaara",
+"rarity": "BP",
+"q": "NRSA04-BP-002 Gaara"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-BP-003",
+"name": "Sakura Haruno",
+"rarity": "BP",
+"q": "NRSA04-BP-003 Sakura Haruno"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-BP-004",
+"name": "Shikamaru Nara",
+"rarity": "BP",
+"q": "NRSA04-BP-004 Shikamaru Nara"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-BP-005",
+"name": "Naruto Uzumaki",
+"rarity": "BP",
+"q": "NRSA04-BP-005 Naruto Uzumaki"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-MR-001",
+"name": "NARUTO UZUMAKI",
+"rarity": "MR",
+"q": "NRSA04-MR-001 NARUTO UZUMAKI"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-MR-002",
+"name": "SASUKE UCHIHA",
+"rarity": "MR",
+"q": "NRSA04-MR-002 SASUKE UCHIHA"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-MR-003",
+"name": "SAKURA HARUNO",
+"rarity": "MR",
+"q": "NRSA04-MR-003 SAKURA HARUNO"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-MR-004",
+"name": "KAKASHI HATAKE",
+"rarity": "MR",
+"q": "NRSA04-MR-004 KAKASHI HATAKE"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-MR-005",
+"name": "YAMATO",
+"rarity": "MR",
+"q": "NRSA04-MR-005 YAMATO"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-MR-006",
+"name": "OROCHIMARU",
+"rarity": "MR",
+"q": "NRSA04-MR-006 OROCHIMARU"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-MR-007",
+"name": "DEIDARA",
+"rarity": "MR",
+"q": "NRSA04-MR-007 DEIDARA"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-MR-008",
+"name": "SASORI",
+"rarity": "MR",
+"q": "NRSA04-MR-008 SASORI"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-PU-001",
+"name": "Naruto Uzumaki",
+"rarity": "PU",
+"q": "NRSA04-PU-001 Naruto Uzumaki"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-PU-002",
+"name": "Sasuke Uchiha",
+"rarity": "PU",
+"q": "NRSA04-PU-002 Sasuke Uchiha"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-PU-003",
+"name": "Sakura Haruno",
+"rarity": "PU",
+"q": "NRSA04-PU-003 Sakura Haruno"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-PU-004",
+"name": "Neji Hyuga",
+"rarity": "PU",
+"q": "NRSA04-PU-004 Neji Hyuga"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-PU-005",
+"name": "Kakashi Hatake",
+"rarity": "PU",
+"q": "NRSA04-PU-005 Kakashi Hatake"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-PU-006",
+"name": "Rock·Lee",
+"rarity": "PU",
+"q": "NRSA04-PU-006 Rock·Lee"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇UR-001",
+"name": "NARUTO",
+"rarity": "◇UR",
+"q": "NRSA04-◇UR-001 NARUTO"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇UR-002",
+"name": "SAKURA",
+"rarity": "◇UR",
+"q": "NRSA04-◇UR-002 SAKURA"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇UR-003",
+"name": "GAARA",
+"rarity": "◇UR",
+"q": "NRSA04-◇UR-003 GAARA"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇UR-004",
+"name": "SAI",
+"rarity": "◇UR",
+"q": "NRSA04-◇UR-004 SAI"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇UR-005",
+"name": "SASUKE",
+"rarity": "◇UR",
+"q": "NRSA04-◇UR-005 SASUKE"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇UR-006",
+"name": "DEIDARA",
+"rarity": "◇UR",
+"q": "NRSA04-◇UR-006 DEIDARA"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇UR-007",
+"name": "SASORI",
+"rarity": "◇UR",
+"q": "NRSA04-◇UR-007 SASORI"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇UR-008",
+"name": "YAMATO",
+"rarity": "◇UR",
+"q": "NRSA04-◇UR-008 YAMATO"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇UR-009",
+"name": "OROCHIMARU",
+"rarity": "◇UR",
+"q": "NRSA04-◇UR-009 OROCHIMARU"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇UR-010",
+"name": "JIRAIYA",
+"rarity": "◇UR",
+"q": "NRSA04-◇UR-010 JIRAIYA"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇UR-011",
+"name": "NEJI",
+"rarity": "◇UR",
+"q": "NRSA04-◇UR-011 NEJI"
+},
+{
+"set": "chapter-jin-4",
+"code": "NRSA04-◇UR-012",
+"name": "GUY",
+"rarity": "◇UR",
+"q": "NRSA04-◇UR-012 GUY"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-CR-001",
+"name": "Orochimaru",
+"rarity": "CR",
+"q": "NRI01-CR-001 Orochimaru"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-CR-002",
+"name": "Kabuto Yakushi",
+"rarity": "CR",
+"q": "NRI01-CR-002 Kabuto Yakushi"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-CR-003",
+"name": "Neji Hyuga",
+"rarity": "CR",
+"q": "NRI01-CR-003 Neji Hyuga"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-CR-004",
+"name": "Gaara",
+"rarity": "CR",
+"q": "NRI01-CR-004 Gaara"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-SP-001",
+"name": "Orochimaru",
+"rarity": "SP",
+"q": "NRI01-SP-001 Orochimaru"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-SP-002",
+"name": "Shikamaru Nara",
+"rarity": "SP",
+"q": "NRI01-SP-002 Shikamaru Nara"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-SP-003",
+"name": "Temari",
+"rarity": "SP",
+"q": "NRI01-SP-003 Temari"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-SP-004",
+"name": "Kiba Inuzuka",
+"rarity": "SP",
+"q": "NRI01-SP-004 Kiba Inuzuka"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-AR-001",
+"name": "Anko Mitarashi",
+"rarity": "AR",
+"q": "NRI01-AR-001 Anko Mitarashi"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-AR-002",
+"name": "Orochimaru",
+"rarity": "AR",
+"q": "NRI01-AR-002 Orochimaru"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-AR-003",
+"name": "Neji Hyuga",
+"rarity": "AR",
+"q": "NRI01-AR-003 Neji Hyuga"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-AR-004",
+"name": "Hinata Hyuga",
+"rarity": "AR",
+"q": "NRI01-AR-004 Hinata Hyuga"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-AR-005",
+"name": "Sasuke Uchiha",
+"rarity": "AR",
+"q": "NRI01-AR-005 Sasuke Uchiha"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-AR-006",
+"name": "Sakura Uchiha",
+"rarity": "AR",
+"q": "NRI01-AR-006 Sakura Uchiha"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-AR-007",
+"name": "Naruto Uzumaki",
+"rarity": "AR",
+"q": "NRI01-AR-007 Naruto Uzumaki"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-AR-008",
+"name": "Sasuke Uchiha",
+"rarity": "AR",
+"q": "NRI01-AR-008 Sasuke Uchiha"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-AR-009",
+"name": "Boruto Uzumaki",
+"rarity": "AR",
+"q": "NRI01-AR-009 Boruto Uzumaki"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-AR-010",
+"name": "Sarada Uchiha",
+"rarity": "AR",
+"q": "NRI01-AR-010 Sarada Uchiha"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-MR-001",
+"name": "Orochimaru",
+"rarity": "MR",
+"q": "NRI01-MR-001 Orochimaru"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-MR-002",
+"name": "Might Guy",
+"rarity": "MR",
+"q": "NRI01-MR-002 Might Guy"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-MR-003",
+"name": "Shikamaru Nara",
+"rarity": "MR",
+"q": "NRI01-MR-003 Shikamaru Nara"
+},
+{
+"set": "earth-scroll-1",
+"code": "NRI01-MR-004",
+"name": "Neji Hyuga",
+"rarity": "MR",
+"q": "NRI01-MR-004 Neji Hyuga"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-CR-001",
+"name": "Kimimaro",
+"rarity": "CR",
+"q": "NREA02-CR-001 Kimimaro"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-CR-002",
+"name": "Tsunade",
+"rarity": "CR",
+"q": "NREA02-CR-002 Tsunade"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-CR-003",
+"name": "Itachi Uchiha",
+"rarity": "CR",
+"q": "NREA02-CR-003 Itachi Uchiha"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-CR-004",
+"name": "Jiraiya",
+"rarity": "CR",
+"q": "NREA02-CR-004 Jiraiya"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-AR-001",
+"name": "Jirobo",
+"rarity": "AR",
+"q": "NREA02-AR-001 Jirobo"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-AR-002",
+"name": "Choji Akimichi",
+"rarity": "AR",
+"q": "NREA02-AR-002 Choji Akimichi"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-AR-003",
+"name": "Gaara",
+"rarity": "AR",
+"q": "NREA02-AR-003 Gaara"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-AR-004",
+"name": "Kimimaro",
+"rarity": "AR",
+"q": "NREA02-AR-004 Kimimaro"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-AR-005",
+"name": "Kimimaro",
+"rarity": "AR",
+"q": "NREA02-AR-005 Kimimaro"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-AR-006",
+"name": "Rock Lee",
+"rarity": "AR",
+"q": "NREA02-AR-006 Rock Lee"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-AR-007",
+"name": "Sasuke Uchiha",
+"rarity": "AR",
+"q": "NREA02-AR-007 Sasuke Uchiha"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-AR-008",
+"name": "Naruto Uzumaki",
+"rarity": "AR",
+"q": "NREA02-AR-008 Naruto Uzumaki"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-AR-009",
+"name": "Neji Hyuga",
+"rarity": "AR",
+"q": "NREA02-AR-009 Neji Hyuga"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-AR-010",
+"name": "Kidomaru",
+"rarity": "AR",
+"q": "NREA02-AR-010 Kidomaru"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-MR-001",
+"name": "Kabuto Yakushi",
+"rarity": "MR",
+"q": "NREA02-MR-001 Kabuto Yakushi"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-MR-002",
+"name": "Tsunade",
+"rarity": "MR",
+"q": "NREA02-MR-002 Tsunade"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-MR-003",
+"name": "Itachi Uchiha",
+"rarity": "MR",
+"q": "NREA02-MR-003 Itachi Uchiha"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-MR-004",
+"name": "Jiraiya",
+"rarity": "MR",
+"q": "NREA02-MR-004 Jiraiya"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-◇UR-001",
+"name": "Naruto Uzumaki",
+"rarity": "◇UR",
+"q": "NREA02-◇UR-001 Naruto Uzumaki"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-◇UR-002",
+"name": "Sasuke Uchiha",
+"rarity": "◇UR",
+"q": "NREA02-◇UR-002 Sasuke Uchiha"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-◇UR-003",
+"name": "Sakura Haruno",
+"rarity": "◇UR",
+"q": "NREA02-◇UR-003 Sakura Haruno"
+},
+{
+"set": "earth-scroll-2",
+"code": "NREA02-◇UR-004",
+"name": "Kakashi Hatake",
+"rarity": "◇UR",
+"q": "NREA02-◇UR-004 Kakashi Hatake"
+},
+{
+"set": "earth-scroll-3",
+"code": "NRI01-CR-001",
+"name": "Naruto Uzumaki",
+"rarity": "CR",
+"q": "NRI01-CR-001 Naruto Uzumaki"
+},
+{
+"set": "earth-scroll-3",
+"code": "NRI01-CR-002",
+"name": "Zabuza Momochi",
+"rarity": "CR",
+"q": "NRI01-CR-002 Zabuza Momochi"
+},
+{
+"set": "earth-scroll-3",
+"code": "NRI01-CR-003",
+"name": "Haku",
+"rarity": "CR",
+"q": "NRI01-CR-003 Haku"
+},
+{
+"set": "earth-scroll-3",
+"code": "NRI01-CR-004",
+"name": "Boruto Uzumaki",
+"rarity": "CR",
+"q": "NRI01-CR-004 Boruto Uzumaki"
+},
+{
+"set": "earth-scroll-3",
+"code": "NREA03-SP-001",
+"name": "Naruto Uzumaki",
+"rarity": "SP",
+"q": "NREA03-SP-001 Naruto Uzumaki"
+},
+{
+"set": "earth-scroll-3",
+"code": "NREA03-SP-002",
+"name": "Zabuza Momochi",
+"rarity": "SP",
+"q": "NREA03-SP-002 Zabuza Momochi"
+},
+{
+"set": "earth-scroll-3",
+"code": "NREA03-SP-003",
+"name": "Haku",
+"rarity": "SP",
+"q": "NREA03-SP-003 Haku"
+},
+{
+"set": "earth-scroll-3",
+"code": "NREA03-SP-004",
+"name": "Boruto Uzumaki",
+"rarity": "SP",
+"q": "NREA03-SP-004 Boruto Uzumaki"
+},
+{
+"set": "earth-scroll-3",
+"code": "NREA03-MR-001",
+"name": "Naruto Uzumaki",
+"rarity": "MR",
+"q": "NREA03-MR-001 Naruto Uzumaki"
+},
+{
+"set": "earth-scroll-3",
+"code": "NREA03-MR-002",
+"name": "Sasuke Uchiha",
+"rarity": "MR",
+"q": "NREA03-MR-002 Sasuke Uchiha"
+},
+{
+"set": "earth-scroll-3",
+"code": "NREA03-MR-003",
+"name": "Sakura Haruno",
+"rarity": "MR",
+"q": "NREA03-MR-003 Sakura Haruno"
+},
+{
+"set": "earth-scroll-3",
+"code": "NREA03-MR-004",
+"name": "Kakashi Hatake",
+"rarity": "MR",
+"q": "NREA03-MR-004 Kakashi Hatake"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-◇XR-001",
+"name": "Naruto Uzumaki",
+"rarity": "◇XR",
+"q": "NRCCNA-◇XR-001 Naruto Uzumaki"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-◇XR-002",
+"name": "Sasuke Uchiha",
+"rarity": "◇XR",
+"q": "NRCCNA-◇XR-002 Sasuke Uchiha"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-◇XR-003",
+"name": "Kakashi Hatake",
+"rarity": "◇XR",
+"q": "NRCCNA-◇XR-003 Kakashi Hatake"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-◇XR-004",
+"name": "Jiraiya",
+"rarity": "◇XR",
+"q": "NRCCNA-◇XR-004 Jiraiya"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-◇XR-005",
+"name": "Minato Namikaze",
+"rarity": "◇XR",
+"q": "NRCCNA-◇XR-005 Minato Namikaze"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-◇XR-006",
+"name": "Iruka Umino",
+"rarity": "◇XR",
+"q": "NRCCNA-◇XR-006 Iruka Umino"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-◇XR-007",
+"name": "Naruto x Sasuke",
+"rarity": "◇XR",
+"q": "NRCCNA-◇XR-007 Naruto x Sasuke"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-◇MR-001",
+"name": "Happy Wedding（Early exclusive version）",
+"rarity": "◇MR",
+"q": "NRCCNA-◇MR-001 Happy Wedding（Early exclusive version）"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-◇MR-002",
+"name": "Happy Wedding（Early exclusive version）",
+"rarity": "◇MR",
+"q": "NRCCNA-◇MR-002 Happy Wedding（Early exclusive version）"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-◇QR-001",
+"name": "Naruto Uzumaki",
+"rarity": "◇QR",
+"q": "NRCCNA-◇QR-001 Naruto Uzumaki"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-MR-001",
+"name": "Ninja Sasori",
+"rarity": "MR",
+"q": "NRCCNA-MR-001 Ninja Sasori"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-MR-002",
+"name": "Ninja Itachi Uchiha",
+"rarity": "MR",
+"q": "NRCCNA-MR-002 Ninja Itachi Uchiha"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-MR-003",
+"name": "Ninja Deidara",
+"rarity": "MR",
+"q": "NRCCNA-MR-003 Ninja Deidara"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-MR-004",
+"name": "Ninja Tendo",
+"rarity": "MR",
+"q": "NRCCNA-MR-004 Ninja Tendo"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-MR-005",
+"name": "Ninja Konan",
+"rarity": "MR",
+"q": "NRCCNA-MR-005 Ninja Konan"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-MR-006",
+"name": "Ninja Sasori",
+"rarity": "MR",
+"q": "NRCCNA-MR-006 Ninja Sasori"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-MR-007",
+"name": "Ninja Itachi Uchiha",
+"rarity": "MR",
+"q": "NRCCNA-MR-007 Ninja Itachi Uchiha"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-MR-008",
+"name": "Ninja Sasuke Uchiha",
+"rarity": "MR",
+"q": "NRCCNA-MR-008 Ninja Sasuke Uchiha"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-QR-001",
+"name": "Naruto Uzumaki",
+"rarity": "QR",
+"q": "NRCCNA-QR-001 Naruto Uzumaki"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-QR-002",
+"name": "Sakura Haruno",
+"rarity": "QR",
+"q": "NRCCNA-QR-002 Sakura Haruno"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-QR-003",
+"name": "Kakashi Hatake",
+"rarity": "QR",
+"q": "NRCCNA-QR-003 Kakashi Hatake"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-QR-004",
+"name": "Sasuke Uchiha",
+"rarity": "QR",
+"q": "NRCCNA-QR-004 Sasuke Uchiha"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-QR-005",
+"name": "Jiraiya",
+"rarity": "QR",
+"q": "NRCCNA-QR-005 Jiraiya"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-QR-006",
+"name": "Orochimaru",
+"rarity": "QR",
+"q": "NRCCNA-QR-006 Orochimaru"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-QR-007",
+"name": "Minato Namikaze",
+"rarity": "QR",
+"q": "NRCCNA-QR-007 Minato Namikaze"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-QR-008",
+"name": "Itachi Uchiha",
+"rarity": "QR",
+"q": "NRCCNA-QR-008 Itachi Uchiha"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-QR-009",
+"name": "Tsunade",
+"rarity": "QR",
+"q": "NRCCNA-QR-009 Tsunade"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-XR-001",
+"name": "Naruto Uzumaki",
+"rarity": "XR",
+"q": "NRCCNA-XR-001 Naruto Uzumaki"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-XR-002",
+"name": "Sasuke Uchiha",
+"rarity": "XR",
+"q": "NRCCNA-XR-002 Sasuke Uchiha"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-XR-003",
+"name": "Kakashi Hatake",
+"rarity": "XR",
+"q": "NRCCNA-XR-003 Kakashi Hatake"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-XR-004",
+"name": "Jiraiya",
+"rarity": "XR",
+"q": "NRCCNA-XR-004 Jiraiya"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-XR-005",
+"name": "Minato Namikaze",
+"rarity": "XR",
+"q": "NRCCNA-XR-005 Minato Namikaze"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-XR-006",
+"name": "Iruka Umino",
+"rarity": "XR",
+"q": "NRCCNA-XR-006 Iruka Umino"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-SP-001",
+"name": "Naruto Uzumaki",
+"rarity": "SP",
+"q": "NRCCNA-SP-001 Naruto Uzumaki"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-SP-002",
+"name": "Sasuke Uchiha",
+"rarity": "SP",
+"q": "NRCCNA-SP-002 Sasuke Uchiha"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-SP-003",
+"name": "Sakura Haruno",
+"rarity": "SP",
+"q": "NRCCNA-SP-003 Sakura Haruno"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-SP-004",
+"name": "Kakashi Hatake",
+"rarity": "SP",
+"q": "NRCCNA-SP-004 Kakashi Hatake"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-SP-005",
+"name": "Hinata Hyuga",
+"rarity": "SP",
+"q": "NRCCNA-SP-005 Hinata Hyuga"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-SP-006",
+"name": "Jiraiya",
+"rarity": "SP",
+"q": "NRCCNA-SP-006 Jiraiya"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-SP-007",
+"name": "Naruto Uzumaki",
+"rarity": "SP",
+"q": "NRCCNA-SP-007 Naruto Uzumaki"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-SP-008",
+"name": "Naruto Uzumaki",
+"rarity": "SP",
+"q": "NRCCNA-SP-008 Naruto Uzumaki"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-SP-009",
+"name": "Sasuke Uchiha",
+"rarity": "SP",
+"q": "NRCCNA-SP-009 Sasuke Uchiha"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-SP-010",
+"name": "Sakura Haruno",
+"rarity": "SP",
+"q": "NRCCNA-SP-010 Sakura Haruno"
+},
+{
+"set": "ninja-age",
+"code": "NRCCNA-SP-011",
+"name": "Kakashi Hatake",
+"rarity": "SP",
+"q": "NRCCNA-SP-011 Kakashi Hatake"
+}
+]
+}

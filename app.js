@@ -3,14 +3,22 @@
 const $ = (s, r = document) => r.querySelector(s);
 const V = $('#view');
 const CONDS = ['Mint', 'NM', 'EX', 'GD', 'LP', 'PL', 'Abîmée'];
-const S = { sets: [], setsSrc: '', odds: {}, col: {}, photos: {}, data: {}, ctx: [], pack: [], opened: null, cls: {}, q: '' };
+const S = { eb: {}, sets: [], setsSrc: '', odds: {}, col: {}, photos: {}, data: {}, ctx: [], pack: [], opened: null, cls: {}, q: '' };
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const eur = v => v == null ? '—' : v.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' });
 const f1 = y => (Math.round(y * 10) / 10).toLocaleString('fr-FR');
 const key = c => c.set + '|' + c.code;
 const qty = c => (S.col[key(c)] || {}).q || 0;
 // Prix manuel : saisi par l'utilisateur, stocké dans l'enregistrement de collection { q, cond, price, priceDate }
-const myPrice = c => { const e = S.col[key(c)]; return e && typeof e.price === 'number' ? e.price : null; };
+// Prix effectif : mon prix manuel s'il est plus récent que le relevé eBay (data/prices.json), sinon la médiane eBay
+function eff(k) {
+  const e = S.col[k], b = S.eb[k.slice(k.indexOf('|') + 1)];
+  const mine = e && typeof e.price === 'number' ? { v: e.price, src: 'moi', date: e.priceDate } : null;
+  const eb = b && b.n > 0 && typeof b.median === 'number' ? { v: b.median, src: 'ebay', date: b.date, n: b.n } : null;
+  if (mine && (!eb || new Date(mine.date) >= new Date(eb.date))) return mine;
+  return eb || mine;
+}
+const myPrice = c => { const p = eff(key(c)); return p ? p.v : null; };
 const price = c => myPrice(c) == null ? null : { median: myPrice(c) };
 const OLD = 30 * 864e5;
 const stale = e => e && e.priceDate && Date.now() - new Date(e.priceDate) > OLD;
@@ -18,7 +26,7 @@ const fdate = s => { const d = new Date(s); return `${String(d.getDate()).padSta
 // valeur d'un ensemble de clés « set|code » : somme prix × quantité, + nb de cartes possédées sans prix
 function worth(prefix) {
   let v = 0, miss = 0;
-  for (const k in S.col) { const e = S.col[k]; if ((!prefix || k.startsWith(prefix + '|')) && e.q > 0) { if (typeof e.price === 'number') v += e.price * e.q; else miss++; } }
+  for (const k in S.col) { const e = S.col[k]; if ((!prefix || k.startsWith(prefix + '|')) && e.q > 0) { const p = eff(k); if (p) v += p.v * e.q; else miss++; } }
   return { v, miss };
 }
 const worthTxt = w => `${eur(w.v)}${w.miss ? ` · ${w.miss} carte${w.miss > 1 ? 's' : ''} sans prix` : ''}`;
@@ -131,7 +139,7 @@ const views = {
     const reg = localStorage.getItem('reg') || 'all';
     return `<div class="band"><div class="seg">${[['fr', 'FR'], ['cn', 'Chine'], ['all', 'Tout']].map(([v, l]) => `<button data-reg="${v}" class="${reg === v ? 'on' : ''}">${l}</button>`).join('')}</div>
       <input id="gq" type="search" placeholder="🔍 Perso, nom chinois ou code (tous les sets)" value="${esc(S.q)}" autocomplete="off"></div>
-      <a class="tot" href="#r">Ma collection : <b>${worthTxt(worth())}</b></a>
+      <a class="tot" href="#r">Ma collection : <b>${worthTxt(worth())}</b></a>${await top10()}
       <div id="res"></div>
       <div id="shelves">${ROWS().filter(r => reg === 'all' || (reg === 'fr' ? r.region === 'intl' : r.region === 'cn')).map(r => `<section class="shelf"><h3>${esc(r.title)}</h3><div class="row">${r.sets.map(m => shelfTile(m)).join('')}</div></section>`).join('')}</div>`;
   },
@@ -169,6 +177,8 @@ const views = {
       ${c.alias && c.alias.eu && c.alias.eu !== c.code ? `<tr><td>Code FR/EU</td><td>${twin(c.alias.eu, m.link)}</td></tr>` : ''}
       ${c.alias && c.alias.cn && c.alias.cn !== c.code ? `<tr><td>Code CN</td><td>${twin(c.alias.cn, m.link)}</td></tr>` : ''}
       <tr><td>État</td><td><select id="cond">${CONDS.map(x => `<option${x === e.cond ? ' selected' : ''}>${x}</option>`).join('')}</select></td></tr></table></section>
+    ${S.eb[c.code] ? `<section class="box"><h2>Ventes eBay</h2>${S.eb[c.code].n ? `<div class="big">${eur(S.eb[c.code].median)}</div><div class="mu">ventes eBay · ${fdate(S.eb[c.code].date)} · ${S.eb[c.code].n} vente${S.eb[c.code].n > 1 ? 's' : ''} (médiane, ${esc(S.eb[c.code].source)})</div>` : `<div class="mu">Aucune vente retenue au ${fdate(S.eb[c.code].date)}.</div>`}
+      <p class="note">${eff(key(c)) && eff(key(c)).src === 'moi' ? 'Ton prix manuel, plus récent, est utilisé dans les valeurs.' : 'Utilisé dans les valeurs tant que tu ne saisis pas un prix plus récent.'}</p></section>` : ''}
     <section class="box"><h2>Mon prix</h2>
       <div class="mp"><input id="mp" type="text" inputmode="decimal" autocomplete="off" pattern="[0-9]*[.,]?[0-9]*" placeholder="Prix en €" value="${e.price ?? ''}"><span>€</span></div>
       <div class="mu" id="mpd">${e.priceDate ? `Saisi le ${fdate(e.priceDate)}${stale(e) ? ' <span title="plus de 30 jours">🕓 à revoir (+30 jours)</span>' : ''}` : 'Aucun prix saisi'}</div>
@@ -397,9 +407,18 @@ async function importJSON(f) {
   } catch { toast('Fichier invalide'); }
 }
 
+async function top10() {
+  const keys = Object.keys(S.col).filter(k => S.col[k].q > 0 && eff(k)).sort((a, b) => eff(b).v - eff(a).v).slice(0, 10);
+  if (!keys.length) return '';
+  await Promise.all([...new Set(keys.map(k => k.split('|')[0]))].map(loadSet));
+  const rows = keys.map(k => { const [sid, code] = k.split('|'), c = S.data[sid] && S.data[sid].cards.find(x => x.code === code); if (!c) return ''; const p = eff(k);
+    return `<a class="top" href="#s/${sid}/${esc(code)}"><div class="tim">${img(c)}</div><div><b>${esc(c.name || code)}</b><div class="mu">${esc(meta(sid).title)} · ×${S.col[k].q}</div></div><span>${eur(p.v)}<small>${p.src === 'moi' ? 'mon prix' : 'eBay'}</small></span></a>`; }).join('');
+  return `<details class="box t10" open><summary><h2>Top 10 de mes cartes les plus chères</h2></summary>${rows}</details>`;
+}
 async function init() {
   const [sj, od] = await Promise.all([fetch('data/sets.json').then(r => r.json()), fetch('data/odds.json').then(r => r.json())]);
   S.sets = Array.isArray(sj) ? sj : sj.sets; S.setsSrc = sj.source || ''; S.odds = od;
+  try { S.eb = (await (await fetch('data/prices.json', { cache: 'no-store' })).json()).cards || {}; } catch { S.eb = {}; }
   S.col = await allOf('col');
   for (const k in S.col) { const r = migrateRec(S.col[k]); if (JSON.stringify(r) !== JSON.stringify(S.col[k])) { S.col[k] = r; saveCol(k); } } // migration douce, même base et mêmes clés
   const ph = await allOf('photos'); for (const k in ph) S.photos[k] = URL.createObjectURL(ph[k]);
