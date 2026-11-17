@@ -131,7 +131,7 @@ const views = {
     S.ctx = d.cards.filter(c => (!f.r || c.rarity === f.r) && (!f.own || qty(c)));
     return `<section class="bh">${ring(own, t, 64)}<div><div class="big">${own}/${t}</div><div class="mu">Valeur estimée : ${eur(val)}</div></div>
       <a class="btn g" href="#g/${id}">📖 Guide</a></section>
-      ${d.partial ? '<p class="note">Liste partielle (codes et raretés publiés, sans noms ni images) : ajoute tes cartes, puis ta photo depuis la fiche.</p>' : ''}
+      ${d.partial ? '<p class="note">Liste partielle : des cartes peuvent manquer ou être sans image (placeholder). ↺ = réédition d\'une autre boîte de la même wave.</p>' : ''}
       <div class="ctabs">${tabs.map(r => { const cs = r.id ? d.cards.filter(c => c.rarity === r.id) : d.cards; return `<button data-r="${esc(r.id)}" class="${f.r === r.id ? 'on' : ''}">${esc(r.id || r.label)} <small>${cs.filter(qty).length}/${cs.length}</small></button>`; }).join('')}</div>
       <label class="own"><input type="checkbox" id="own" ${f.own ? 'checked' : ''}> Possédées seulement</label>
       <div class="grid" id="grid">${S.ctx.map(tile).join('') || '<p class="mu">Aucune carte.</p>'}</div>
@@ -149,6 +149,7 @@ const views = {
     ${isHigh(c) && window.DeviceOrientationEvent && DeviceOrientationEvent.requestPermission ? '<button class="btn g w" id="gyro">Activer l\'effet gyroscope</button>' : ''}
     <section class="box"><div style="font-size:20px;font-weight:800">${esc(c.name || c.code)}</div>${c.nameCn && c.nameCn !== c.name ? `<div>${esc(c.nameCn)}</div>` : ''}
       <div class="mu"><span class="rb ${esc(c.rarity)}">${esc(c.rarity)}</span> ${esc(r.label)} · ${esc(m.title)}</div>
+      ${c.reprint ? `<p class="note">↺ Réédition de ${esc(c.reprint)} : même carte, mais ta possession est comptée à part dans ce classeur.</p>` : ''}${c.note ? `<p class="note">${esc(c.note)}</p>` : ''}
       <table style="margin-top:10px"><tr><td>Code</td><td><b>${esc(c.full || c.code)}</b></td></tr>
       ${c.alias && c.alias.eu && c.alias.eu !== c.code ? `<tr><td>Code FR/EU</td><td>${twin(c.alias.eu, m.link)}</td></tr>` : ''}
       ${c.alias && c.alias.cn && c.alias.cn !== c.code ? `<tr><td>Code CN</td><td>${twin(c.alias.cn, m.link)}</td></tr>` : ''}
@@ -238,7 +239,7 @@ const views = {
 const YUAN = { 1: ['1 ¥', 36, 'R non brillante', 'GP'], 2: ['2 ¥', 30, '1 SR', 'CR (+ ZR dès la wave 4)'], 25: ['3 ¥', 50, 'SR minimum', 'CP'], 3: ['5 ¥', 20, '1 TR ou TGR', 'NR (+ TR/TGR)'], 4: ['10 ¥', 18, '1 HR (waves 1-5)', 'BP, SE (+ HR, SLR)'] };
 const TIERX = m => { const t = (m.id.match(/^cn-t(\d+)w/) || [])[1]; const y = YUAN[t]; return y ? `${y[0]} le booster · ${y[1]} boosters de 5 cartes par boîte · garanti par booster : ${y[2]} · exclusivités : ${y[3]} <span class="mu">(Narutopia)</span>` : ''; };
 const PK = d => (d.pack && d.pack.cards) || 8;
-const tile = c => `<div class="c ${land(c) ? 'l' : ''} ${qty(c) ? '' : 'no'}" data-k="${esc(c.set + '/' + c.code)}">${img(c)}${qty(c) > 1 ? `<span class="q">×${qty(c)}</span>` : ''}</div>`;
+const tile = c => `<div class="c ${land(c) ? 'l' : ''} ${qty(c) ? '' : 'no'}" data-k="${esc(c.set + '/' + c.code)}">${img(c)}${qty(c) > 1 ? `<span class="q">×${qty(c)}</span>` : ''}${c.reprint ? '<span class="rp" title="réédition">↺</span>' : ''}</div>`;
 const byKey = k => { const i = k.indexOf('/'), s = k.slice(0, i), c = k.slice(i + 1); return S.data[s] && S.data[s].cards.find(x => x.code === c); };
 function refreshTile(el) { const n = document.createElement('div'); n.innerHTML = tile(byKey(el.dataset.k)); const nc = n.firstChild; if (el.classList.contains('b')) nc.classList.add('b'); el.replaceWith(nc); return nc; }
 
@@ -247,13 +248,14 @@ function rateOf(id, rar) {
   const o = S.odds[id], r = o && o.rarities && o.rarities[rar], B = o && o.boxPacks;
   if (!r || (!r.k && !r.min)) return { booster: 'taux inconnu', box: '—', r };
   if (r.k) return { booster: r.k >= 1 ? `${f1(r.k)} (garanti)` : `1 sur ${f1(1 / r.k)}`, box: r.range ? r.range.replace(' par boîte', '') : `≈ ${f1(r.k * B)}`, r };
-  return { booster: `≥ ${f1(r.min)}`, box: `≥ ${f1(r.min * B)}`, r };
+  return { booster: `au moins ${f1(r.min)}`, box: `au moins ${f1(r.min * B)}`, r };
 }
 function oddsLine(c) {
+  const o = S.odds[c.set]; if (o && !o.boxPacks) return '<p>Carte hors booster (promo, coffret) : pas de taux de tirage.</p>';
   const x = rateOf(c.set, c.rarity), n = rarOf(c).count, r = x.r;
   if (!r || (!r.k && !r.min)) return `<p><b>${esc(c.rarity)}</b> : taux inconnu</p>`;
   const k = r.k || r.min, pc = 1 - Math.pow(1 - 1 / n, k);
-  return `<p><b>${esc(c.rarity)}</b> : ${x.booster} par booster · ${x.box} par boîte${r.k ? '' : ' (minimum)'}${r.status && r.status.startsWith('moyenne') ? ' <span class="mu">(moyenne)</span>' : ''}</p><p class="note">Cette carte : ${r.k ? '' : 'au moins '}1 chance sur ${f1(1 / pc)} boosters.</p>`;
+  return `<p><b>${esc(c.rarity)}</b> : ${x.booster} par booster · ${x.box} par boîte${r.status && r.status.startsWith('moyenne') ? ' <span class="mu">(moyenne)</span>' : ''}</p><p class="note">Cette carte : ${r.k ? '' : 'au moins '}1 chance sur ${f1(1 / pc)} boosters.</p>`;
 }
 
 /* appui court = ouvrir, appui long = +1 */

@@ -998,10 +998,14 @@
 "range": null
 },
 "R": {
-"status": "taux inconnu"
+"min": 2,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 2 R par booster Tier 4"
 },
 "SR": {
-"status": "taux inconnu"
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 1 SR par booster Tier 4"
 },
 "SSR": {
 "status": "taux inconnu"
@@ -1053,10 +1057,14 @@
 "range": null
 },
 "R": {
-"status": "taux inconnu"
+"min": 2,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 2 R par booster Tier 4"
 },
 "SR": {
-"status": "taux inconnu"
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 1 SR par booster Tier 4"
 },
 "SSR": {
 "status": "taux inconnu"
@@ -1091,6 +1099,17 @@
 "k": 0.01389,
 "status": "moyenne Narutopia",
 "range": null
+},
+"R": {
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Narutopia : 1 R non brillante assurée par booster"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"SR": {
+"status": "taux inconnu"
 }
 },
 "checks": [
@@ -1113,6 +1132,19 @@
 "k": 0.01667,
 "status": "moyenne Narutopia",
 "range": null
+},
+"R": {
+"min": 4,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 4 R + 1 SR ou plus par booster Tier 2"
+},
+"SR": {
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Narutopia : 1 SR assurée par booster"
+},
+"SSR": {
+"status": "taux inconnu"
 }
 },
 "checks": [
@@ -1145,10 +1177,14 @@
 "status": "taux inconnu"
 },
 "R": {
-"status": "taux inconnu"
+"min": 2,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 2 R par booster Tier 3"
 },
 "SR": {
-"status": "taux inconnu"
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 1 SR par booster Tier 3"
 },
 "TR": {
 "status": "taux inconnu"
@@ -1191,6 +1227,19 @@
 "HR": {
 "k": 1,
 "status": "garanti (Narutopia : 1 HR par booster)"
+},
+"R": {
+"min": 2,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 2 R par booster Tier 4"
+},
+"SR": {
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 1 SR par booster Tier 4"
+},
+"SSR": {
+"status": "taux inconnu"
 }
 },
 "checks": [
@@ -1218,6 +1267,15 @@
 "k": 0.03,
 "status": "moyenne Narutopia",
 "range": "1 à 2 par boîte"
+},
+"R": {
+"status": "taux inconnu"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"SR": {
+"status": "taux inconnu"
 }
 },
 "checks": [
@@ -1250,6 +1308,19 @@
 "k": 0.00139,
 "status": "moyenne Narutopia",
 "range": null
+},
+"R": {
+"min": 4,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 4 R + 1 SR ou plus par booster Tier 2"
+},
+"SR": {
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Narutopia : 1 SR assurée par booster"
+},
+"SSR": {
+"status": "taux inconnu"
 }
 },
 "checks": [
@@ -1282,6 +1353,17 @@
 "k": 0.00463,
 "status": "moyenne Narutopia",
 "range": null
+},
+"R": {
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Narutopia : 1 R non brillante assurée par booster"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"SR": {
+"status": "taux inconnu"
 }
 },
 "checks": [
@@ -1335,10 +1417,14 @@
 "status": "garanti (Narutopia : 1 HR par booster)"
 },
 "R": {
-"status": "taux inconnu"
+"min": 2,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 2 R par booster Tier 4"
 },
 "SR": {
-"status": "taux inconnu"
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 1 SR par booster Tier 4"
 },
 "SSR": {
 "status": "taux inconnu"
@@ -1369,6 +1455,19 @@
 "status": "taux inconnu"
 },
 "TR": {
+"status": "taux inconnu"
+},
+"R": {
+"min": 2,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 2 R par booster Tier 3"
+},
+"SR": {
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 1 SR par booster Tier 3"
+},
+"SSR": {
 "status": "taux inconnu"
 }
 },
@@ -1402,6 +1501,19 @@
 "k": 0.00139,
 "status": "moyenne Narutopia",
 "range": null
+},
+"R": {
+"min": 4,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 4 R + 1 SR ou plus par booster Tier 2"
+},
+"SR": {
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Narutopia : 1 SR assurée par booster"
+},
+"SSR": {
+"status": "taux inconnu"
 }
 },
 "checks": [
@@ -1424,6 +1536,17 @@
 "k": 0.00463,
 "status": "moyenne Narutopia",
 "range": null
+},
+"R": {
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Narutopia : 1 R non brillante assurée par booster"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"SR": {
+"status": "taux inconnu"
 }
 },
 "checks": [
@@ -1455,6 +1578,16 @@
 },
 "SSR": {
 "status": "taux inconnu"
+},
+"R": {
+"min": 2,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 2 R par booster Tier 3"
+},
+"SR": {
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 1 SR par booster Tier 3"
 }
 },
 "checks": [
@@ -1508,10 +1641,14 @@
 "status": "garanti (Narutopia : 1 HR par booster)"
 },
 "R": {
-"status": "taux inconnu"
+"min": 2,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 2 R par booster Tier 4"
 },
 "SR": {
-"status": "taux inconnu"
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 1 SR par booster Tier 4"
 },
 "SSR": {
 "status": "taux inconnu"
@@ -1582,6 +1719,19 @@
 },
 "ZR": {
 "status": "taux inconnu"
+},
+"R": {
+"min": 4,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 4 R + 1 SR ou plus par booster Tier 2"
+},
+"SR": {
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Narutopia : 1 SR assurée par booster"
+},
+"SSR": {
+"status": "taux inconnu"
 }
 },
 "checks": [
@@ -1629,6 +1779,19 @@
 "status": "taux inconnu"
 },
 "TR": {
+"status": "taux inconnu"
+},
+"R": {
+"min": 2,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 2 R par booster Tier 3"
+},
+"SR": {
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 1 SR par booster Tier 3"
+},
+"SSR": {
 "status": "taux inconnu"
 }
 },
@@ -1684,13 +1847,21 @@
 "range": null
 },
 "R": {
-"status": "taux inconnu"
+"min": 2,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 2 R par booster Tier 4"
 },
 "SR": {
-"status": "taux inconnu"
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 1 SR par booster Tier 4"
 },
 "SSR": {
 "status": "taux inconnu"
+},
+"HR": {
+"k": 1,
+"status": "garanti (Narutopia : 1 HR par booster)"
 }
 },
 "checks": [
@@ -1713,6 +1884,17 @@
 "k": 0.00463,
 "status": "moyenne Narutopia",
 "range": null
+},
+"R": {
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Narutopia : 1 R non brillante assurée par booster"
+},
+"SSR": {
+"status": "taux inconnu"
+},
+"SR": {
+"status": "taux inconnu"
 }
 },
 "checks": [
@@ -1761,7 +1943,9 @@
 "status": "minimum (Narutopia : 1 SR assurée par booster)"
 },
 "R": {
-"status": "taux inconnu"
+"min": 4,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 4 R + 1 SR ou plus par booster Tier 2"
 },
 "ZR": {
 "status": "taux inconnu"
@@ -1815,6 +1999,19 @@
 "status": "taux inconnu"
 },
 "TR": {
+"status": "taux inconnu"
+},
+"R": {
+"min": 2,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 2 R par booster Tier 3"
+},
+"SR": {
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 1 SR par booster Tier 3"
+},
+"SSR": {
 "status": "taux inconnu"
 }
 },
@@ -1892,7 +2089,9 @@
 "status": "minimum (Narutopia : 1 SR assurée par booster)"
 },
 "R": {
-"status": "taux inconnu"
+"min": 4,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 4 R + 1 SR ou plus par booster Tier 2"
 },
 "ZR": {
 "status": "taux inconnu"
@@ -1955,6 +2154,19 @@
 "HR": {
 "k": 1,
 "status": "garanti (Narutopia : 1 HR par booster)"
+},
+"R": {
+"min": 2,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 2 R par booster Tier 4"
+},
+"SR": {
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 1 SR par booster Tier 4"
+},
+"SSR": {
+"status": "taux inconnu"
 }
 },
 "checks": [
@@ -2021,7 +2233,9 @@
 "status": "minimum (Narutopia : 1 SR assurée par booster)"
 },
 "R": {
-"status": "taux inconnu"
+"min": 4,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 4 R + 1 SR ou plus par booster Tier 2"
 },
 "SSR": {
 "status": "taux inconnu"
@@ -2068,7 +2282,9 @@
 "status": "minimum (Narutopia : 1 SR assurée par booster)"
 },
 "R": {
-"status": "taux inconnu"
+"min": 4,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 4 R + 1 SR ou plus par booster Tier 2"
 },
 "SSR": {
 "status": "taux inconnu"
@@ -2110,13 +2326,17 @@
 "status": "garanti (Narutopia : 1 HR par booster)"
 },
 "R": {
-"status": "taux inconnu"
+"min": 2,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 2 R par booster Tier 4"
 },
 "UAR": {
 "status": "taux inconnu"
 },
 "SR": {
-"status": "taux inconnu"
+"min": 1,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 1 SR par booster Tier 4"
 },
 "SSR": {
 "status": "taux inconnu"
@@ -2164,7 +2384,9 @@
 "status": "taux inconnu"
 },
 "R": {
-"status": "taux inconnu"
+"min": 4,
+"status": "minimum garanti par le format du booster",
+"src": "Capsule Corp Gear : 4 R + 1 SR ou plus par booster Tier 2"
 },
 "SSR": {
 "status": "taux inconnu"
@@ -2173,5 +2395,21 @@
 "checks": [
 "Boîte : 5 × 30 = 150 cartes ; cartes chiffrées par les moyennes : ≈ 36.9 (OK, ≤ total) ; le reste = raretés communes (R, SR, SSR…) non chiffrées"
 ]
+},
+"cn-promo-autres": {
+"edition": "Chine",
+"packCards": null,
+"boxPacks": null,
+"source": "Cartes hors booster (promos, coffrets) : pas de taux",
+"rarities": {},
+"checks": []
+},
+"cn-promo-pr": {
+"edition": "Chine",
+"packCards": null,
+"boxPacks": null,
+"source": "Cartes hors booster (promos, coffrets) : pas de taux",
+"rarities": {},
+"checks": []
 }
 }
