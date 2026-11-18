@@ -1,15 +1,22 @@
-# Mise à jour des prix (manuelle, par Claude Code via le navigateur)
+# Mise à jour des prix — par série (Claude Code, via Claude in Chrome)
 
-Déclencheur : « mets à jour les prix ».
+Commandes : « prix <série> » (ex. « prix Heaven Scroll », « prix Chapter Jin S2 ») ou « prix tout » (les 8 séries internationales à la suite).
 
-1. **Lot** : dans `data/watchlist.json`, prendre les 50 cartes dont le prix est absent de `data/prices.json` ou dont la `date` est la plus ancienne (ordre du fichier en cas d'égalité).
-2. **Recherche** (navigateur intégré, une recherche toutes les 10 à 15 s) :
-   - `https://www.ebay.fr/sch/i.html?_nkw=<code sans suffixe L> <nom>&LH_Sold=1&LH_Complete=1`
-   - moins de 3 ventes retenues → compléter avec `ebay.com` puis `ebay.de` (même requête).
-3. **Filtre** : ventes des 90 derniers jours ; exclure lots / bundles / « x2 », proxys / customs / fan-made / reprint, cartes gradées (PSA, BGS, CGC, PCA, Collect Aura…), versions chinoises (chinese, T4Wx, NRZ, NRB), le titre doit contenir le code (rareté + numéro).
-4. **Calcul** : médiane en € (USD converti au taux BCE du jour), nombre de ventes, date du jour, source (`ebay.fr`, `ebay.fr+com`…).
-5. **CAPTCHA / vérification eBay** : s'arrêter immédiatement, ne rien contourner, enregistrer ce qui est déjà fait.
-6. **Écrire** `data/prices.json` (`{updated, cards: {code: {median, n, date, source, prev}}}`), changer `V` dans `sw.js`, commit + push.
-7. **Récap** : cartes mises à jour, 5 plus chères, plus grosses hausses / baisses (vs `prev`), nombre restant sans prix.
+| Série | id | code |
+|---|---|---|
+| Heaven Scroll | heaven-scroll | NRSA01 |
+| Chapter Jin S2 / S3 / S4 | chapter-jin-2 / -3 / -4 | NRSA02 / 03 / 04 |
+| Earth Scroll S1 / S2 / S3 | earth-scroll-1 / -2 / -3 | NRI01 / NREA02 / NREA03 |
+| Ninja Age | ninja-age | NRCCNA |
 
-Dans l'app : prix eBay affiché « ventes eBay · date · N ventes » ; le prix manuel de l'utilisateur reste prioritaire s'il est plus récent.
+1. **Navigateur** : Chrome de l'utilisateur (Claude in Chrome), connecté à eBay.
+2. **Recherches larges** (1 à 3) sur ebay.fr, ventes réussies, 240 résultats/page :
+   `https://www.ebay.fr/sch/i.html?_nkw=<requête>&LH_Sold=1&LH_Complete=1&_ipg=240&_pgn=<page>`
+   requêtes : « Kayou Naruto <nom de série> », « <code série> ». 5 pages max par recherche, **une page toutes les 15 à 20 s**.
+3. **Association annonce → carte** : d'abord le code dans le titre (sans suffixe L, séparateurs tolérés : `NRSA01-SSR-019`, `NRSA01 SSR 019`…), sinon nom du perso + rareté, uniquement s'il n'y a qu'une carte possible. Ignorer lots, proxys/customs, gradées (PSA, BGS, CGC, PCA, Collect Aura…), versions chinoises, annonces ambiguës.
+4. **Calcul** : ventes des 90 derniers jours, médiane en € par carte de la watchlist (`data/watchlist.json`) ; moins de 2 ventes → « pas assez de ventes » (`median: null`). Bonus : UR et SSR trouvées au passage aussi enregistrées.
+5. **Vérification / CAPTCHA eBay** : s'arrêter immédiatement sans contourner, enregistrer ce qui est fait.
+6. **Écrire** `data/prices.json` (`cards.<code> = {median, n, date, source, prev}`), changer `V` dans `sw.js`, commit + push.
+7. **Récap** : cartes chiffrées / sans ventes, top 5, plus grosses variations (vs `prev`).
+
+Dans l'app : prix eBay affiché « ventes eBay · date · N ventes » ; le prix manuel reste prioritaire s'il est plus récent.

@@ -6,233 +6,204 @@
 "median": 150.0,
 "n": 3,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 0
+"source": "ebay.fr (recherches larges)",
+"prev": 150.0
 },
 "NRSA01-SE-002": {
-"median": 615.16,
+"median": 615.12,
 "n": 6,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 0
+"source": "ebay.fr (recherches larges)",
+"prev": 615.16
 },
 "NRSA01-SE-003": {
-"median": 232.95,
-"n": 6,
+"median": 193.1,
+"n": 5,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 4
+"source": "ebay.fr (recherches larges)",
+"prev": 232.95
 },
 "NRSA01-SE-004": {
-"median": 283.71,
-"n": 7,
+"median": 278.24,
+"n": 8,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 1
+"source": "ebay.fr (recherches larges)",
+"prev": 283.71
 },
 "NRSA01-SP-001": {
-"median": 43.65,
-"n": 23,
+"median": 45.0,
+"n": 30,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 9
+"source": "ebay.fr (recherches larges)",
+"prev": 43.65
 },
 "NRSA01-SP-002": {
 "median": 28.36,
-"n": 31,
+"n": 33,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 8
+"source": "ebay.fr (recherches larges)",
+"prev": 28.36
 },
 "NRSA01-SP-003": {
 "median": 21.82,
-"n": 26,
+"n": 32,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 5
+"source": "ebay.fr (recherches larges)",
+"prev": 21.82
 },
 "NRSA01-SP-004": {
-"median": 38.19,
-"n": 21,
+"median": 32.73,
+"n": 29,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 4
+"source": "ebay.fr (recherches larges)",
+"prev": 38.19
 },
 "NRSA01-BP-001": {
-"median": 79.11,
-"n": 4,
-"date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 3
-},
-"NRSA01-BP-002": {
-"median": 51.83,
+"median": 79.1,
 "n": 6,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 1
+"source": "ebay.fr (recherches larges)",
+"prev": 79.11
+},
+"NRSA01-BP-002": {
+"median": 51.82,
+"n": 6,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": 51.83
 },
 "NRSA01-BP-003": {
 "median": 21.82,
-"n": 15,
+"n": 16,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 1
+"source": "ebay.fr (recherches larges)",
+"prev": 21.82
 },
 "NRSA01-BP-004": {
 "median": 49.1,
 "n": 5,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 1
+"source": "ebay.fr (recherches larges)",
+"prev": 49.1
 },
 "NRSA01-BP-005": {
 "median": 21.82,
 "n": 13,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 1
+"source": "ebay.fr (recherches larges)",
+"prev": 21.82
 },
 "NRSA01-BP-006": {
-"median": 21.7,
-"n": 14,
+"median": 21.81,
+"n": 17,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 0
+"source": "ebay.fr (recherches larges)",
+"prev": 21.7
 },
 "NRSA01-BP-007": {
 "median": 54.55,
 "n": 3,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 0
+"source": "ebay.fr (recherches larges)",
+"prev": 54.55
 },
 "NRSA01-MR-001": {
 "median": 5.45,
-"n": 19,
+"n": 23,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 2
+"source": "ebay.fr (recherches larges)",
+"prev": 5.45
 },
 "NRSA01-MR-002": {
-"median": 3.38,
-"n": 16,
+"median": 3.81,
+"n": 17,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 4
+"source": "ebay.fr (recherches larges)",
+"prev": 3.38
 },
 "NRSA01-MR-003": {
 "median": 4.36,
-"n": 14,
+"n": 18,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 4
+"source": "ebay.fr (recherches larges)",
+"prev": 4.36
 },
 "NRSA01-MR-004": {
 "median": 5.46,
-"n": 29,
+"n": 31,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 0
+"source": "ebay.fr (recherches larges)",
+"prev": 5.46
 },
 "NRSA01-MR-005": {
 "median": 3.58,
 "n": 20,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 1
+"source": "ebay.fr (recherches larges)",
+"prev": 3.58
 },
 "NRSA01-MR-006": {
 "median": 4.36,
-"n": 12,
+"n": 15,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 4
+"source": "ebay.fr (recherches larges)",
+"prev": 4.36
 },
 "NRSA01-PU-001": {
 "median": 3.26,
-"n": 9,
+"n": 12,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 1
+"source": "ebay.fr (recherches larges)",
+"prev": 3.26
 },
 "NRSA01-PU-002": {
 "median": 3.15,
 "n": 22,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 6
+"source": "ebay.fr (recherches larges)",
+"prev": 3.15
 },
 "NRSA01-PU-003": {
-"median": 3.08,
-"n": 18,
+"median": 2.9,
+"n": 19,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 0
+"source": "ebay.fr (recherches larges)",
+"prev": 3.08
 },
 "NRSA01-PU-004": {
 "median": 3.26,
-"n": 12,
+"n": 16,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 1
+"source": "ebay.fr (recherches larges)",
+"prev": 3.26
 },
 "NRSA01-PU-005": {
 "median": 3.59,
-"n": 15,
+"n": 18,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 0
+"source": "ebay.fr (recherches larges)",
+"prev": 3.59
 },
 "NRSA01-PU-006": {
-"median": 2.81,
-"n": 22,
+"median": 2.78,
+"n": 27,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 3
+"source": "ebay.fr (recherches larges)",
+"prev": 2.81
 },
 "NRSA01-PU-007": {
-"median": 3.45,
-"n": 8,
+"median": 3.46,
+"n": 12,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 0
+"source": "ebay.fr (recherches larges)",
+"prev": 3.45
 },
 "NRSA01-PU-008": {
 "median": 3.27,
-"n": 12,
+"n": 13,
 "date": "2026-11-18",
-"source": "ebay.fr",
-"prev": null,
-"excluded": 1
+"source": "ebay.fr (recherches larges)",
+"prev": 3.27
 },
 "NRSA02-SE-001": {
 "median": 66.38,
@@ -401,6 +372,266 @@
 "source": "ebay.fr",
 "prev": null,
 "excluded": 0
+},
+"NRSA01-UR-001": {
+"median": 2.17,
+"n": 11,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-UR-002": {
+"median": 2.17,
+"n": 10,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-UR-003": {
+"median": 2.17,
+"n": 6,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-UR-004": {
+"median": 2.18,
+"n": 3,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-UR-005": {
+"median": 2.17,
+"n": 7,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-UR-006": {
+"median": 2.17,
+"n": 8,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-UR-007": {
+"median": 2.04,
+"n": 2,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-UR-008": {
+"median": 2.04,
+"n": 2,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-UR-010": {
+"median": 2.18,
+"n": 7,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-UR-012": {
+"median": null,
+"n": 1,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null,
+"note": "pas assez de ventes"
+},
+"NRSA01-UR-013": {
+"median": 2.17,
+"n": 3,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-UR-014": {
+"median": 2.17,
+"n": 8,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-UR-015": {
+"median": 2.17,
+"n": 2,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-001": {
+"median": 2.17,
+"n": 3,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-002": {
+"median": 2.17,
+"n": 7,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-003": {
+"median": 2.13,
+"n": 7,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-004": {
+"median": 2.17,
+"n": 8,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-005": {
+"median": 2.18,
+"n": 5,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-006": {
+"median": 2.18,
+"n": 7,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-007": {
+"median": 2.17,
+"n": 3,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-008": {
+"median": 3.5,
+"n": 3,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-009": {
+"median": 2.17,
+"n": 3,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-010": {
+"median": 2.45,
+"n": 8,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-011": {
+"median": 2.04,
+"n": 4,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-012": {
+"median": 2.17,
+"n": 6,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-013": {
+"median": 2.17,
+"n": 3,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-014": {
+"median": 2.17,
+"n": 5,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-015": {
+"median": 2.31,
+"n": 4,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-016": {
+"median": 1.75,
+"n": 7,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-017": {
+"median": 2.17,
+"n": 9,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-018": {
+"median": 2.17,
+"n": 9,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-019": {
+"median": 5.46,
+"n": 44,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-020": {
+"median": 2.17,
+"n": 7,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-021": {
+"median": 10.9,
+"n": 45,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-022": {
+"median": 2.17,
+"n": 5,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-023": {
+"median": 2.17,
+"n": 4,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
+},
+"NRSA01-SSR-024": {
+"median": 1.91,
+"n": 4,
+"date": "2026-11-18",
+"source": "ebay.fr (recherches larges)",
+"prev": null
 }
 }
 }
