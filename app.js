@@ -3,7 +3,7 @@
 const $ = (s, r = document) => r.querySelector(s);
 const V = $('#view');
 const CONDS = ['Mint', 'NM', 'EX', 'GD', 'LP', 'PL', 'Abîmée'];
-const S = { eb: {}, sets: [], setsSrc: '', odds: {}, col: {}, photos: {}, data: {}, ctx: [], pack: [], opened: null, cls: {}, q: '' };
+const S = { eb: {}, pm: {}, sets: [], setsSrc: '', odds: {}, col: {}, photos: {}, data: {}, ctx: [], pack: [], opened: null, cls: {}, q: '' };
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const eur = v => v == null ? '—' : v.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' });
 const f1 = y => (Math.round(y * 10) / 10).toLocaleString('fr-FR');
@@ -14,7 +14,7 @@ const qty = c => (S.col[key(c)] || {}).q || 0;
 function eff(k) {
   const e = S.col[k], b = S.eb[k.slice(k.indexOf('|') + 1)];
   const mine = e && typeof e.price === 'number' ? { v: e.price, src: 'moi', date: e.priceDate } : null;
-  const eb = b && b.n > 0 && typeof b.median === 'number' ? { v: b.median, src: 'ebay', date: b.date, n: b.n } : null;
+  const nb = b && (b.nbVentes ?? b.n), eb = b && nb > 0 && typeof b.median === 'number' ? { v: b.median, src: 'ebay', date: b.date, n: nb } : null;
   if (mine && (!eb || new Date(mine.date) >= new Date(eb.date))) return mine;
   return eb || mine;
 }
@@ -152,8 +152,9 @@ const views = {
     const own = d.cards.filter(qty).length, t = d.cards.length, val = worth(id);
     const tabs = [{ id: '', label: 'Tout' }, ...d.rarities.slice().reverse()];
     S.ctx = d.cards.filter(c => (!f.r || c.rarity === f.r) && (!f.own || qty(c)));
-    return `<section class="bh">${ring(own, t, 64)}<div><div class="big">${own}/${t}</div><div class="mu">Valeur (mes prix) : ${worthTxt(val)}</div></div>
+    return `<section class="bh">${ring(own, t, 64)}<div><div class="big">${own}/${t}</div><div class="mu">Valeur : ${worthTxt(val)}</div></div>
       <a class="btn g" href="#g/${id}">📖 Guide</a></section>
+      ${meta(id).region === 'intl' ? updBtn(meta(id).title.replace(/ – Série (\d)/, ' S$1').replace('Heaven Scroll S1', 'Heaven Scroll'), (S.pm.series || {})[id]) : ''}
       ${d.partial ? '<p class="note">Liste partielle : des cartes peuvent manquer ou être sans image (placeholder). ↺ = réédition d\'une autre boîte de la même wave.</p>' : ''}
       <div class="ctabs">${tabs.map(r => { const cs = r.id ? d.cards.filter(c => c.rarity === r.id) : d.cards; return `<button data-r="${esc(r.id)}" class="${f.r === r.id ? 'on' : ''}">${esc(r.id || r.label)} <small>${cs.filter(qty).length}/${cs.length}</small></button>`; }).join('')}</div>
       <label class="own"><input type="checkbox" id="own" ${f.own ? 'checked' : ''}> Possédées seulement</label>
@@ -177,8 +178,7 @@ const views = {
       ${c.alias && c.alias.eu && c.alias.eu !== c.code ? `<tr><td>Code FR/EU</td><td>${twin(c.alias.eu, m.link)}</td></tr>` : ''}
       ${c.alias && c.alias.cn && c.alias.cn !== c.code ? `<tr><td>Code CN</td><td>${twin(c.alias.cn, m.link)}</td></tr>` : ''}
       <tr><td>État</td><td><select id="cond">${CONDS.map(x => `<option${x === e.cond ? ' selected' : ''}>${x}</option>`).join('')}</select></td></tr></table></section>
-    ${S.eb[c.code] ? `<section class="box"><h2>Ventes eBay</h2>${S.eb[c.code].n ? `<div class="big">${eur(S.eb[c.code].median)}</div><div class="mu">ventes eBay · ${fdate(S.eb[c.code].date)} · ${S.eb[c.code].n} vente${S.eb[c.code].n > 1 ? 's' : ''} (médiane, ${esc(S.eb[c.code].source)})</div>` : `<div class="mu">Aucune vente retenue au ${fdate(S.eb[c.code].date)}.</div>`}
-      <p class="note">${eff(key(c)) && eff(key(c)).src === 'moi' ? 'Ton prix manuel, plus récent, est utilisé dans les valeurs.' : 'Utilisé dans les valeurs tant que tu ne saisis pas un prix plus récent.'}</p></section>` : ''}
+    ${priceBox(c)}
     <section class="box"><h2>Mon prix</h2>
       <div class="mp"><input id="mp" type="text" inputmode="decimal" autocomplete="off" pattern="[0-9]*[.,]?[0-9]*" placeholder="Prix en €" value="${e.price ?? ''}"><span>€</span></div>
       <div class="mu" id="mpd">${e.priceDate ? `Saisi le ${fdate(e.priceDate)}${stale(e) ? ' <span title="plus de 30 jours">🕓 à revoir (+30 jours)</span>' : ''}` : 'Aucun prix saisi'}</div>
@@ -229,7 +229,7 @@ const views = {
       <a class="btn w" href="#b/${id}" data-replace>Nouveau booster</a><a class="btn g w" href="#s/${id}">Voir le classeur</a></section>`;
   },
   r() {
-    return `<a class="btn w" href="#k">📖 Comprendre Kayou</a>
+    return `${updBtn('tout', S.pm.updated)}<a class="btn w" href="#k">📖 Comprendre Kayou</a>
     <section class="box"><h2>Sauvegarde</h2><p class="mu">Ta collection est stockée sur ce téléphone (IndexedDB). Exporte-la régulièrement.</p>
       <button class="btn w" id="ex">⤓ Exporter (JSON)</button>
       <label class="btn g w">⤒ Importer un backup<input id="im" type="file" accept="application/json,.json" hidden></label></section>
@@ -294,6 +294,38 @@ function press(el, onTap, onLong) {
 const openCard = c => go('#s/' + c.dataset.k);
 const longAdd = c => { const card = byKey(c.dataset.k); add(card); vib(25); refreshTile(c).classList.add('pop'); toast(`+1 ${card.name || card.code} (×${qty(card)})`); };
 
+/* ---------- prix eBay (data/prices.json, relevé par Claude Code selon PRICES.md) ---------- */
+function updBtn(serie, date) {
+  return `<div class="upd"><button class="btn w" data-cmd="${esc(`prix ${serie} — suis PRICES.md`)}">🔄 Mettre à jour les prix</button><div class="mu">Dernière mise à jour : ${date ? fdate(date) : 'jamais'}</div></div>`;
+}
+function spark(h) {
+  if (!h || h.length < 2) return '';
+  const v = h.map(x => x.median), lo = Math.min(...v), hi = Math.max(...v), W = 120, H = 32;
+  const pts = v.map((y, i) => `${(i / (v.length - 1) * W).toFixed(1)},${(H - 3 - (hi === lo ? .5 : (y - lo) / (hi - lo)) * (H - 6)).toFixed(1)}`).join(' ');
+  const d = (v[v.length - 1] - v[v.length - 2]) / v[v.length - 2] * 100;
+  return `<div class="spk"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><polyline points="${pts}" fill="none" stroke="var(--or)" stroke-width="2"/></svg><b class="${d >= 0 ? 'up' : 'dn'}">${d >= 0 ? '▲' : '▼'} ${f1(Math.abs(d))} %</b><span class="mu">depuis le ${fdate(h[h.length - 2].date)}</span></div>`;
+}
+function priceBox(c) {
+  const b = S.eb[c.code]; if (!b) return '';
+  const n = b.nbVentes ?? b.n ?? 0, last = b.dernieresVentes || [];
+  return `<section class="box"><h2>Prix</h2>
+    ${b.median != null ? `<div class="big">Vendu ~ ${eur(b.median)}</div><div class="mu">${n} vente${n > 1 ? 's' : ''} · 90 j · relevé du ${fdate(b.date)}</div>` : `<div class="big" style="color:var(--mu)">pas assez de ventes</div><div class="mu">${n} vente${n > 1 ? 's' : ''} sur 90 j · relevé du ${fdate(b.date)}</div>`}
+    ${spark(b.historique)}
+    ${last.length ? `<div class="lv">${last.map(v => `<a href="${esc(v.url)}" target="_blank" rel="noopener"><span>${fdate(v.date)}</span><b>${eur(v.prix)}</b><span class="mu">${esc(v.pays || '')}</span></a>`).join('')}</div>` : ''}
+    ${b.plusBasActuel != null ? `<p class="mu">En vente dès ${eur(b.plusBasActuel)} (${b.nbAnnonces} annonce${b.nbAnnonces > 1 ? 's' : ''})</p>` : ''}
+    <p class="note">Source : ventes réussies eBay (${esc(b.source || 'ebay')}). ${eff(key(c)) && eff(key(c)).src === 'moi' ? 'Ton prix manuel, plus récent, est utilisé dans les valeurs.' : 'Utilisé dans les valeurs tant que tu ne saisis pas un prix plus récent.'}</p></section>`;
+}
+async function loadEb() {
+  try { const j = await (await fetch('data/prices.json?t=' + Date.now(), { cache: 'no-store' })).json(); const ch = j.updated !== (S.pm && S.pm.updated) || JSON.stringify(j.series) !== JSON.stringify(S.pm && S.pm.series); S.pm = j; S.eb = j.cards || {}; return ch; } catch { return false; }
+}
+document.addEventListener('visibilitychange', async () => { if (document.visibilityState === 'visible' && await loadEb()) { curBase = null; route(); toast('Prix mis à jour'); } });
+document.addEventListener('click', async e => {
+  const b = e.target.closest('[data-cmd]'); if (!b) return;
+  const t = b.dataset.cmd;
+  try { await navigator.clipboard.writeText(t); } catch { const a = document.createElement('textarea'); a.value = t; document.body.append(a); a.select(); document.execCommand('copy'); a.remove(); }
+  const m = $('#bubble'); m.innerHTML = `<b>Commande copiée ✓</b><p>« ${esc(t)} »</p><p>Ouvre l'app Claude, va dans la conversation Claude Code du projet Kayou, colle et envoie. Ton PC doit être allumé avec l'app Claude et Chrome ouverts.</p><button class="btn w">OK</button>`;
+  m.hidden = false; m.querySelector('button').onclick = () => m.hidden = true;
+});
 const binds = {
   h() {
     const inp = $('#gq');
@@ -418,7 +450,7 @@ async function top10() {
 async function init() {
   const [sj, od] = await Promise.all([fetch('data/sets.json').then(r => r.json()), fetch('data/odds.json').then(r => r.json())]);
   S.sets = Array.isArray(sj) ? sj : sj.sets; S.setsSrc = sj.source || ''; S.odds = od;
-  try { S.eb = (await (await fetch('data/prices.json', { cache: 'no-store' })).json()).cards || {}; } catch { S.eb = {}; }
+  await loadEb();
   S.col = await allOf('col');
   for (const k in S.col) { const r = migrateRec(S.col[k]); if (JSON.stringify(r) !== JSON.stringify(S.col[k])) { S.col[k] = r; saveCol(k); } } // migration douce, même base et mêmes clés
   const ph = await allOf('photos'); for (const k in ph) S.photos[k] = URL.createObjectURL(ph[k]);
