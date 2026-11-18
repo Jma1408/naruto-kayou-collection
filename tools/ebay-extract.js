@@ -10,7 +10,7 @@
     const ti = (li.querySelector('.s-card__title') || li).innerText.replace(/La page s'ouvre.*|Opens in a new.*|Wird in neuem.*/s, '').replace(/\s+/g, ' ').trim();
     const d = (t.match(/(?:Vendu le|Verkauft am|Sold)\s+([^\n]+?\d{4})/) || [])[1] || '';
     const p = (t.match(/(\d[\d\s. ]*,\d{2})\s*EUR/) || t.match(/EUR\s*(\d[\d. ]*,\d{2})/) || t.match(/(\$\s?\d[\d,]*\.\d{2})/) || [])[1] || '';
-    const pays = (t.match(/livraison de\s+([^\n]+)/i) || t.match(/(?:aus|from)\s+([A-Z][^\n]+)/) || [])[1] || '';
+    const pays = (t.match(/livraison\s+de\s+([^\n]+)/i) || t.match(/Versand\s+aus\s+([^\n]+)/i) || t.match(/shipping\s+from\s+([^\n]+)/i) || [])[1] || ''; // vide = vendeur du pays du site (France sur ebay.fr)
     rows.push([tag, d, p, pays.trim(), a.href.split('?')[0], ti].join('\t'));
   }
   localStorage.kdw = (localStorage.kdw || '') + rows.join('\n') + '\n';
