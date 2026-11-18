@@ -33,7 +33,7 @@ RRE = re.compile(r'(?<![A-Z])(' + '|'.join(re.escape(r) for r in rars) + r')[\s\
 bycode = {(c['rarity'], int(re.search(r'(\d+)$', c['code']).group(1))): c for c in d['cards']}
 words = lambda n: [w for w in re.split(r'\s+', n.upper()) if len(w) > 2]
 stats = collections.Counter(); sales = collections.defaultdict(list); ads = collections.defaultdict(list)
-for kind, date, price, pays, url, title in [r[:6] for r in rows.values()]:
+for kind, date, price, pays, url, title in [[r[0][0]] + r[1:6] for r in rows.values()]:
     T = title.upper(); v = pprice(price)
     if v is None: stats['prix?'] += 1; continue
     if kind == 'S':
