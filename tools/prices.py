@@ -44,7 +44,7 @@ for l in raw.split('\n'):
     p = l.split('\t')
     if len(p) >= 6: rows[(p[0][0], p[4] or p[5])] = p
 OTHER = re.compile(r'NRSA0\d|NREA0\d|NRI0\d|NRCC\w*|NR[ZB]\d\d', re.I)
-BAD = re.compile(r'\blots?\b|bundle|\bx\s?[2-9]\b|\b[2-9]\s?x\b|proxy|custom|fan.?made|reprint|\bpsa\b|bgs|cgc|\bpca\b|collect ?aura|grad[ée]|graded|set of|complete|playset|au choix|choose|pick|à choisir|liste|booster|display|scell|sealed', re.I)
+BAD = re.compile(r'\blots?\b|bundle|\bx\s?[2-9]\b|\b[2-9]\s?x\b|proxy|custom|fan.?made|reprint|\bpsa\b|bgs|cgc|\bpca\b|collect ?aura|grad[ée]|graded|set of|complete|playset|au choix|choose|choice|pick|select|choisi|à choisir|liste|booster|display|scell|sealed', re.I)
 FOREIGN = re.compile(r'chin|t\dw\d|tier\s?\d|nrz\d|nrb\d|\bcn\b', re.I)  # séries FR : versions chinoises exclues
 LOCAL = re.compile(r'\b(?:EN|FR|ENG)\b|(?i:english|anglais|fran[cç]ais|french|heaven scroll|chapter jin|earth scroll|ninja age|smriti)')  # sets chinois : versions EN/FR exclues
 WTAG = re.compile(r'\bT\s?(\d(?:\.5)?)\s?[-_/ ]?\s?W(?:AVE)?\s?0?(\d)\b|TIER\s?(\d(?:\.5)?)\s*WAVE\s?(\d)', re.I)

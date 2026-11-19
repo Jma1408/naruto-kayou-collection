@@ -1,8 +1,16 @@
 {
-"updated": "2026-11-18",
+"updated": "2026-11-19",
 "series": {
 "heaven-scroll": "2026-11-18",
-"chapter-jin-2": "2026-11-17"
+"chapter-jin-2": "2026-11-17",
+"cn-t4w8": "2026-11-19",
+"cn-t4w7": "2026-11-19",
+"cn-t4w6": "2026-11-19",
+"cn-t4w5": "2026-11-19",
+"cn-t4w4": "2026-11-19",
+"cn-t4w3": "2026-11-19",
+"cn-t4w2": "2026-11-19",
+"cn-t4w1": "2026-11-19"
 },
 "source": "ventes réussies eBay (procédure PRICES.md)",
 "cards": {
@@ -2666,6 +2674,4720 @@
 "nbAnnonces": 1,
 "date": "2026-11-18",
 "source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-SE-001": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-SE-002": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-SE-003": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-SE-004": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-BP-001": {
+"median": 71.07,
+"nbVentes": 2,
+"dernieresVentes": [
+{
+"date": "2026-10-09",
+"prix": 71.07,
+"pays": "Thaïlande",
+"url": "https://www.ebay.fr/itm/237092233865"
+},
+{
+"date": "2026-10-03",
+"prix": 71.07,
+"pays": "Thaïlande",
+"url": "https://www.ebay.fr/itm/237092233870"
+}
+],
+"plusBasActuel": 78.72,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 71.07
+}
+]
+},
+"cn-t4w8|NRZ08-BP-002": {
+"median": 74.44,
+"nbVentes": 4,
+"dernieresVentes": [
+{
+"date": "2026-10-20",
+"prix": 75.44,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/168495446689"
+},
+{
+"date": "2026-10-09",
+"prix": 71.07,
+"pays": "Thaïlande",
+"url": "https://www.ebay.fr/itm/237092233866"
+},
+{
+"date": "2026-10-07",
+"prix": 73.43,
+"pays": "Australie",
+"url": "https://www.ebay.fr/itm/307108195229"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 74.44
+}
+]
+},
+"cn-t4w8|NRZ08-BP-003": {
+"median": 97.31,
+"nbVentes": 3,
+"dernieresVentes": [
+{
+"date": "2026-11-09",
+"prix": 98.35,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/188480347008"
+},
+{
+"date": "2026-09-09",
+"prix": 97.31,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/168486777693"
+},
+{
+"date": "2026-09-08",
+"prix": 77.45,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/237041745518"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 97.31
+}
+]
+},
+"cn-t4w8|NRZ08-BP-004": {
+"median": 126.28,
+"nbVentes": 4,
+"dernieresVentes": [
+{
+"date": "2026-10-19",
+"prix": 82.95,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/407204721477"
+},
+{
+"date": "2026-10-09",
+"prix": 100.59,
+"pays": "Thaïlande",
+"url": "https://www.ebay.fr/itm/168566464489"
+},
+{
+"date": "2026-09-09",
+"prix": 151.98,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/168554358638"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 126.28
+}
+]
+},
+"cn-t4w8|NRZ08-BP-005": {
+"median": 163.95,
+"nbVentes": 7,
+"dernieresVentes": [
+{
+"date": "2026-10-23",
+"prix": 218.67,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/820243779869"
+},
+{
+"date": "2026-10-22",
+"prix": 164.01,
+"pays": "Thaïlande",
+"url": "https://www.ebay.fr/itm/168557331341"
+},
+{
+"date": "2026-10-16",
+"prix": 218.67,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/820070418774"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 163.95
+}
+]
+},
+"cn-t4w8|NRZ08-BP-006": {
+"median": 151.98,
+"nbVentes": 4,
+"dernieresVentes": [
+{
+"date": "2026-10-30",
+"prix": 151.98,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/168489937257"
+},
+{
+"date": "2026-10-30",
+"prix": 151.98,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/168489823211"
+},
+{
+"date": "2026-10-16",
+"prix": 182.7,
+"pays": "Italie",
+"url": "https://www.ebay.fr/itm/377207907207"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 151.98
+}
+]
+},
+"cn-t4w8|NRZ08-BP-007": {
+"median": 87.47,
+"nbVentes": 5,
+"dernieresVentes": [
+{
+"date": "2026-11-15",
+"prix": 67.04,
+"pays": "Italie",
+"url": "https://www.ebay.fr/itm/800885880838"
+},
+{
+"date": "2026-11-09",
+"prix": 120.22,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/188834976588"
+},
+{
+"date": "2026-09-21",
+"prix": 87.47,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/178486203128"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 87.47
+}
+]
+},
+"cn-t4w8|NRZ08-AR-001": {
+"median": 68.36,
+"nbVentes": 2,
+"dernieresVentes": [
+{
+"date": "2026-09-20",
+"prix": 55.82,
+"pays": "Italie",
+"url": "https://www.ebay.fr/itm/366669239520"
+},
+{
+"date": "2026-08-28",
+"prix": 80.9,
+"pays": "Thaïlande",
+"url": "https://www.ebay.fr/itm/128047623615"
+}
+],
+"plusBasActuel": 146.51,
+"nbAnnonces": 2,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 68.36
+}
+]
+},
+"cn-t4w8|NRZ08-AR-002": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-11-11",
+"prix": 35.54,
+"pays": "Thaïlande",
+"url": "https://www.ebay.fr/itm/128179099149"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-AR-003": {
+"median": 160.73,
+"nbVentes": 5,
+"dernieresVentes": [
+{
+"date": "2026-11-15",
+"prix": 130.0,
+"pays": "Italie",
+"url": "https://www.ebay.fr/itm/800885872960"
+},
+{
+"date": "2026-11-06",
+"prix": 115.19,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/960127717334"
+},
+{
+"date": "2026-10-30",
+"prix": 198.3,
+"pays": "Italie",
+"url": "https://www.ebay.fr/itm/377223971644"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 160.73
+}
+]
+},
+"cn-t4w8|NRZ08-AR-004": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-AR-005": {
+"median": 142.14,
+"nbVentes": 2,
+"dernieresVentes": [
+{
+"date": "2026-11-16",
+"prix": 142.14,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/257841452026"
+},
+{
+"date": "2026-11-07",
+"prix": 142.14,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/257698194537"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 142.14
+}
+]
+},
+"cn-t4w8|NRZ08-AR-006": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-10-25",
+"prix": 137.15,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/158025468547"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-MR-001": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-10-10",
+"prix": 3.82,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/158212983426"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-MR-002": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-MR-003": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-09-13",
+"prix": 7.64,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/158212971493"
+}
+],
+"plusBasActuel": 16.15,
+"nbAnnonces": 2,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-MR-004": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-09-08",
+"prix": 16.69,
+"pays": "France",
+"url": "https://www.ebay.fr/itm/407197040480"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-MR-005": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-MR-006": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-MR-007": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-09-08",
+"prix": 22.28,
+"pays": "France",
+"url": "https://www.ebay.fr/itm/407197044135"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-MR-008": {
+"median": 18.21,
+"nbVentes": 2,
+"dernieresVentes": [
+{
+"date": "2026-09-06",
+"prix": 20.04,
+"pays": "France",
+"url": "https://www.ebay.fr/itm/407197045500"
+},
+{
+"date": "2026-08-23",
+"prix": 16.39,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/158212989692"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 18.21
+}
+]
+},
+"cn-t4w8|NRZ08-UR-001": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 25.66,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-UR-006": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-09-19",
+"prix": 7.64,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/157988760956"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-UR-007": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-09-16",
+"prix": 3.27,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/157908593232"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-UR-009": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-09-20",
+"prix": 16.4,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/168303682491"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-UR-010": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-09-25",
+"prix": 9.83,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/236956182592"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-UR-012": {
+"median": 4.58,
+"nbVentes": 2,
+"dernieresVentes": [
+{
+"date": "2026-10-26",
+"prix": 4.8,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/158144203971"
+},
+{
+"date": "2026-10-11",
+"prix": 4.36,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/206230094008"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 4.58
+}
+]
+},
+"cn-t4w8|NRZ08-UR-015": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-08-23",
+"prix": 2.88,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/157908593290"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-SSR-004": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-10-11",
+"prix": 2.18,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/157968098881"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-SSR-006": {
+"median": 1.59,
+"nbVentes": 2,
+"dernieresVentes": [
+{
+"date": "2026-11-08",
+"prix": 1.0,
+"pays": "Autriche",
+"url": "https://www.ebay.fr/itm/840080828351"
+},
+{
+"date": "2026-10-26",
+"prix": 2.18,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/157968098900"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 1.59
+}
+]
+},
+"cn-t4w8|NRZ08-SSR-008": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-10-11",
+"prix": 2.18,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/157968098908"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-SSR-012": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-10-10",
+"prix": 4.36,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/158171965947"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-SSR-013": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-10-26",
+"prix": 2.18,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/157968098875"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-SSR-014": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-10-15",
+"prix": 2.18,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/157968098839"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-SSR-016": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-10-26",
+"prix": 2.18,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/157968098906"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-SE-001": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-SE-002": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-SE-003": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-SE-004": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-SP-001": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-SP-002": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-SP-003": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-SP-004": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-BP-001": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-BP-002": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-BP-003": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-BP-004": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-BP-005": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-BP-006": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-BP-007": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-AR-001": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-AR-002": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 516.69,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-AR-003": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-AR-004": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-AR-005": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-AR-006": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-AR-007": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-AR-008": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-AR-009": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-AR-010": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-MR-001": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-MR-002": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-MR-003": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-MR-004": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-MR-005": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-MR-006": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 9.83,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-MR-007": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-PU-001": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-PU-002": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-PU-003": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-PU-004": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-PU-005": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-PU-006": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-PU-007": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-PU-008": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-UR-002": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.89,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-UR-003": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.89,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-UR-004": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.89,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-UR-005": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.89,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-UR-006": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.89,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-UR-007": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.89,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-UR-009": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.89,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-UR-010": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.89,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-UR-011": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.89,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-UR-012": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.89,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-UR-014": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.89,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-UR-015": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.89,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-SSR-005": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 6.55,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w7|NRZ07-SSR-007": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 6.55,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SE-013": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SE-014": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SE-015": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 146.29,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SE-016": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SP-070": {
+"median": 32.02,
+"nbVentes": 4,
+"dernieresVentes": [
+{
+"date": "2026-10-27",
+"prix": 32.75,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/187628064016"
+},
+{
+"date": "2026-09-22",
+"prix": 33.74,
+"pays": "France",
+"url": "https://www.ebay.fr/itm/168672103699"
+},
+{
+"date": "2026-08-31",
+"prix": 31.28,
+"pays": "Canada",
+"url": "https://www.ebay.fr/itm/188604673546"
+}
+],
+"plusBasActuel": 12.47,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 32.02
+}
+]
+},
+"cn-t4w6|NRZ06-SP-071": {
+"median": 10.92,
+"nbVentes": 3,
+"dernieresVentes": [
+{
+"date": "2026-11-02",
+"prix": 11.97,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/187379541072"
+},
+{
+"date": "2026-10-24",
+"prix": 10.92,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/358453984040"
+},
+{
+"date": "2026-08-22",
+"prix": 3.64,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366602295168"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 10.92
+}
+]
+},
+"cn-t4w6|NRZ06-SP-072": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-11-17",
+"prix": 16.35,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/188068320708"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SP-073": {
+"median": 11.59,
+"nbVentes": 2,
+"dernieresVentes": [
+{
+"date": "2026-11-02",
+"prix": 16.35,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/188319944499"
+},
+{
+"date": "2026-09-23",
+"prix": 6.83,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/377503967771"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 11.59
+}
+]
+},
+"cn-t4w6|NRZ06-BP-028": {
+"median": 22.1,
+"nbVentes": 2,
+"dernieresVentes": [
+{
+"date": "2026-09-13",
+"prix": 38.27,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/168489826249"
+},
+{
+"date": "2026-08-22",
+"prix": 5.92,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366602823257"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 22.1
+}
+]
+},
+"cn-t4w6|NRZ06-BP-029": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-09-16",
+"prix": 0.9,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366657781226"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-BP-030": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-08-22",
+"prix": 13.67,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366602801010"
+}
+],
+"plusBasActuel": 32.79,
+"nbAnnonces": 2,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-BP-031": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-08-22",
+"prix": 5.01,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366602818219"
+}
+],
+"plusBasActuel": 25.14,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-BP-032": {
+"median": 1.14,
+"nbVentes": 3,
+"dernieresVentes": [
+{
+"date": "2026-09-16",
+"prix": 0.9,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366657793028"
+},
+{
+"date": "2026-09-16",
+"prix": 1.14,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366657773123"
+},
+{
+"date": "2026-08-22",
+"prix": 2.96,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366604501592"
+}
+],
+"plusBasActuel": 25.14,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 1.14
+}
+]
+},
+"cn-t4w6|NRZ06-BP-033": {
+"median": 2.77,
+"nbVentes": 4,
+"dernieresVentes": [
+{
+"date": "2026-09-16",
+"prix": 0.9,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366657778740"
+},
+{
+"date": "2026-09-16",
+"prix": 1.14,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366657769635"
+},
+{
+"date": "2026-08-22",
+"prix": 4.56,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366602810859"
+}
+],
+"plusBasActuel": 15.0,
+"nbAnnonces": 2,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 2.77
+}
+]
+},
+"cn-t4w6|NRZ06-BP-034": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 24.05,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-MR-063": {
+"median": 5.42,
+"nbVentes": 2,
+"dernieresVentes": [
+{
+"date": "2026-11-17",
+"prix": 4.32,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/187184464430"
+},
+{
+"date": "2026-09-20",
+"prix": 6.51,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/157648607617"
+}
+],
+"plusBasActuel": 7.0,
+"nbAnnonces": 2,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 5.42
+}
+]
+},
+"cn-t4w6|NRZ06-MR-064": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-11-04",
+"prix": 4.32,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/187184465550"
+}
+],
+"plusBasActuel": 10.92,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-MR-065": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-11-04",
+"prix": 4.32,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/187184467619"
+}
+],
+"plusBasActuel": 10.92,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-MR-066": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-11-10",
+"prix": 4.32,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/187166592690"
+}
+],
+"plusBasActuel": 7.0,
+"nbAnnonces": 2,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-MR-067": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-11-10",
+"prix": 4.32,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/187184468754"
+}
+],
+"plusBasActuel": 7.0,
+"nbAnnonces": 4,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-MR-068": {
+"median": 2.98,
+"nbVentes": 2,
+"dernieresVentes": [
+{
+"date": "2026-11-10",
+"prix": 4.32,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/187184470740"
+},
+{
+"date": "2026-08-28",
+"prix": 1.64,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/287541929836"
+}
+],
+"plusBasActuel": 7.0,
+"nbAnnonces": 2,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 2.98
+}
+]
+},
+"cn-t4w6|NRZ06-PU-001": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 2.0,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-PU-002": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-11-17",
+"prix": 4.8,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/156478883961"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-PU-003": {
+"median": 2.96,
+"nbVentes": 3,
+"dernieresVentes": [
+{
+"date": "2026-11-13",
+"prix": 0.9,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366786215054"
+},
+{
+"date": "2026-09-16",
+"prix": 2.96,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366657456795"
+},
+{
+"date": "2026-08-22",
+"prix": 5.01,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366602279790"
+}
+],
+"plusBasActuel": 2.0,
+"nbAnnonces": 4,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 2.96
+}
+]
+},
+"cn-t4w6|NRZ06-PU-004": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-10-21",
+"prix": 0.91,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/880016209050"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-PU-005": {
+"median": 2.84,
+"nbVentes": 4,
+"dernieresVentes": [
+{
+"date": "2026-09-16",
+"prix": 2.95,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366657462608"
+},
+{
+"date": "2026-09-16",
+"prix": 1.14,
+"pays": "Chine",
+"url": "https://www.ebay.fr/itm/366657459310"
+},
+{
+"date": "2026-08-27",
+"prix": 5.99,
+"pays": "France",
+"url": "https://www.ebay.fr/itm/306156621181"
+}
+],
+"plusBasActuel": 2.0,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 2.84
+}
+]
+},
+"cn-t4w6|NRZ06-PU-006": {
+"median": 2.18,
+"nbVentes": 3,
+"dernieresVentes": [
+{
+"date": "2026-11-11",
+"prix": 2.18,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/227213684633"
+},
+{
+"date": "2026-09-27",
+"prix": 0.9,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/287602365949"
+},
+{
+"date": "2026-09-06",
+"prix": 3.59,
+"pays": "France",
+"url": "https://www.ebay.fr/itm/188889308400"
+}
+],
+"plusBasActuel": 2.0,
+"nbAnnonces": 2,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 2.18
+}
+]
+},
+"cn-t4w6|NRZ06-PU-007": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-09-05",
+"prix": 3.84,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/156892602329"
+}
+],
+"plusBasActuel": 9.92,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-PU-008": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-UR-115": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 2.72,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-UR-117": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 2.72,
+"nbAnnonces": 2,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-UR-118": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-08-26",
+"prix": 3.0,
+"pays": "Allemagne",
+"url": "https://www.ebay.fr/itm/257181839080"
+}
+],
+"plusBasActuel": 2.72,
+"nbAnnonces": 2,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-UR-119": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 2.46,
+"nbAnnonces": 3,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-UR-121": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.28,
+"nbAnnonces": 2,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-UR-123": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.28,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-UR-124": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 2.72,
+"nbAnnonces": 4,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-UR-125": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 2.72,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-UR-126": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-10-22",
+"prix": 2.88,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/156449417429"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-UR-127": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-09-01",
+"prix": 2.18,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/156449417430"
+}
+],
+"plusBasActuel": 2.72,
+"nbAnnonces": 3,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-UR-128": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 2.72,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-UR-129": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 2.72,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SSR-131": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 6.55,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SSR-133": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 6.55,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SSR-134": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.82,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SSR-135": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 6.55,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SSR-138": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 4.58,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SSR-139": {
+"median": 2.94,
+"nbVentes": 2,
+"dernieresVentes": [
+{
+"date": "2026-10-26",
+"prix": 2.88,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/156449417386"
+},
+{
+"date": "2026-08-26",
+"prix": 3.0,
+"pays": "Allemagne",
+"url": "https://www.ebay.fr/itm/257181841004"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 2.94
+}
+]
+},
+"cn-t4w6|NRZ06-SSR-141": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 6.55,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SSR-142": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 2.49,
+"nbAnnonces": 2,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SSR-144": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-10-05",
+"prix": 2.13,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/187127136286"
+}
+],
+"plusBasActuel": 3.82,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SSR-146": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 4.58,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SSR-147": {
+"median": 3.42,
+"nbVentes": 2,
+"dernieresVentes": [
+{
+"date": "2026-10-26",
+"prix": 3.84,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/158336038171"
+},
+{
+"date": "2026-08-26",
+"prix": 3.0,
+"pays": "Allemagne",
+"url": "https://www.ebay.fr/itm/257181841601"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 3.42
+}
+]
+},
+"cn-t4w6|NRZ06-SSR-149": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-09-11",
+"prix": 31.8,
+"pays": "Italie",
+"url": "https://www.ebay.fr/itm/168538550747"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SSR-150": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 2.49,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SSR-151": {
+"median": 6.72,
+"nbVentes": 5,
+"dernieresVentes": [
+{
+"date": "2026-10-27",
+"prix": 5.01,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/800823466883"
+},
+{
+"date": "2026-10-26",
+"prix": 6.72,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/158336038172"
+},
+{
+"date": "2026-10-08",
+"prix": 7.64,
+"pays": "États-Unis",
+"url": "https://www.ebay.fr/itm/158325788939"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 6.72
+}
+]
+},
+"cn-t4w6|NRZ06-SSR-152": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 6.11,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SSR-153": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.26,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w6|NRZ06-SSR-154": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 3.27,
+"nbAnnonces": 2,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SE-007": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SE-008": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SE-009": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SE-010": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SE-011": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SE-012": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 492.03,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SP-061": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 28.42,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SP-062": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SP-063": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SP-064": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SP-065": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-BP-023": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-BP-024": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-BP-025": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-BP-026": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-BP-027": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-AR-058": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 5.47,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-AR-059": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-AR-060": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-MR-055": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-MR-056": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 239.45,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-MR-057": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-MR-058": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SLR-049": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SLR-050": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SLR-051": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SLR-052": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SLR-053": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SLR-054": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SLR-055": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SLR-056": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SLR-057": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SLR-058": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SLR-059": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-SLR-060": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-OR-093": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-OR-094": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-OR-095": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-OR-096": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-OR-097": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w5|NR-OR-098": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SE-001": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SE-002": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SE-003": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SE-004": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SE-005": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SE-006": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SP-046": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SP-047": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SP-048": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SP-049": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-BP-017": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-BP-018": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-BP-019": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-BP-020": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-BP-021": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-BP-022": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-AR-046": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-AR-047": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-AR-048": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-MR-037": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-MR-040": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-MR-041": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-MR-042": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SLR-037": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SLR-038": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SLR-039": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SLR-040": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SLR-041": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SLR-042": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SLR-043": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 10.93,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SLR-044": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SLR-045": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 4.54,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SLR-046": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SLR-047": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-SLR-048": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-OR-073": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-OR-074": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-OR-075": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-OR-076": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-OR-077": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w4|NR-OR-078": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SP-030": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SP-031": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SP-032": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SP-033": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-BP-007": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-BP-008": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-BP-009": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-BP-010": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-BP-011": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-BP-012": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-AR-025": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-AR-026": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-AR-027": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-AR-028": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-AR-029": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-AR-030": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-AR-031": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-AR-032": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-AR-033": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-AR-034": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-AR-035": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-AR-036": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-MR-023": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-MR-024": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-MR-025": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-MR-026": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-MR-027": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-MR-028": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SLR-025": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SLR-026": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SLR-027": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SLR-028": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SLR-029": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SLR-030": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SLR-031": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SLR-032": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SLR-033": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SLR-034": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SLR-035": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-SLR-036": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-OR-047": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-OR-048": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-OR-049": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-OR-050": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-OR-051": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-OR-052": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-OR-053": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-OR-054": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-OR-055": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-OR-056": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-OR-057": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-OR-058": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w3|NR-UR-064": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 4.0,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SP-016": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SP-020": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SP-021": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SP-022": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-BP-001": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-BP-002": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-BP-003": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-BP-004": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-BP-005": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-BP-006": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-AR-013": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-AR-014": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-AR-015": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-AR-016": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-AR-017": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-AR-018": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-AR-019": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-AR-020": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-AR-021": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-AR-022": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-AR-023": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-AR-024": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-MR-009": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-MR-010": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-MR-011": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-MR-012": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-MR-013": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-MR-014": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SLR-013": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SLR-014": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SLR-015": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SLR-016": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SLR-017": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SLR-018": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SLR-019": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SLR-020": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SLR-021": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SLR-022": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SLR-023": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-SLR-024": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-OR-027": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-OR-028": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-OR-029": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-OR-030": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-OR-031": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-OR-032": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-OR-033": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-OR-034": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-OR-035": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-OR-036": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-OR-037": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w2|NR-OR-038": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SP-005": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SP-006": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": 10.0,
+"nbAnnonces": 1,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SP-007": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-08-28",
+"prix": 37.09,
+"pays": "France",
+"url": "https://www.ebay.fr/itm/198598655484"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.fr",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SP-008": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SP-009": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-AR-011": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-AR-012": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SLR-001": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SLR-002": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SLR-003": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SLR-004": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SLR-005": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SLR-006": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SLR-007": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SLR-008": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SLR-009": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SLR-010": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SLR-011": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w1|NR-SLR-012": {
+"median": null,
+"nbVentes": 0,
+"dernieresVentes": [],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay",
 "historique": [],
 "note": "pas assez de ventes"
 }

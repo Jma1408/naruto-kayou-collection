@@ -48,6 +48,6 @@
 ## Outils (dans le dépôt)
 - `python3 tools/prices.py <set-id> --urls <ebay.fr|ebay.com|ebay.de> [S|A]` : liste des pages à relever (S = ventes, A = annonces en cours).
 - `tools/ebay-extract.js` : extraction d'une page de résultats (`localStorage.kdg = <contenu>` ; tag `S…` = ventes, `A…` = annonces en cours). Les lignes s'accumulent dans `localStorage.kdw`.
-- `tools/ebay-crawl.js` : dans un onglet du même site eBay, `eval(<contenu>)(<liste --urls>)` relève les pages une à une toutes les 15 à 20 s, saute les pages suivantes d'une requête épuisée, s'arrête sur CAPTCHA / vérification / déconnexion (`localStorage.kdst`, journal `localStorage.kdlog`).
+- `tools/ebay-crawl.js` : dans un onglet du même site eBay **laissé au premier plan** (en arrière-plan, le navigateur ralentit fortement les minuteries), `eval(<contenu>)(<liste --urls>)` relève les pages une à une toutes les 15 à 20 s, saute les pages suivantes d'une requête épuisée, s'arrête sur CAPTCHA / vérification / déconnexion (`localStorage.kdst`, journal `localStorage.kdlog`).
 - Export : renvoyer `'@@DATA@@'+JSON.stringify(localStorage.kdw)+'@@END@@'` complété d'espaces (> 100 ko) pour que la sortie soit enregistrée dans un fichier.
 - `python3 tools/prices.py <série-id> <fichier exporté> <taux USD BCE>` : association, médianes, historique, écrit `data/prices.json` et affiche le récap.

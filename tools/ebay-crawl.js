@@ -13,7 +13,8 @@ async (jobs) => {
     const doc = new DOMParser().parseFromString(h, 'text/html');
     if (/captcha|splashui|signin/i.test(r.url) || /Security Measure|Pardon Our Interruption|V[ée]rification|Verify/i.test(doc.title)) { localStorage.kdst = 'CAPTCHA ' + tag; return; }
     doc.querySelectorAll('img,script,style,link').forEach(n => n.remove());
-    box.replaceChildren(...doc.querySelectorAll('li.s-card'));
+    const li = [...doc.querySelectorAll('li.s-card, .srp-river-answer--REWRITE_START')], cut = li.findIndex(n => !n.matches('li.s-card')); // sans les résultats « moins de mots »
+    box.replaceChildren(...(cut < 0 ? li : li.slice(0, cut)));
     const [cnt, n] = ex(tag, box);
     localStorage.kdlog = (localStorage.kdlog || '') + `${tag}\t${n}\t${cnt || ''}\n`;
     if (n < 200) short.add(q);
