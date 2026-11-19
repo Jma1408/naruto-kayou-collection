@@ -2678,15 +2678,32 @@
 "note": "pas assez de ventes"
 },
 "cn-t4w8|NRZ08-SE-001": {
-"median": null,
-"nbVentes": 0,
-"dernieresVentes": [],
+"median": 548.37,
+"nbVentes": 2,
+"dernieresVentes": [
+{
+"date": "2026-10-19",
+"prix": 591.33,
+"pays": "China",
+"url": "https://www.ebay.com/itm/178567074131"
+},
+{
+"date": "2026-09-14",
+"prix": 505.41,
+"pays": "China",
+"url": "https://www.ebay.com/itm/407116041565"
+}
+],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 548.37
+}
+]
 },
 "cn-t4w8|NRZ08-SE-002": {
 "median": null,
@@ -2701,12 +2718,19 @@
 },
 "cn-t4w8|NRZ08-SE-003": {
 "median": null,
-"nbVentes": 0,
-"dernieresVentes": [],
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-10-02",
+"prix": 323.86,
+"pays": "China",
+"url": "https://www.ebay.com/itm/147386793680"
+}
+],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay",
+"source": "ebay.com",
 "historique": [],
 "note": "pas assez de ventes"
 },
@@ -2723,13 +2747,19 @@
 },
 "cn-t4w8|NRZ08-BP-001": {
 "median": 71.07,
-"nbVentes": 2,
+"nbVentes": 5,
 "dernieresVentes": [
 {
 "date": "2026-10-09",
 "prix": 71.07,
 "pays": "Thaïlande",
 "url": "https://www.ebay.fr/itm/237092233865"
+},
+{
+"date": "2026-10-09",
+"prix": 59.13,
+"pays": "Thailand",
+"url": "https://www.ebay.com/itm/237092233865"
 },
 {
 "date": "2026-10-03",
@@ -2741,7 +2771,7 @@
 "plusBasActuel": 78.72,
 "nbAnnonces": 1,
 "date": "2026-11-19",
-"source": "ebay.fr",
+"source": "ebay.com+ebay.fr",
 "historique": [
 {
 "date": "2026-11-19",
@@ -2750,8 +2780,8 @@
 ]
 },
 "cn-t4w8|NRZ08-BP-002": {
-"median": 74.44,
-"nbVentes": 4,
+"median": 72.25,
+"nbVentes": 6,
 "dernieresVentes": [
 {
 "date": "2026-10-20",
@@ -2766,26 +2796,26 @@
 "url": "https://www.ebay.fr/itm/237092233866"
 },
 {
-"date": "2026-10-07",
-"prix": 73.43,
-"pays": "Australie",
-"url": "https://www.ebay.fr/itm/307108195229"
+"date": "2026-10-09",
+"prix": 59.13,
+"pays": "Thailand",
+"url": "https://www.ebay.com/itm/237092233866"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
+"source": "ebay.com+ebay.fr",
 "historique": [
 {
 "date": "2026-11-19",
-"median": 74.44
+"median": 72.25
 }
 ]
 },
 "cn-t4w8|NRZ08-BP-003": {
-"median": 97.31,
-"nbVentes": 3,
+"median": 79.64,
+"nbVentes": 6,
 "dernieresVentes": [
 {
 "date": "2026-11-09",
@@ -2794,32 +2824,32 @@
 "url": "https://www.ebay.fr/itm/188480347008"
 },
 {
-"date": "2026-09-09",
-"prix": 97.31,
-"pays": "Chine",
-"url": "https://www.ebay.fr/itm/168486777693"
+"date": "2026-11-08",
+"prix": 81.83,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/188480347008"
 },
 {
-"date": "2026-09-08",
-"prix": 77.45,
-"pays": "États-Unis",
-"url": "https://www.ebay.fr/itm/237041745518"
+"date": "2026-11-08",
+"prix": 61.86,
+"pays": "China",
+"url": "https://www.ebay.com/itm/366510496685"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
+"source": "ebay.com+ebay.fr",
 "historique": [
 {
 "date": "2026-11-19",
-"median": 97.31
+"median": 79.64
 }
 ]
 },
 "cn-t4w8|NRZ08-BP-004": {
-"median": 126.28,
-"nbVentes": 4,
+"median": 100.59,
+"nbVentes": 7,
 "dernieresVentes": [
 {
 "date": "2026-10-19",
@@ -2828,32 +2858,32 @@
 "url": "https://www.ebay.fr/itm/407204721477"
 },
 {
+"date": "2026-10-18",
+"prix": 69.02,
+"pays": "China",
+"url": "https://www.ebay.com/itm/407204721477"
+},
+{
 "date": "2026-10-09",
 "prix": 100.59,
 "pays": "Thaïlande",
 "url": "https://www.ebay.fr/itm/168566464489"
-},
-{
-"date": "2026-09-09",
-"prix": 151.98,
-"pays": "Chine",
-"url": "https://www.ebay.fr/itm/168554358638"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
+"source": "ebay.com+ebay.fr",
 "historique": [
 {
 "date": "2026-11-19",
-"median": 126.28
+"median": 100.59
 }
 ]
 },
 "cn-t4w8|NRZ08-BP-005": {
-"median": 163.95,
-"nbVentes": 7,
+"median": 141.11,
+"nbVentes": 12,
 "dernieresVentes": [
 {
 "date": "2026-10-23",
@@ -2868,27 +2898,33 @@
 "url": "https://www.ebay.fr/itm/168557331341"
 },
 {
-"date": "2026-10-16",
-"prix": 218.67,
-"pays": "États-Unis",
-"url": "https://www.ebay.fr/itm/820070418774"
+"date": "2026-10-22",
+"prix": 136.46,
+"pays": "Thailand",
+"url": "https://www.ebay.com/itm/168557331341"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
+"source": "ebay.com+ebay.fr",
 "historique": [
 {
 "date": "2026-11-19",
-"median": 163.95
+"median": 141.11
 }
 ]
 },
 "cn-t4w8|NRZ08-BP-006": {
 "median": 151.98,
-"nbVentes": 4,
+"nbVentes": 7,
 "dernieresVentes": [
+{
+"date": "2026-11-04",
+"prix": 81.87,
+"pays": "China",
+"url": "https://www.ebay.com/itm/178487082985"
+},
 {
 "date": "2026-10-30",
 "prix": 151.98,
@@ -2900,18 +2936,12 @@
 "prix": 151.98,
 "pays": "Chine",
 "url": "https://www.ebay.fr/itm/168489823211"
-},
-{
-"date": "2026-10-16",
-"prix": 182.7,
-"pays": "Italie",
-"url": "https://www.ebay.fr/itm/377207907207"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
+"source": "ebay.com+ebay.fr",
 "historique": [
 {
 "date": "2026-11-19",
@@ -2921,7 +2951,7 @@
 },
 "cn-t4w8|NRZ08-BP-007": {
 "median": 87.47,
-"nbVentes": 5,
+"nbVentes": 9,
 "dernieresVentes": [
 {
 "date": "2026-11-15",
@@ -2930,22 +2960,22 @@
 "url": "https://www.ebay.fr/itm/800885880838"
 },
 {
+"date": "2026-11-15",
+"prix": 63.69,
+"pays": "Italy",
+"url": "https://www.ebay.com/itm/800885880838"
+},
+{
 "date": "2026-11-09",
 "prix": 120.22,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/188834976588"
-},
-{
-"date": "2026-09-21",
-"prix": 87.47,
-"pays": "États-Unis",
-"url": "https://www.ebay.fr/itm/178486203128"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
+"source": "ebay.com+ebay.fr",
 "historique": [
 {
 "date": "2026-11-19",
@@ -2954,14 +2984,20 @@
 ]
 },
 "cn-t4w8|NRZ08-AR-001": {
-"median": 68.36,
-"nbVentes": 2,
+"median": 55.82,
+"nbVentes": 3,
 "dernieresVentes": [
 {
 "date": "2026-09-20",
 "prix": 55.82,
 "pays": "Italie",
 "url": "https://www.ebay.fr/itm/366669239520"
+},
+{
+"date": "2026-09-19",
+"prix": 52.92,
+"pays": "Italy",
+"url": "https://www.ebay.com/itm/366669239520"
 },
 {
 "date": "2026-08-28",
@@ -2973,35 +3009,45 @@
 "plusBasActuel": 146.51,
 "nbAnnonces": 2,
 "date": "2026-11-19",
-"source": "ebay.fr",
+"source": "ebay.com+ebay.fr",
 "historique": [
 {
 "date": "2026-11-19",
-"median": 68.36
+"median": 55.82
 }
 ]
 },
 "cn-t4w8|NRZ08-AR-002": {
-"median": null,
-"nbVentes": 1,
+"median": 35.51,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-11-11",
 "prix": 35.54,
 "pays": "Thaïlande",
 "url": "https://www.ebay.fr/itm/128179099149"
+},
+{
+"date": "2026-11-11",
+"prix": 35.48,
+"pays": "Thailand",
+"url": "https://www.ebay.com/itm/128179099149"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 35.51
+}
+]
 },
 "cn-t4w8|NRZ08-AR-003": {
-"median": 160.73,
-"nbVentes": 5,
+"median": 133.73,
+"nbVentes": 9,
 "dernieresVentes": [
 {
 "date": "2026-11-15",
@@ -3010,26 +3056,26 @@
 "url": "https://www.ebay.fr/itm/800885872960"
 },
 {
+"date": "2026-11-15",
+"prix": 124.14,
+"pays": "Italy",
+"url": "https://www.ebay.com/itm/800885872960"
+},
+{
 "date": "2026-11-06",
 "prix": 115.19,
 "pays": "Chine",
 "url": "https://www.ebay.fr/itm/960127717334"
-},
-{
-"date": "2026-10-30",
-"prix": 198.3,
-"pays": "Italie",
-"url": "https://www.ebay.fr/itm/377223971644"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
+"source": "ebay.com+ebay.fr",
 "historique": [
 {
 "date": "2026-11-19",
-"median": 160.73
+"median": 133.73
 }
 ]
 },
@@ -3045,14 +3091,20 @@
 "note": "pas assez de ventes"
 },
 "cn-t4w8|NRZ08-AR-005": {
-"median": 142.14,
-"nbVentes": 2,
+"median": 130.2,
+"nbVentes": 4,
 "dernieresVentes": [
 {
 "date": "2026-11-16",
 "prix": 142.14,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/257841452026"
+},
+{
+"date": "2026-11-16",
+"prix": 118.27,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/257841452026"
 },
 {
 "date": "2026-11-07",
@@ -3064,49 +3116,75 @@
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
+"source": "ebay.com+ebay.fr",
 "historique": [
 {
 "date": "2026-11-19",
-"median": 142.14
+"median": 130.2
 }
 ]
 },
 "cn-t4w8|NRZ08-AR-006": {
-"median": null,
-"nbVentes": 1,
+"median": 125.63,
+"nbVentes": 4,
 "dernieresVentes": [
+{
+"date": "2026-11-04",
+"prix": 108.15,
+"pays": "China",
+"url": "https://www.ebay.com/itm/178492717951"
+},
 {
 "date": "2026-10-25",
 "prix": 137.15,
 "pays": "Chine",
 "url": "https://www.ebay.fr/itm/158025468547"
+},
+{
+"date": "2026-10-24",
+"prix": 114.11,
+"pays": "China",
+"url": "https://www.ebay.com/itm/158025468547"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 125.63
+}
+]
 },
 "cn-t4w8|NRZ08-MR-001": {
-"median": null,
-"nbVentes": 1,
+"median": 3.5,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-10-10",
 "prix": 3.82,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/158212983426"
+},
+{
+"date": "2026-10-10",
+"prix": 3.18,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/158212983426"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 3.5
+}
+]
 },
 "cn-t4w8|NRZ08-MR-002": {
 "median": null,
@@ -3120,40 +3198,60 @@
 "note": "pas assez de ventes"
 },
 "cn-t4w8|NRZ08-MR-003": {
-"median": null,
-"nbVentes": 1,
+"median": 7.0,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-09-13",
 "prix": 7.64,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/158212971493"
+},
+{
+"date": "2026-09-12",
+"prix": 6.36,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/158212971493"
 }
 ],
 "plusBasActuel": 16.15,
 "nbAnnonces": 2,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 7.0
+}
+]
 },
 "cn-t4w8|NRZ08-MR-004": {
-"median": null,
-"nbVentes": 1,
+"median": 16.68,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-09-08",
 "prix": 16.69,
 "pays": "France",
 "url": "https://www.ebay.fr/itm/407197040480"
+},
+{
+"date": "2026-09-08",
+"prix": 16.67,
+"pays": "United Kingdom",
+"url": "https://www.ebay.com/itm/407197040480"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 16.68
+}
+]
 },
 "cn-t4w8|NRZ08-MR-005": {
 "median": null,
@@ -3178,32 +3276,54 @@
 "note": "pas assez de ventes"
 },
 "cn-t4w8|NRZ08-MR-007": {
-"median": null,
-"nbVentes": 1,
+"median": 22.28,
+"nbVentes": 3,
 "dernieresVentes": [
+{
+"date": "2026-10-01",
+"prix": 24.95,
+"pays": "Italy",
+"url": "https://www.ebay.com/itm/377148850936"
+},
 {
 "date": "2026-09-08",
 "prix": 22.28,
 "pays": "France",
 "url": "https://www.ebay.fr/itm/407197044135"
+},
+{
+"date": "2026-09-08",
+"prix": 22.25,
+"pays": "United Kingdom",
+"url": "https://www.ebay.com/itm/407197044135"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 22.28
+}
+]
 },
 "cn-t4w8|NRZ08-MR-008": {
-"median": 18.21,
-"nbVentes": 2,
+"median": 18.2,
+"nbVentes": 4,
 "dernieresVentes": [
 {
 "date": "2026-09-06",
 "prix": 20.04,
 "pays": "France",
 "url": "https://www.ebay.fr/itm/407197045500"
+},
+{
+"date": "2026-09-06",
+"prix": 20.01,
+"pays": "United Kingdom",
+"url": "https://www.ebay.com/itm/407197045500"
 },
 {
 "date": "2026-08-23",
@@ -3215,11 +3335,11 @@
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
+"source": "ebay.com+ebay.fr",
 "historique": [
 {
 "date": "2026-11-19",
-"median": 18.21
+"median": 18.2
 }
 ]
 },
@@ -3235,86 +3355,132 @@
 "note": "pas assez de ventes"
 },
 "cn-t4w8|NRZ08-UR-006": {
-"median": null,
-"nbVentes": 1,
+"median": 7.0,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-09-19",
 "prix": 7.64,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/157988760956"
+},
+{
+"date": "2026-09-19",
+"prix": 6.36,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/157988760956"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 7.0
+}
+]
 },
 "cn-t4w8|NRZ08-UR-007": {
-"median": null,
-"nbVentes": 1,
+"median": 3.0,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-09-16",
 "prix": 3.27,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/157908593232"
+},
+{
+"date": "2026-09-15",
+"prix": 2.72,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/157908593232"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 3.0
+}
+]
 },
 "cn-t4w8|NRZ08-UR-009": {
-"median": null,
-"nbVentes": 1,
+"median": 15.02,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-09-20",
 "prix": 16.4,
 "pays": "Chine",
 "url": "https://www.ebay.fr/itm/168303682491"
+},
+{
+"date": "2026-09-20",
+"prix": 13.65,
+"pays": "China",
+"url": "https://www.ebay.com/itm/168303682491"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 15.02
+}
+]
 },
 "cn-t4w8|NRZ08-UR-010": {
-"median": null,
-"nbVentes": 1,
+"median": 9.0,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-09-25",
 "prix": 9.83,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/236956182592"
+},
+{
+"date": "2026-09-25",
+"prix": 8.18,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/236956182592"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 9.0
+}
+]
 },
 "cn-t4w8|NRZ08-UR-012": {
-"median": 4.58,
-"nbVentes": 2,
+"median": 4.18,
+"nbVentes": 4,
 "dernieresVentes": [
 {
 "date": "2026-10-26",
 "prix": 4.8,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/158144203971"
+},
+{
+"date": "2026-10-25",
+"prix": 3.99,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/158144203971"
 },
 {
 "date": "2026-10-11",
@@ -3326,53 +3492,73 @@
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
+"source": "ebay.com+ebay.fr",
 "historique": [
 {
 "date": "2026-11-19",
-"median": 4.58
+"median": 4.18
 }
 ]
 },
 "cn-t4w8|NRZ08-UR-015": {
-"median": null,
-"nbVentes": 1,
+"median": 2.63,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-08-23",
 "prix": 2.88,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/157908593290"
+},
+{
+"date": "2026-08-22",
+"prix": 2.39,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/157908593290"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 2.63
+}
+]
 },
 "cn-t4w8|NRZ08-SSR-004": {
-"median": null,
-"nbVentes": 1,
+"median": 2.0,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-10-11",
 "prix": 2.18,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/157968098881"
+},
+{
+"date": "2026-10-11",
+"prix": 1.81,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/157968098881"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 2.0
+}
+]
 },
 "cn-t4w8|NRZ08-SSR-006": {
-"median": 1.59,
-"nbVentes": 2,
+"median": 1.81,
+"nbVentes": 3,
 "dernieresVentes": [
 {
 "date": "2026-11-08",
@@ -3385,108 +3571,170 @@
 "prix": 2.18,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/157968098900"
+},
+{
+"date": "2026-10-25",
+"prix": 1.81,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/157968098900"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
+"source": "ebay.com+ebay.fr",
 "historique": [
 {
 "date": "2026-11-19",
-"median": 1.59
+"median": 1.81
 }
 ]
 },
 "cn-t4w8|NRZ08-SSR-008": {
-"median": null,
-"nbVentes": 1,
+"median": 2.0,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-10-11",
 "prix": 2.18,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/157968098908"
+},
+{
+"date": "2026-10-11",
+"prix": 1.81,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/157968098908"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 2.0
+}
+]
 },
 "cn-t4w8|NRZ08-SSR-012": {
-"median": null,
-"nbVentes": 1,
+"median": 4.0,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-10-10",
 "prix": 4.36,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/158171965947"
+},
+{
+"date": "2026-10-10",
+"prix": 3.63,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/158171965947"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 4.0
+}
+]
 },
 "cn-t4w8|NRZ08-SSR-013": {
-"median": null,
-"nbVentes": 1,
+"median": 2.0,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-10-26",
 "prix": 2.18,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/157968098875"
+},
+{
+"date": "2026-10-25",
+"prix": 1.81,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/157968098875"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 2.0
+}
+]
 },
 "cn-t4w8|NRZ08-SSR-014": {
-"median": null,
-"nbVentes": 1,
+"median": 2.0,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-10-15",
 "prix": 2.18,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/157968098839"
+},
+{
+"date": "2026-10-14",
+"prix": 1.81,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/157968098839"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 2.0
+}
+]
 },
 "cn-t4w8|NRZ08-SSR-016": {
-"median": null,
-"nbVentes": 1,
+"median": 1.81,
+"nbVentes": 3,
 "dernieresVentes": [
 {
 "date": "2026-10-26",
 "prix": 2.18,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/157968098906"
+},
+{
+"date": "2026-10-25",
+"prix": 1.81,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/157968098906"
+},
+{
+"date": "2026-10-10",
+"prix": 0.64,
+"pays": "Canada",
+"url": "https://www.ebay.com/itm/267799003890"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 1.81
+}
+]
 },
 "cn-t4w7|NRZ07-SE-001": {
 "median": null,
@@ -4593,22 +4841,32 @@
 ]
 },
 "cn-t4w6|NRZ06-PU-004": {
-"median": null,
-"nbVentes": 1,
+"median": 1.95,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-10-21",
 "prix": 0.91,
 "pays": "États-Unis",
 "url": "https://www.ebay.fr/itm/880016209050"
+},
+{
+"date": "2026-08-28",
+"prix": 2.98,
+"pays": "Germany",
+"url": "https://www.ebay.com/itm/376580054646"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 1.95
+}
+]
 },
 "cn-t4w6|NRZ06-PU-005": {
 "median": 2.84,
@@ -5052,8 +5310,8 @@
 "note": "pas assez de ventes"
 },
 "cn-t4w6|NRZ06-SSR-151": {
-"median": 6.72,
-"nbVentes": 5,
+"median": 5.87,
+"nbVentes": 6,
 "dernieresVentes": [
 {
 "date": "2026-10-27",
@@ -5077,11 +5335,11 @@
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
+"source": "ebay.com+ebay.fr",
 "historique": [
 {
 "date": "2026-11-19",
-"median": 6.72
+"median": 5.87
 }
 ]
 },
@@ -6605,12 +6863,19 @@
 },
 "cn-t4w2|NR-SP-016": {
 "median": null,
-"nbVentes": 0,
-"dernieresVentes": [],
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-09-09",
+"prix": 6.36,
+"pays": "United States",
+"url": "https://www.ebay.com/itm/358578474890"
+}
+],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay",
+"source": "ebay.com",
 "historique": [],
 "note": "pas assez de ventes"
 },
@@ -7198,22 +7463,32 @@
 "note": "pas assez de ventes"
 },
 "cn-t4w1|NR-SP-007": {
-"median": null,
-"nbVentes": 1,
+"median": 36.01,
+"nbVentes": 2,
 "dernieresVentes": [
 {
 "date": "2026-08-28",
 "prix": 37.09,
 "pays": "France",
 "url": "https://www.ebay.fr/itm/198598655484"
+},
+{
+"date": "2026-08-28",
+"prix": 34.93,
+"pays": "France",
+"url": "https://www.ebay.com/itm/198598655484"
 }
 ],
 "plusBasActuel": null,
 "nbAnnonces": 0,
 "date": "2026-11-19",
-"source": "ebay.fr",
-"historique": [],
-"note": "pas assez de ventes"
+"source": "ebay.com+ebay.fr",
+"historique": [
+{
+"date": "2026-11-19",
+"median": 36.01
+}
+]
 },
 "cn-t4w1|NR-SP-008": {
 "median": null,
@@ -7388,6 +7663,24 @@
 "nbAnnonces": 0,
 "date": "2026-11-19",
 "source": "ebay",
+"historique": [],
+"note": "pas assez de ventes"
+},
+"cn-t4w8|NRZ08-UR-004": {
+"median": null,
+"nbVentes": 1,
+"dernieresVentes": [
+{
+"date": "2026-11-05",
+"prix": 9.01,
+"pays": "China",
+"url": "https://www.ebay.com/itm/860059963479"
+}
+],
+"plusBasActuel": null,
+"nbAnnonces": 0,
+"date": "2026-11-19",
+"source": "ebay.com",
 "historique": [],
 "note": "pas assez de ventes"
 }
