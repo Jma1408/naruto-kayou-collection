@@ -72,7 +72,7 @@ const ph = c => `<div class="ph"><b>${esc(c.rarity)}</b>${esc(c.name || '')}<sma
 function img(c) {
   const src = S.photos[key(c)] || c.img;
   if (!src) return ph(c);
-  return `<img src="${esc(src)}" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.outerHTML=this.nextElementSibling.innerHTML"><template>${ph(c)}</template>`;
+  return `<img src="${esc(src)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="" onload="this.classList.add('ok')" onerror="this.outerHTML=this.nextElementSibling.innerHTML"><template>${ph(c)}</template>`;
 }
 const ring = (o, t, size = 46) => `<div class="ring" style="--p:${t ? o / t * 100 : 0};--s:${size}px"><span>${t ? Math.round(o / t * 100) : 0}%</span></div>`;
 async function loadSet(id) {
@@ -93,7 +93,7 @@ function parent(h) {
   if (a === 'k') return '#r';
   return null;
 }
-let curBase = null, lastHash = null, navN = ((history.state && history.state.n) || 0) + 1;
+let lastN = 0, curBase = null, lastHash = null, navN = ((history.state && history.state.n) || 0) + 1;
 const SCR = {};
 history.scrollRestoration = 'manual';
 const go = h => { location.hash = h; };
@@ -106,7 +106,8 @@ async function route() {
   curBase = base;
   const html = await (views[seg[0]] || views.h)(...seg.slice(1));
   if (base !== curBase) return;
-  V.innerHTML = html; V.classList.remove('in'); void V.offsetWidth; V.classList.add('in');
+  const n = (history.state && history.state.n) || 0, dir = n > lastN ? 'fw' : n < lastN ? 'bw' : 'in'; lastN = n;
+  V.innerHTML = html; V.classList.remove('in', 'fw', 'bw'); void V.offsetWidth; V.classList.add(dir);
   (binds[seg[0]] || (() => { }))(...seg.slice(1));
   scrollTo(0, SCR[base] || 0);
   $('#back').hidden = !parent(location.hash);
@@ -122,8 +123,11 @@ function TITLE(seg) {
 }
 $('#back').onclick = back;
 addEventListener('hashchange', route);
+addEventListener('scroll', () => { const b = $('#bst'); if (b) b.classList.toggle('mini', scrollY > 40); }, { passive: true });
 
 /* ---------- vues ---------- */
+const REG = () => localStorage.getItem('reg') === 'cn' ? 'cn' : 'fr';
+const RECENT = () => { try { return JSON.parse(localStorage.getItem('recent')) || []; } catch { return []; } };
 const ROWS = () => {
   const intl = [...new Set(S.sets.filter(m => m.region === 'intl').map(m => m.line))].map(l => ({ title: l, region: 'intl', sets: S.sets.filter(m => m.line === l) }));
   const cn = [...new Set(S.sets.filter(m => m.region === 'cn').map(m => m.group))].map(g => ({ title: 'Chine · ' + g, region: 'cn', sets: S.sets.filter(m => m.group === g) }));
@@ -131,18 +135,23 @@ const ROWS = () => {
 };
 function shelfTile(m, href) {
   const t = m.count || 0, o = ownedIn(m.id), wip = !m.file;
-  return `<a class="st${wip ? ' wip' : ''}" href="${href || (wip ? '#g/' + m.id : '#s/' + m.id)}"><div class="sti">${m.box || m.cover ? `<img src="${esc(m.box || m.cover)}" referrerpolicy="no-referrer" loading="lazy" alt="">` : '<span>⏳</span>'}</div>
+  return `<a class="st${wip ? ' wip' : ''}" href="${href || (wip ? '#g/' + m.id : '#s/' + m.id)}"><div class="sti sk">${m.box || m.cover ? `<img src="${esc(m.box || m.cover)}" referrerpolicy="no-referrer" loading="lazy" decoding="async" alt="" onload="this.classList.add('ok')">` : '<span>⏳</span>'}</div>
     <b>${esc(m.title)}</b><span class="cn">${esc(m.titleCn || '')}</span>
     <div class="stp">${wip ? '<span class="rb">en cours</span>' : `${ring(o, t, 30)}<span>${o}/${t}</span>${m.partial ? '<span class="rb">partiel</span>' : ''}`}</div></a>`;
 }
 const views = {
   async h() {
-    const reg = localStorage.getItem('reg') || 'all';
-    return `<div class="band"><div class="seg">${[['fr', 'FR'], ['cn', 'Chine'], ['all', 'Tout']].map(([v, l]) => `<button data-reg="${v}" class="${reg === v ? 'on' : ''}">${l}</button>`).join('')}</div>
-      <input id="gq" type="search" placeholder="🔍 Perso, nom chinois ou code (tous les sets)" value="${esc(S.q)}" autocomplete="off"></div>
-      <a class="tot" href="#r">Ma collection : <b>${worthTxt(worth())}</b></a>${await top10()}
+    const reg = REG(), w = worth(), n = Object.values(S.col).reduce((a, e) => a + (e.q || 0), 0);
+    const rec = RECENT().map(meta).filter(m => m && m.file);
+    return `<section class="hd"><div><div class="hv">${eur(w.v)}</div><div class="mu">${n} carte${n > 1 ? 's' : ''}${w.miss ? ` · ${w.miss} sans prix` : ''}</div></div>
+      <button class="sb" id="sbt" aria-label="Rechercher">🔍</button></section>
+      <div class="srch" id="srch" ${S.q ? '' : 'hidden'}><input id="gq" type="search" placeholder="Perso, nom chinois ou code" value="${esc(S.q)}" autocomplete="off" enterkeyhint="search"></div>
       <div id="res"></div>
-      <div id="shelves">${ROWS().filter(r => reg === 'all' || (reg === 'fr' ? r.region === 'intl' : r.region === 'cn')).map(r => `<section class="shelf"><h3>${esc(r.title)}</h3><div class="row">${r.sets.map(m => shelfTile(m)).join('')}</div></section>`).join('')}</div>`;
+      <div id="shelves">
+      ${rec.length ? `<h3 class="hh">Continuer</h3><div class="cont">${rec.map(m => `<a class="ct" href="#s/${m.id}"><div class="sti sk">${m.box || m.cover ? `<img src="${esc(m.box || m.cover)}" referrerpolicy="no-referrer" loading="lazy" decoding="async" alt="" onload="this.classList.add('ok')">` : ''}</div><b>${esc(m.title)}</b><span class="mu">${ownedIn(m.id)}/${m.count || 0}</span></a>`).join('')}</div>` : ''}
+      <div class="seg">${[['fr', 'FR'], ['cn', 'Chine']].map(([v, l]) => `<button data-reg="${v}" class="${reg === v ? 'on' : ''}">${l}</button>`).join('')}</div>
+      ${ROWS().filter(r => reg === 'fr' ? r.region === 'intl' : r.region === 'cn').map(r => `<section class="shelf"><h3>${esc(r.title.replace(/^Chine · /, ''))}</h3><div class="row">${r.sets.map(m => shelfTile(m)).join('')}</div></section>`).join('')}
+      ${await top10()}</div>`;
   },
   async s(id, code) {
     const d = await loadSet(id); if (!d) return views.g(id);
@@ -153,14 +162,15 @@ const views = {
     const own = d.cards.filter(qty).length, t = d.cards.length, val = worth(id);
     const tabs = [{ id: '', label: 'Tout' }, ...d.rarities.slice().reverse()];
     S.ctx = d.cards.filter(c => (!f.r || c.rarity === f.r) && (!f.own || qty(c)));
-    return `<section class="bh">${ring(own, t, 64)}<div><div class="big">${own}/${t}</div><div class="mu">Valeur : ${worthTxt(val)}</div></div>
+    const rc = RECENT().filter(x => x !== id); rc.unshift(id); try { localStorage.setItem('recent', JSON.stringify(rc.slice(0, 3))); } catch { }
+    return `<div class="bstick" id="bst"><section class="bh">${ring(own, t, 64)}<div><div class="big">${own}/${t}</div><div class="mu">Valeur : ${worthTxt(val)}</div></div>
       <a class="btn g" href="#g/${id}">📖 Guide</a></section>
-      ${updBtn(meta(id).region === 'intl' ? meta(id).title.replace(/ – Série (\d)/, ' S$1').replace('Heaven Scroll S1', 'Heaven Scroll') : meta(id).title.replace(/ \(.*\)$/, ''), (S.pm.series || {})[id])}
-      ${d.partial ? '<p class="note">Liste partielle : des cartes peuvent manquer ou être sans image (placeholder). ↺ = réédition d\'une autre boîte de la même wave.</p>' : ''}
-      <div class="ctabs">${tabs.map(r => { const cs = r.id ? d.cards.filter(c => c.rarity === r.id) : d.cards; return `<button data-r="${esc(r.id)}" class="${f.r === r.id ? 'on' : ''}">${esc(r.id || r.label)} <small>${cs.filter(qty).length}/${cs.length}</small></button>`; }).join('')}</div>
+      <div class="ctabs">${tabs.map(r => { const cs = r.id ? d.cards.filter(c => c.rarity === r.id) : d.cards; return `<button data-r="${esc(r.id)}" class="${f.r === r.id ? 'on' : ''}">${esc(r.id || r.label)} <small>${cs.filter(qty).length}/${cs.length}</small></button>`; }).join('')}</div></div>
       <label class="own"><input type="checkbox" id="own" ${f.own ? 'checked' : ''}> Possédées seulement</label>
       <div class="grid" id="grid">${S.ctx.map(tile).join('') || '<p class="mu">Aucune carte.</p>'}</div>
-      <p class="note">Tap = fiche · appui long = +1.</p>`;
+      <p class="note">Tap = fiche · appui long = +1.</p>
+      ${updBtn(meta(id).region === 'intl' ? meta(id).title.replace(/ – Série (\d)/, ' S$1').replace('Heaven Scroll S1', 'Heaven Scroll') : meta(id).title.replace(/ \(.*\)$/, ''), (S.pm.series || {})[id])}
+      ${d.partial ? '<p class="note">Liste partielle : des cartes peuvent manquer. ↺ = réédition d\'une autre boîte de la même wave.</p>' : ''}`;
   },
   card(d, code) {
     const c = d.cards.find(x => x.code === code); if (!c) return '<p>Carte introuvable.</p>';
@@ -170,7 +180,7 @@ const views = {
     const twin = (cd, sid) => sid && meta(sid) && meta(sid).file ? `<a href="#s/${sid}/${esc(cd)}">${esc(cd)}</a>` : esc(cd);
     return `<div class="det"><div class="card3d ${land(c) ? 'l' : ''} ${isHigh(c) ? 'holo' : ''}" id="c3">${img(c)}</div></div>
     <div class="nav"><button data-step="-1" ${i > 0 ? '' : 'disabled'}>‹</button><span class="mu">${i + 1}/${S.ctx.length} · glisse ← →</span><button data-step="1" ${i < S.ctx.length - 1 ? '' : 'disabled'}>›</button></div>
-    <section class="box"><div class="qty"><button data-d="-1" aria-label="Retirer">−</button><div><b id="qv">${e.q}</b><small>possédée(s)</small></div><button data-d="1" aria-label="Ajouter">+</button></div></section>
+    <section class="box qbar"><div class="qty"><button data-d="-1" aria-label="Retirer">−</button><div><b id="qv">${e.q}</b><small>possédée(s)</small></div><button data-d="1" aria-label="Ajouter">+</button></div></section>
     ${isHigh(c) && window.DeviceOrientationEvent && DeviceOrientationEvent.requestPermission ? '<button class="btn g w" id="gyro">Activer l\'effet gyroscope</button>' : ''}
     <section class="box"><div style="font-size:20px;font-weight:800">${esc(c.name || c.code)}</div>${c.nameCn && c.nameCn !== c.name ? `<div>${esc(c.nameCn)}</div>` : ''}
       <div class="mu"><span class="rb ${esc(c.rarity)}">${esc(c.rarity)}</span> ${esc(r.label)} · ${esc(m.title)}</div>
@@ -188,7 +198,7 @@ const views = {
     <section class="box"><h2>Taux de drop</h2>${oddsLine(c)}<a class="mu" href="#g/${c.set}">Détail et source dans le guide ›</a></section>
     <section class="box"><h2>Ma photo</h2>
       <label class="btn w">📷 ${S.photos[key(c)] ? 'Remplacer ma photo' : 'Ajouter ma photo'}<input id="ph" type="file" accept="image/*" capture="environment" hidden></label>
-      ${S.photos[key(c)] ? '<button class="btn g w" id="phx">Revenir à l\'image officielle</button>' : ''}</section>`;
+      ${S.photos[key(c)] ? '<button class="btn g w" id="phx">Revenir à l\'image officielle</button>' : ''}</section><div class="qsp"></div>`;
   },
   async g(id) {
     const m = meta(id); if (!m) return '<p>Set introuvable.</p>';
@@ -215,8 +225,8 @@ const views = {
   },
   async pack(id) {
     const d = await loadSet(id); if (!d) return '';
-    return `<section class="box pk"><div class="pkh"><b>Booster : <span id="pn">0</span>/${PK(d)}</b><button class="btn" id="pv" disabled>Ouvrir ✦</button></div><div class="chips" id="pc"></div></section>
-      <div id="pkg">${d.rarities.map(r => `<h3 class="gh">${esc(r.id)} · ${esc(r.label)}</h3><div class="grid g4">${d.cards.filter(c => c.rarity === r.id).map(c => tile(c).replace('class="c ', 'class="c b ')).join('')}</div>`).join('')}</div>`;
+    return `<div id="pkg">${d.rarities.map(r => `<h3 class="gh">${esc(r.id)} · ${esc(r.label)}</h3><div class="grid g4">${d.cards.filter(c => c.rarity === r.id).map(c => tile(c).replace('class="c ', 'class="c b ')).join('')}</div>`).join('')}</div>
+      <section class="box pk"><div class="chips" id="pc"></div><div class="pkh"><b>Booster : <span id="pn">0</span>/${PK(d)}</b><button class="btn" id="pv" disabled>Ouvrir ✦</button></div></section>`;
   },
   reveal(id) {
     const o = S.opened; if (!o || o.set !== id) { setTimeout(() => replaceTo('#b/' + id)); return ''; }
@@ -335,12 +345,12 @@ const binds = {
       $('#shelves').hidden = on;
       if (!on) { $('#res').innerHTML = ''; return; }
       await loadAll(); if (S.q.toLowerCase() !== q) return;
-      const reg = localStorage.getItem('reg') || 'all';
-      const res = allCards().filter(c => (reg === 'all' || (meta(c.set).region === 'intl') === (reg === 'fr')) && [c.name, c.nameCn, c.code, c.full, c.alias && c.alias.cn, c.alias && c.alias.eu].join(' ').toLowerCase().includes(q)).slice(0, 150);
+      const res = allCards().filter(c => [c.name, c.nameCn, c.code, c.full, c.alias && c.alias.cn, c.alias && c.alias.eu].join(' ').toLowerCase().includes(q)).slice(0, 150);
       S.ctx = res;
       $('#res').innerHTML = `<p class="mu">${res.length} résultat${res.length > 1 ? 's' : ''}${res.length === 150 ? ' (150 max)' : ''}</p><div class="grid">${res.map(tile).join('')}</div>`;
     };
     inp.oninput = draw; draw();
+    $('#sbt').onclick = () => { const b = $('#srch'); b.hidden = !b.hidden; if (!b.hidden) inp.focus(); else { inp.value = ''; draw(); } };
     press($('#res'), openCard, longAdd);
     V.querySelectorAll('[data-reg]').forEach(b => b.onclick = () => { localStorage.setItem('reg', b.dataset.reg); curBase = null; route(); });
   },
@@ -387,7 +397,7 @@ function bindCard(c) {
   const mp = $('#mp'), savePrice = () => {
     const e = S.col[k] || (S.col[k] = { q: 0, cond: 'NM' }), v = mp.value.trim().replace(',', '.');
     if (v === '') { delete e.price; delete e.priceDate; } else if (!isNaN(+v)) { e.price = Math.round(+v * 100) / 100; e.priceDate = new Date().toISOString(); } else return;
-    saveCol(k); $('#mpd').textContent = e.priceDate ? 'Saisi le ' + fdate(e.priceDate) : 'Aucun prix saisi'; toast(v === '' ? 'Prix retiré' : 'Prix enregistré');
+    saveCol(k); $('#mpd').textContent = e.priceDate ? 'Saisi le ' + fdate(e.priceDate) : 'Aucun prix saisi'; vib(v === '' ? 10 : [15, 40, 15]); toast(v === '' ? 'Prix retiré' : 'Prix enregistré');
   };
   mp.onchange = savePrice; mp.onkeydown = ev => { if (ev.key === 'Enter') mp.blur(); };
   const tilt = (px, py) => { c3.style.setProperty('--mx', px * 100 + '%'); c3.style.setProperty('--my', py * 100 + '%'); c3.style.setProperty('--ry', (px - .5) * 24 + 'deg'); c3.style.setProperty('--rx', (.5 - py) * 24 + 'deg'); };
@@ -445,8 +455,8 @@ async function top10() {
   if (!keys.length) return '';
   await Promise.all([...new Set(keys.map(k => k.split('|')[0]))].map(loadSet));
   const rows = keys.map(k => { const [sid, code] = k.split('|'), c = S.data[sid] && S.data[sid].cards.find(x => x.code === code); if (!c) return ''; const p = eff(k);
-    return `<a class="top" href="#s/${sid}/${esc(code)}"><div class="tim">${img(c)}</div><div><b>${esc(c.name || code)}</b><div class="mu">${esc(meta(sid).title)} · ×${S.col[k].q}</div></div><span>${eur(p.v)}<small>${p.src === 'moi' ? 'mon prix' : 'eBay'}</small></span></a>`; }).join('');
-  return `<details class="box t10" open><summary><h2>Top 10 de mes cartes les plus chères</h2></summary>${rows}</details>`;
+    return `<a class="tc" href="#s/${sid}/${esc(code)}"><div class="tim">${img(c)}</div><b>${eur(p.v)}</b><span>${esc(c.name || code)}</span><small class="mu">${esc(meta(sid).title)} · ${p.src === 'moi' ? 'mon prix' : 'eBay'}</small></a>`; }).join('');
+  return `<details class="t10"><summary><h3 class="hh">Top 10 de mes cartes les plus chères</h3><span class="mu">▾</span></summary><div class="row">${rows}</div></details>`;
 }
 async function init() {
   const [sj, od] = await Promise.all([fetch('data/sets.json').then(r => r.json()), fetch('data/odds.json').then(r => r.json())]);
