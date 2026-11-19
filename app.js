@@ -11,8 +11,9 @@ const key = c => c.set + '|' + c.code;
 const qty = c => (S.col[key(c)] || {}).q || 0;
 // Prix manuel : saisi par l'utilisateur, stocké dans l'enregistrement de collection { q, cond, price, priceDate }
 // Prix effectif : mon prix manuel s'il est plus récent que le relevé eBay (data/prices.json), sinon la médiane eBay
+const ebOf = k => S.eb[k] || S.eb[k.slice(k.indexOf('|') + 1)]; // sets chinois : clé « set|code », séries FR : code
 function eff(k) {
-  const e = S.col[k], b = S.eb[k.slice(k.indexOf('|') + 1)];
+  const e = S.col[k], b = ebOf(k);
   const mine = e && typeof e.price === 'number' ? { v: e.price, src: 'moi', date: e.priceDate } : null;
   const nb = b && (b.nbVentes ?? b.n), eb = b && nb > 0 && typeof b.median === 'number' ? { v: b.median, src: 'ebay', date: b.date, n: nb } : null;
   if (mine && (!eb || new Date(mine.date) >= new Date(eb.date))) return mine;
@@ -154,7 +155,7 @@ const views = {
     S.ctx = d.cards.filter(c => (!f.r || c.rarity === f.r) && (!f.own || qty(c)));
     return `<section class="bh">${ring(own, t, 64)}<div><div class="big">${own}/${t}</div><div class="mu">Valeur : ${worthTxt(val)}</div></div>
       <a class="btn g" href="#g/${id}">📖 Guide</a></section>
-      ${meta(id).region === 'intl' ? updBtn(meta(id).title.replace(/ – Série (\d)/, ' S$1').replace('Heaven Scroll S1', 'Heaven Scroll'), (S.pm.series || {})[id]) : ''}
+      ${updBtn(meta(id).region === 'intl' ? meta(id).title.replace(/ – Série (\d)/, ' S$1').replace('Heaven Scroll S1', 'Heaven Scroll') : meta(id).title.replace(/ \(.*\)$/, ''), (S.pm.series || {})[id])}
       ${d.partial ? '<p class="note">Liste partielle : des cartes peuvent manquer ou être sans image (placeholder). ↺ = réédition d\'une autre boîte de la même wave.</p>' : ''}
       <div class="ctabs">${tabs.map(r => { const cs = r.id ? d.cards.filter(c => c.rarity === r.id) : d.cards; return `<button data-r="${esc(r.id)}" class="${f.r === r.id ? 'on' : ''}">${esc(r.id || r.label)} <small>${cs.filter(qty).length}/${cs.length}</small></button>`; }).join('')}</div>
       <label class="own"><input type="checkbox" id="own" ${f.own ? 'checked' : ''}> Possédées seulement</label>
@@ -306,7 +307,7 @@ function spark(h) {
   return `<div class="spk"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><polyline points="${pts}" fill="none" stroke="var(--or)" stroke-width="2"/></svg><b class="${d >= 0 ? 'up' : 'dn'}">${d >= 0 ? '▲' : '▼'} ${f1(Math.abs(d))} %</b><span class="mu">depuis le ${fdate(h[h.length - 2].date)}</span></div>`;
 }
 function priceBox(c) {
-  const b = S.eb[c.code]; if (!b) return '';
+  const b = ebOf(key(c)); if (!b) return '';
   const n = b.nbVentes ?? b.n ?? 0, last = b.dernieresVentes || [];
   return `<section class="box"><h2>Prix</h2>
     ${b.median != null ? `<div class="big">Vendu ~ ${eur(b.median)}</div><div class="mu">${n} vente${n > 1 ? 's' : ''} · 90 j · relevé du ${fdate(b.date)}</div>` : `<div class="big" style="color:var(--mu)">pas assez de ventes</div><div class="mu">${n} vente${n > 1 ? 's' : ''} sur 90 j · relevé du ${fdate(b.date)}</div>`}
@@ -323,7 +324,7 @@ document.addEventListener('click', async e => {
   const b = e.target.closest('[data-cmd]'); if (!b) return;
   const t = b.dataset.cmd;
   try { await navigator.clipboard.writeText(t); } catch { const a = document.createElement('textarea'); a.value = t; document.body.append(a); a.select(); document.execCommand('copy'); a.remove(); }
-  const m = $('#bubble'); m.innerHTML = `<b>Commande copiée ✓</b><p>« ${esc(t)} »</p><p>Ouvre l'app Claude, va dans la conversation Claude Code du projet Kayou, colle et envoie. Ton PC doit être allumé avec l'app Claude et Chrome ouverts.</p><button class="btn w">OK</button>`;
+  const m = $('#bubble'); m.innerHTML = `<b>Commande copiée ✓</b><p>« ${esc(t)} »</p><p>Ouvre l'app Claude, va dans la conversation Claude Code du projet Kayou, colle et envoie. Ton PC doit être allumé avec l'app Claude ouverte.</p><button class="btn w">OK</button>`;
   m.hidden = false; m.querySelector('button').onclick = () => m.hidden = true;
 });
 const binds = {

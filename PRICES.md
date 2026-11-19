@@ -1,6 +1,6 @@
 # Mise à jour des prix — procédure de référence
 
-**Commande** : « prix <série> » (ex. « prix Heaven Scroll ») ou « prix tout » (les 8 séries ci-dessous, une à la fois). À réception : suivre ce fichier **sans poser de question**.
+**Commande** : « prix <série> » (ex. « prix Heaven Scroll »), « prix <wave> » (ex. « prix T4W6 », sets chinois, id `cn-…` dans `data/sets.json`) ou « prix tout » (toutes les séries et waves, une à la fois). À réception : suivre ce fichier **sans poser de question**.
 
 | Série | id | code | requête large |
 |---|---|---|---|
@@ -13,7 +13,9 @@
 | Earth Scroll S3 | earth-scroll-3 | NREA03 | Kayou Naruto Earth Scroll |
 | Ninja Age | ninja-age | NRCCNA | Kayou Naruto Ninja Age |
 
-**Périmètre** : séries internationales uniquement ; cartes de `data/watchlist.json` (raretés au-dessus de UR). Enregistrer aussi les UR et SSR trouvées au passage.
+**Périmètre** : séries internationales : cartes de `data/watchlist.json` (raretés au-dessus de UR). Sets chinois : watchlist générée depuis le fichier du set par `tools/prices.py` (raretés au-dessus de UR dans l'ordre du fichier, sans HR/PTR garanties ; set sans UR : au-dessus de SSR, sinon tout le set). Enregistrer aussi les UR et SSR trouvées au passage.
+
+**Sets chinois** : requêtes larges « Kayou Naruto <wave> », « <wave> » et le préfixe propre à la wave (NRZxx, NRBxx). Les versions chinoises sont voulues : exclure les versions EN/FR (NRSA, NREA, NRI, NRCC, EN/FR, English, Heaven Scroll, Chapter Jin…), les annonces d'une autre wave, et un titre sans tag de wave ni préfixe propre (codes `NR-…` partagés entre waves). Ventes : ebay.fr, puis ebay.com, puis ebay.de (recherches larges sur chaque site). Clé dans `prices.json` : `<set-id>|<code>`.
 
 **Navigateur** : Chrome de l'utilisateur via Claude in Chrome (connecté à eBay). Si Chrome n'est pas joignable : navigateur intégré de l'app (session eBay ouverte).
 
@@ -44,6 +46,8 @@
 **Récap** : cartes chiffrées / sans ventes, top 5, plus grosses hausses et baisses vs le relevé précédent.
 
 ## Outils (dans le dépôt)
-- `tools/ebay-extract.js` : à charger dans la page eBay (`localStorage.kdg = <contenu>` puis `eval(localStorage.kdg)('S-q1p1')` ; tag `S…` = ventes, `A…` = annonces en cours). Les lignes s'accumulent dans `localStorage.kdw`.
+- `python3 tools/prices.py <set-id> --urls <ebay.fr|ebay.com|ebay.de> [S|A]` : liste des pages à relever (S = ventes, A = annonces en cours).
+- `tools/ebay-extract.js` : extraction d'une page de résultats (`localStorage.kdg = <contenu>` ; tag `S…` = ventes, `A…` = annonces en cours). Les lignes s'accumulent dans `localStorage.kdw`.
+- `tools/ebay-crawl.js` : dans un onglet du même site eBay, `eval(<contenu>)(<liste --urls>)` relève les pages une à une toutes les 15 à 20 s, saute les pages suivantes d'une requête épuisée, s'arrête sur CAPTCHA / vérification / déconnexion (`localStorage.kdst`, journal `localStorage.kdlog`).
 - Export : renvoyer `'@@DATA@@'+JSON.stringify(localStorage.kdw)+'@@END@@'` complété d'espaces (> 100 ko) pour que la sortie soit enregistrée dans un fichier.
 - `python3 tools/prices.py <série-id> <fichier exporté> <taux USD BCE>` : association, médianes, historique, écrit `data/prices.json` et affiche le récap.
